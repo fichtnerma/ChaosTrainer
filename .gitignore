@@ -10,6 +10,9 @@
 # Java class files
 *.class
 
+# Github files 
+.github
+
 # Generated files
 bin/
 gen/
