@@ -5,12 +5,13 @@ Download the LTS Version
 Node has to be installed to continue
 `npm install -g yarn`
 ### 3. Install [git](https://git-scm.com/downloads)
-Set your User Information
-`git config user.name "Your Name"`
-`git config user.email "Your Email"`
 ### 4. Download and Install Visual Studio Code
 Install the [React Native Tools Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.vscode-react-native) for VSCode
 ### 5. Download and Install Android Studio
 Configure -> AVD Manager -> Create Virtual Device
 ### 6. Install expo-cli
 yarn global add expo-cli
+### 7. Clone Github Repo
+![Github Clone](https://code.visualstudio.com/assets/docs/editor/github/clone-from-github.gif)
+`git config user.name "Your Name"`
+`git config user.email Your Email`
