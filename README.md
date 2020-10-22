@@ -21,5 +21,5 @@ Innerhalb eines Git Projects ausführen
 `git config user.email Your Email`
 
 ### 8. Download Dependcies
-Innerhalb des AppInterface Ordner folgenden Befehl ausführen:
+Folgenden Befehl ausführen:
 `yarn install`

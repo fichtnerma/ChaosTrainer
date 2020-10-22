@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "loadDependencies",
+			"command": "yarn install",
+			"detail": "install dependencies from package"
+		},
+		{
+			"type": "shell",
+			"label": "start",
+			"command": "expo start",
+			"detail": "install dependencies from package"
+		},
+		{
+			"label": "startApp",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"loadDependencies",
+				"start"
+			]
+		}
+	]
+}
