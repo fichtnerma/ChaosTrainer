@@ -5,12 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach to packager",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnative",
+            "request": "attach"
+        },
+        {
             "name": "Start App",
             "cwd": "${workspaceFolder}",
             "type": "reactnative",
             "request": "attach",
-            "preLaunchTask": "startApp",
-            "port": "19001",
+            "preLaunchTask": "startApp"
         },
     ]
 }
