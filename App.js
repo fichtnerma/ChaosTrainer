@@ -1,39 +1,45 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Button} from 'react-native';
-import  WelcomeScreen  from './app/screens/WelcomeScreen';
+//Librarys
+import * as React from 'react';
+import {View, Text, Button} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-export default function App() {
-  return (
-    <View>
-      <SafeAreaView style={containerStyles}>
-        <Button
-            title="Click Me" color= "black" />
-      </SafeAreaView>
-        <View style={styles.container}>
-          <Text numberOfLines={1}>Hallo Leute</Text>
+//Components
+import HomeScreen from './app/screens/HomeScreen';
+
+function DetailsScreen({navigation}) {
+    return (
+        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+            <Text>Details Screen</Text>
+            <Button
+                title="Go to Home"
+                onPress={() => navigation.navigate('Home')}
+            />
+            <Button title="Go back" onPress={() => navigation.goBack()} />
         </View>
-        <WelcomeScreen />
-      <View style={styles.container}>
-        <Text numberOfLines={1}>Hallo Leute</Text>
-      </View>
-    </View>
-  );
+    );
 }
-const containerStyles = {
-  backgroundColor: "orange"
+
+const Stack = createStackNavigator();
+
+function App() {
+    return (
+        <NavigationContainer>
+            <Stack.Navigator screenOptions={headerStyle}>
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Details" component={DetailsScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
+}
+const headerStyle = {
+    headerStyle: {
+        backgroundColor: '#f4511e',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+        fontWeight: 'bold',
+    },
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  background: {
-    flex: 1,
-    width: "100%",
-    height: "100%",
-}
-});
+export default App;
