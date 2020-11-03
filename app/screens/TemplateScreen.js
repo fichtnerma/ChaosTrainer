@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, StyleSheet, View, Button} from 'react-native';
 
-export default function HomeScreen({navigation}) {
+export default function TemplateScreen({navigation}) {
     return (
         <View
             style={{
@@ -10,19 +10,14 @@ export default function HomeScreen({navigation}) {
                 justifyContent: 'center',
             }}
         >
-            <Text>Home Screen</Text>
+            <Text>Template Screen</Text>
             <Button
-                title="Informationen"
-                onPress={() => navigation.navigate('Info')}
+                title="Template"
+                onPress={() => navigation.navigate('Template')}
             />
-            <Button title="SOS" onPress={() => navigation.navigate('Sos')} />
         </View>
     );
 }
-
-const containerStyles = {
-    backgroundColor: 'orange',
-};
 
 const styles = StyleSheet.create({
     container: {

@@ -6,19 +6,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 //Components
 import HomeScreen from './app/screens/HomeScreen';
-
-function DetailsScreen({navigation}) {
-    return (
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Text>Details Screen</Text>
-            <Button
-                title="Go to Home"
-                onPress={() => navigation.navigate('Home')}
-            />
-            <Button title="Go back" onPress={() => navigation.goBack()} />
-        </View>
-    );
-}
+import InfoScreen from './app/screens/InfoScreen';
+import SosScreen from './app/screens/SosScreen';
 
 const Stack = createStackNavigator();
 
@@ -27,14 +16,15 @@ function App() {
         <NavigationContainer>
             <Stack.Navigator screenOptions={headerStyle}>
                 <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Details" component={DetailsScreen} />
+                <Stack.Screen name="Info" component={InfoScreen} />
+                <Stack.Screen name="Sos" component={SosScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
 }
 const headerStyle = {
     headerStyle: {
-        backgroundColor: '#f4511e',
+        backgroundColor: '#123456',
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
