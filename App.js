@@ -1,39 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Button} from 'react-native';
-import  WelcomeScreen  from './app/screens/WelcomeScreen';
+//Librarys
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-export default function App() {
-  return (
-    <View>
-      <SafeAreaView style={containerStyles}>
-        <Button
-            title="Click Me" color= "black" />
-      </SafeAreaView>
-        <View style={styles.container}>
-          <Text numberOfLines={1}>Hallo Leute</Text>
-        </View>
-        <WelcomeScreen />
-      <View style={styles.container}>
-        <Text numberOfLines={1}>Hallo Leute</Text>
-      </View>
-    </View>
-  );
+//Components
+import HomeScreen from './app/screens/HomeScreen';
+import InfoScreen from './app/screens/InfoScreen';
+import SosScreen from './app/screens/SosScreen';
+
+const Stack = createStackNavigator();
+
+function App() {
+    return (
+        <NavigationContainer>
+            <Stack.Navigator screenOptions={headerStyle}>
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Info" component={InfoScreen} />
+                <Stack.Screen name="Sos" component={SosScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
-const containerStyles = {
-  backgroundColor: "orange"
+const headerStyle = {
+    headerStyle: {
+        backgroundColor: '#123456',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+        fontWeight: 'bold',
+    },
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  background: {
-    flex: 1,
-    width: "100%",
-    height: "100%",
-}
-});
+export default App;
