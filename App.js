@@ -20,13 +20,11 @@ function App() {
             let iconName;
 
             if (route.name === 'Info') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle';
+              iconName = 'ios-information-circle';
             } else if (route.name === 'Home') {
-              iconName = focused ? 'ios-home' : 'ios-home';
+              iconName = 'ios-home';
             } else if (route.name === 'Sos') {
-                iconName = focused ? 'ios-flame' : 'ios-flame';
+                iconName = 'ios-flame';
               }
 
             // You can return any component that you like here!
