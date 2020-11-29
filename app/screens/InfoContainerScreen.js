@@ -16,13 +16,7 @@ export default function InfoContainerScreen() {
 
 function InfoScreen({navigation}) {
     return (
-        <View
-            style={{
-                flex: 1,
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}
-        >
+        <View style={styles.container}>
             <Text>Info Screen</Text>
             <Button
                 title="InfoChild"
@@ -48,7 +42,7 @@ const styles = StyleSheet.create({
 
 const headerStyle = {
     headerStyle: {
-        backgroundColor: '#123456',
+        backgroundColor: '#6895a2',
     },
     headerTintColor: '#fff',
     headerTitleStyle: {

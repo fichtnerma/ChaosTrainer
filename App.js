@@ -1,56 +1,33 @@
 //Librarys
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 //Components
 import HomeScreen from './app/screens/HomeScreen';
 import InfoContainerScreen from './app/screens/InfoContainerScreen';
 import SosScreen from './app/screens/SosScreen';
+import MyTabbar from './app/components/TabBar/MyTabbar';
+import SearchScreen from './app/screens/SearchScreen';
+import PlayScreen from './app/screens/PlayScreen';
 
 const Tab = createBottomTabNavigator();
 
 function App() {
     return (
         <NavigationContainer>
-            <Tab.Navigator screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
-
-            if (route.name === 'Info') {
-              iconName = 'ios-information-circle';
-            } else if (route.name === 'Home') {
-              iconName = 'ios-home';
-            } else if (route.name === 'Sos') {
-                iconName = 'ios-flame';
-              }
-
-            // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-        })}
-        tabBarOptions={{
-          activeTintColor: '#123456',
-          inactiveTintColor: 'gray',
-        }}>
+            <Tab.Navigator
+                style={{backgroundColor: 'red'}}
+                tabBar={(props) => <MyTabbar {...props} />}
+            >
                 <Tab.Screen name="Home" component={HomeScreen} />
                 <Tab.Screen name="Sos" component={SosScreen} />
-                <Tab.Screen name="Info" component={InfoContainerScreen} />   
+                <Tab.Screen name="Info" component={InfoContainerScreen} />
+                <Tab.Screen name="Search" component={SearchScreen} />
+                <Tab.Screen name="Play" component={PlayScreen} />
             </Tab.Navigator>
         </NavigationContainer>
     );
 }
 
-
-
-
-
-
-
-
-
-
 export default App;
-
