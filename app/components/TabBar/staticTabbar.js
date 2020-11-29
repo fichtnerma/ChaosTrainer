@@ -5,7 +5,6 @@ import {
     TouchableWithoutFeedback,
     Animated,
     Dimensions,
-    Text,
 } from 'react-native';
 import {Feather as Icon} from '@expo/vector-icons';
 

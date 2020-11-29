@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Dimensions, Text, Animated} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {View, StyleSheet, Dimensions, Animated} from 'react-native';
 import * as shape from 'd3-shape';
 import Svg, {Path} from 'react-native-svg';
 import StaticTabbar, {tabHeight as height} from './staticTabbar';
