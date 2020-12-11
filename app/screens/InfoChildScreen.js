@@ -3,18 +3,8 @@ import {Text, StyleSheet, View, Button} from 'react-native';
 
 export default function InfoChildScreen({navigation}) {
     return (
-        <View
-            style={{
-                flex: 1,
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}
-        >
-            <Text>InfoChild Screen</Text>
-            <Button
-                title="Info"
-                onPress={() => navigation.navigate('Info')}
-            />
+        <View style={styles.container}>
+            <Text>Feuer</Text>
         </View>
     );
 }

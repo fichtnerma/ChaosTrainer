@@ -3,13 +3,7 @@ import {Text, StyleSheet, View, Button} from 'react-native';
 
 export default function SosScreen({navigation}) {
     return (
-        <View
-            style={{
-                flex: 1,
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}
-        >
+        <View style={styles.container}>
             <Text>Sos Screen</Text>
             <Button title="Home" onPress={() => navigation.navigate('Home')} />
         </View>
