@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import InfoChildScreen from './InfoChildScreen';
 import {Text, StyleSheet, View, Button, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import ErsteHilfeScreen from './InfoUnterseiten/ErsteHilfe';
 
 const Stack = createStackNavigator();
 
@@ -11,6 +12,7 @@ export default function InfoContainerScreen() {
         <Stack.Navigator screenOptions={headerStyle}>
             <Stack.Screen name="Info" component={InfoScreen} />
             <Stack.Screen name="InfoChild" component={InfoChildScreen} />
+            <Stack.Screen name="ErsteHilfe" component={ErsteHilfeScreen} />
         </Stack.Navigator>
     );
 }
@@ -21,7 +23,7 @@ function InfoScreen({navigation}) {
             <View style={styles.layout}>
                 <TouchableOpacity
                     style={styles.box}
-                    onPress={() => navigation.navigate('InfoChild')}
+                    onPress={() => navigation.navigate('ErsteHilfe')}
                 > 
                     <Image 
                         source={require('../assets/InfoScreen/Erste_Hilfe.png')}
