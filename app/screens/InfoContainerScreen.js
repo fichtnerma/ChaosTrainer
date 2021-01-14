@@ -23,29 +23,20 @@ function InfoScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 > 
-                    <Image source={require('../assets/InfoScreen/Erste_Hilfe.png')}
-                    style={kacheln.icons} />
-                    <Text>Erste Hilfe</Text>
+                    <Image 
+                        source={require('../assets/InfoScreen/Erste_Hilfe.png')}
+                        style={kacheln.icons} />
+                    <Text style={kacheln.titel} >Erste Hilfe</Text>
                 </TouchableOpacity>
+
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Text>Brand</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.layout}>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => navigation.navigate('InfoChild')}
-                >
-                    <Text>Erste Hilfe</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => navigation.navigate('InfoChild')}
-                >
-                    <Text>Erste Hilfe</Text>
+                   <Image 
+                        source={require('../assets/InfoScreen/Feuer.png')}
+                        style={kacheln.icons} />
+                    <Text style={kacheln.titel} >Brand</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.layout}>
@@ -53,13 +44,39 @@ function InfoScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Text>Erste Hilfe</Text>
+                    <Image 
+                        source={require('../assets/InfoScreen/Virus.png')}
+                        style={kacheln.icons} />
+                    <Text style={kacheln.titel} >Virus</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Text>Erste Hilfe</Text>
+                    <Image 
+                        source={require('../assets/InfoScreen/Unfall.png')}
+                        style={kacheln.icons} />
+                    <Text style={kacheln.titel} >Verkehrsunfall</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={styles.layout}>
+                <TouchableOpacity
+                    style={styles.box}
+                    onPress={() => navigation.navigate('InfoChild')}
+                >
+                    <Image 
+                        source={require('../assets/InfoScreen/Überschwemmung.png')}
+                        style={kacheln.icons} />
+                    <Text style={kacheln.titel} >Überschwemmung</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.box}
+                    onPress={() => navigation.navigate('InfoChild')}
+                >
+                    <Image 
+                        source={require('../assets/InfoScreen/Waffe.png')}
+                        style={kacheln.icons} />
+                    <Text style={kacheln.titel} >Terroranschlag</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -95,6 +112,7 @@ const styles = StyleSheet.create({
         //shadowOpacity: 0.2,
         shadowRadius: 5,
         elevation: 10,
+        alignItems: 'center',
     },
     layout: {
         height: '28%',
@@ -106,10 +124,17 @@ const styles = StyleSheet.create({
 
 const kacheln = StyleSheet.create({
     icons: {
-        width: 140,
-        height: 140,
-        justifyContent: 'center',
+        width: 160,
+        height: 160,
+        flex: 5,
     },
+    titel: {
+        justifyContent: 'center',
+        color: '#14647f',
+        flex: 1,
+        fontSize: 16,
+        marginBottom: 15,
+    }
 });
 
 const headerStyle = {
