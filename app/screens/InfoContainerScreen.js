@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import InfoChildScreen from './InfoChildScreen';
-import {Text, StyleSheet, View, Button} from 'react-native';
+import {Text, StyleSheet, View, Button, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const Stack = createStackNavigator();
@@ -22,14 +22,16 @@ function InfoScreen({navigation}) {
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
-                >
+                > 
+                    <Image source={require('../assets/InfoScreen/Erste_Hilfe.png')}
+                    style={kacheln.icons} />
                     <Text>Erste Hilfe</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Text>Erste Hilfe</Text>
+                    <Text>Brand</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.layout}>
@@ -98,6 +100,15 @@ const styles = StyleSheet.create({
         height: '28%',
         flexDirection: 'row',
         margin: 10,
+    },
+
+});
+
+const kacheln = StyleSheet.create({
+    icons: {
+        width: 140,
+        height: 140,
+        justifyContent: 'center',
     },
 });
 
