@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'column',
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
     },
     background: {
         flex: 1,
@@ -22,3 +25,18 @@ const styles = StyleSheet.create({
         height: '100%',
     },
 });
+
+const headerStyle = {
+    headerStyle: {
+        backgroundColor: '#f79A42',
+        elevation: 0,
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+        fontWeight: 'bold',
+    },
+    cardStyle: {
+        backgroundColor: "#f79A42",
+    },
+    
+};

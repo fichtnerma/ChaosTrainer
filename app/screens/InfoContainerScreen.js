@@ -92,8 +92,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        borderTopLeftRadius: 50,
-        borderTopRightRadius: 50,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
     },
     background: {
         flex: 1,
@@ -156,8 +156,3 @@ const headerStyle = {
     
 };
 
-const backgroundTeil = {
-    cardStyle: {
-        backgroundColor: '#f79A42',
-    },
-};
