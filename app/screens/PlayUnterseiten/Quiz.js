@@ -117,9 +117,10 @@ const kacheln = StyleSheet.create({
         marginTop: 0,
         color: '#000',
         //flex: 0.5,
-        fontSize: 15,
+        fontSize: 20,
         textAlignVertical: 'center',
         marginLeft: 80,
+        color: '#ffc185',
     },
 
     hiScoreText: {
