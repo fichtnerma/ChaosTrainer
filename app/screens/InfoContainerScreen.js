@@ -1,9 +1,9 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import InfoChildScreen from './InfoChildScreen';
-import {Text, StyleSheet, View, Button, Image} from 'react-native';
+import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import ErsteHilfeScreen from './InfoUnterseiten/ErsteHilfe';
+import ErsteHilfeScreen from './InfoUnterseiten/ErsteHilfeScreen';
 
 const Stack = createStackNavigator();
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Text, StyleSheet, View, Button, Image} from 'react-native';
+import {Text, StyleSheet, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import QuizScreen from './PlayUnterseiten/Quiz';
+import QuizScreen from './PlayUnterseiten/QuizScreen';
 
 const Stack = createStackNavigator();
 
