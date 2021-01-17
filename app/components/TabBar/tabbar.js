@@ -69,7 +69,7 @@ export default class Tabbar extends Component {
                         {...{height}}
                         style={{transform: [{translateX}]}}
                     >
-                        <Path {...{d}} fill="#6895a2" />
+                        <Path {...{d}} fill="#f79A42" />
                     </AnimatedSvg>
                     <View style={StyleSheet.absoluteFill}>
                         <StaticTabbar

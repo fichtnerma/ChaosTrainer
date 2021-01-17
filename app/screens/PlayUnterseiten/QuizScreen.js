@@ -2,49 +2,34 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import QuizScreen from './PlayUnterseiten/QuizScreen';
 
 const Stack = createStackNavigator();
 
-export default function PlayScreen() {
-    return (
-        <Stack.Navigator screenOptions={headerStyle}>
-            <Stack.Screen name="Play" component={PlayHomeScreen} />
-            <Stack.Screen name="Quiz" component={QuizScreen} />
-        </Stack.Navigator>
-    );
-}
-
-function PlayHomeScreen({navigation}) {
+export default function QuizScreen() {
     return (
         <View style={styles.container} >
             <View style={styles.layout}>
                 <TouchableOpacity
                     style={styles.box}
-                    onPress={() => navigation.navigate('Quiz')}
                 > 
-                    <Text style={kacheln.titel} >Trainer-AR</Text>
-                    <Text style={kacheln.orangeSchrift} >AR</Text>
-                    <View style={kacheln.bottom} >
-                    <Text style={kacheln.hiScore}>Hi-Score: 2100 Punkte</Text>
-                    </View>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.layout}>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => navigation.navigate('Quiz')}
-                >
+                <View style={{ flex: 4 }}>
                     <Text style={kacheln.titel} >Gefahren-Quiz</Text>
-                    <Text style={kacheln.orangeSchrift} >Quiz</Text>
+                    <Text style={kacheln.unterueberschrift}>Teste dein Wissen über gefahren</Text>
+                </View>  
+                <View style={{ flex: 4 }}>
+                    <Text style={kacheln.hinweis}>Erfahere mehr über</Text>
+                    <Text style={kacheln.hinweis}>Brände in der Bibliothek</Text>
+                </View>
                     <View style={kacheln.bottom} >
-                    <Text style={kacheln.hiScore}>Hi-Score: 713 Punkte</Text>
+                    <Text style={kacheln.hiScoreText}>Dein erreicheter Hi-Score:</Text>
+                    <Text style={kacheln.hiScore}>2100 Punkte</Text>
                     </View>
                 </TouchableOpacity>
             </View>
         </View>
     );
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -64,7 +49,7 @@ const styles = StyleSheet.create({
 
     box: {
         width: 340,
-        height: 240,
+        height: 300,
         backgroundColor: '#fff',
         borderRadius: 30,
         margin: 10,
@@ -79,7 +64,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
     },
     layout: {
-        height: '40%',
+        height: '75%',
         flexDirection: 'row',
         margin: 10,
     },
@@ -94,7 +79,7 @@ const kacheln = StyleSheet.create({
     },
     titel: {
         color: '#14647f',
-        flex: 1,
+        //flex: 1,
         fontSize: 30,
         marginTop: 10,
         marginLeft: 15,
@@ -116,14 +101,42 @@ const kacheln = StyleSheet.create({
         backgroundColor: '#ffc185',
         borderBottomLeftRadius: 30,
         borderBottomRightRadius: 30,
+        flex: 3,
+    },
+
+    unterueberschrift: {
+        marginTop: 0,
+        color: '#000',
+        //flex: 1,
+        fontSize: 15,
+        textAlignVertical: 'top',
+        marginLeft: 15,
+    },
+
+    hinweis: {
+        marginTop: 0,
+        //flex: 0.5,
+        fontSize: 20,
+        textAlignVertical: 'center',
+        marginLeft: 80,
+        color: '#ffc185',
+    },
+
+    hiScoreText: {
+        color: '#fff',
+        //flex: 1,
+        fontSize: 15,
+        textAlignVertical: 'center',
+        marginLeft: 80,
+        marginTop: 5,
     },
 
     hiScore: {
         color: '#fff',
-        flex: 1,
-        fontSize: 20,
+        //flex: 1,
+        fontSize: 40,
         textAlignVertical: 'center',
-        marginLeft: 15,
+        marginLeft: 80,
     },
 });
 
