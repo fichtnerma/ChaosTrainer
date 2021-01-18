@@ -2,52 +2,54 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
-import ErsteHilfeAkuteErkrankungenScreen from './ErsteHilfeAkuteErkrankungenScreen';
 
 const Stack = createStackNavigator();
 
-export default function ErsteHilfeScreen() {
+export default function ErsteHilfeAkuteErkrankungenScreen() {
     return (
         <Stack.Navigator screenOptions={headerStyle}>
-        <Stack.Screen name="Erste Hilfe" component={ErsteHilfeHomeScreen} />
-        <Stack.Screen name="AkuteErkrankungen" component={ErsteHilfeAkuteErkrankungenScreen} />
+        <Stack.Screen name="Erste Hilfe" component={AkuteErkrankungenHomeScreen} />
         </Stack.Navigator>
     );
 }
-function ErsteHilfeHomeScreen({navigation}) {
+function AkuteErkrankungenHomeScreen({navigation}) {
     return (
         <View style={styles.container} >
             <View> 
             <Text style={kacheln.titel} >ERSTE HILFE</Text>
+            <Text style={kacheln.h1} >Akute Erkrankungen</Text>
             </View>
                 <View style={kacheln.infoBox} > 
-                    <Text style={kacheln.infoText} >Rufe die 112 oder 110 an</Text>
+                    <Text style={kacheln.infoText} >Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint.</Text>
                     <Image 
                         source={require('../../assets/InfoScreen/Ausrufezeichen.png')}
                         style={kacheln.ausrufezeichen} />
                 </View>
 
                 <ScrollView>
-                <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('AkuteErkrankungen')}>
-                    <Text style={kacheln.h2} >Akute Erkrankungen</Text>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2} >Asthma Bronchiale</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Lebensmittel</Text>
+                    <Text style={kacheln.h2} >Diabetes Mellitus</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Verletzungen</Text>
+                    <Text style={kacheln.h2} >Überzuckerung</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Atembeschwerden</Text>
+                    <Text style={kacheln.h2} >Unterzuckerung</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Vergiftungen</Text>
+                    <Text style={kacheln.h2} >Schlaganfall</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Insektenstiche</Text>
+                    <Text style={kacheln.h2} >Fieberkrämpfe</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Chemieunfälle</Text>
+                    <Text style={kacheln.h2} >Krampfanfälle</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2} >Herzinfarkt</Text>
                 </TouchableOpacity>
                 </ScrollView>
             </View>
@@ -99,7 +101,7 @@ const styles = StyleSheet.create({
 const kacheln = StyleSheet.create({
     infoBox: {
         width: 330,
-        height: 140,
+        height: 200,
         backgroundColor: '#fff',
         borderRadius: 15,
         margin: 10,
@@ -115,8 +117,10 @@ const kacheln = StyleSheet.create({
         alignItems: 'center',
     },
     titel: {
-        margin: 10,
-        justifyContent: 'flex-start',
+        alignSelf: 'center',
+        marginTop: 10,
+        marginBottom: 0,
+        justifyContent: 'center',
         color: '#f79A42',
         fontSize: 45,
     },
@@ -124,18 +128,29 @@ const kacheln = StyleSheet.create({
         justifyContent: 'flex-start',
         color: '#000',
         fontSize: 16,
+        marginLeft: 80,
+        marginRight: 20,
+    },
+    h1: {
+        alignSelf: 'center',
+        margin: 0,
+        justifyContent: 'center',
+        color: '#f79A42',
+        fontSize: 24,
     },
     h2: {
         justifyContent: 'flex-start',
         color: '#000',
         fontSize: 24,
     },
+
     ausrufezeichen: {
         width: 80,
         height: 190,
         position: 'absolute',
         top: 0,
         left: 0,
+        marginTop: 30,
     },
 });
 
