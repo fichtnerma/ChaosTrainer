@@ -84,7 +84,6 @@ const custom = StyleSheet.create({
         elevation: 10,
         textAlign: 'left',
         marginBottom: 30,
-        justifyContent: 'center',
         paddingLeft: 20,
     },
     textInput: {
