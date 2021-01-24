@@ -72,6 +72,8 @@ export default class StaticTabbar extends Component {
                         <React.Fragment {...{key}}>
                             <TouchableWithoutFeedback
                                 onPress={() => {
+                                    let currentScreen = this.props.navigation;
+                                    console.log(currentScreen);
                                     switch (key) {
                                         case 0:
                                             this.navigation.navigate('Home');
@@ -83,7 +85,13 @@ export default class StaticTabbar extends Component {
                                             this.navigation.navigate('Sos');
                                             break;
                                         case 3:
-                                            this.navigation.navigate('Info');
+                                            if (currentScreen == 'Info') {
+                                                this.navigation.goBack();
+                                            } else {
+                                                this.navigation.navigate(
+                                                    'Info'
+                                                );
+                                            }
                                             break;
                                         case 4:
                                             this.navigation.navigate('Search');

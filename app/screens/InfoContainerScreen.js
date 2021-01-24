@@ -19,26 +19,28 @@ export default function InfoContainerScreen() {
 
 function InfoScreen({navigation}) {
     return (
-        <View style={styles.container} >
+        <View style={styles.container}>
             <View style={styles.layout}>
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('ErsteHilfe')}
-                > 
-                    <Image 
+                >
+                    <Image
                         source={require('../assets/InfoScreen/Erste_Hilfe.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Erste Hilfe</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Erste Hilfe</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                   <Image 
+                    <Image
                         source={require('../assets/InfoScreen/Feuer.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Brand</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Brand</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.layout}>
@@ -46,19 +48,21 @@ function InfoScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Image 
+                    <Image
                         source={require('../assets/InfoScreen/Virus.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Virus</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Virus</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Image 
+                    <Image
                         source={require('../assets/InfoScreen/Unfall.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Verkehrsunfall</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Verkehrsunfall</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.layout}>
@@ -66,19 +70,21 @@ function InfoScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Image 
+                    <Image
                         source={require('../assets/InfoScreen/Überschwemmung.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Überschwemmung</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Überschwemmung</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Image 
+                    <Image
                         source={require('../assets/InfoScreen/Waffe.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Terroranschlag</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Terroranschlag</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -123,7 +129,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
@@ -138,7 +143,7 @@ const kacheln = StyleSheet.create({
         flex: 1,
         fontSize: 16,
         marginBottom: 15,
-    }
+    },
 });
 
 const headerStyle = {
@@ -151,8 +156,6 @@ const headerStyle = {
         fontWeight: 'bold',
     },
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };
-
