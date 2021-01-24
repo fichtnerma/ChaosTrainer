@@ -1,6 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Text, StyleSheet, View} from 'react-native';
+import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import QuizScreen from './PlayUnterseiten/QuizScreen';
 
@@ -23,7 +23,11 @@ function PlayHomeScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('Quiz')}
                 > 
+                <Image 
+                        source={require('../assets/QuizScreen/ARPerson.png')}
+                        style={kacheln.ARPerson} />
                     <Text style={kacheln.titel} >Trainer-AR</Text>
+                    <Text style={kacheln.h1} >Erste Hilfe virtuell üben</Text>
                     <Text style={kacheln.orangeSchrift} >AR</Text>
                     <View style={kacheln.bottom} >
                     <Text style={kacheln.hiScore}>Hi-Score: 2100 Punkte</Text>
@@ -35,7 +39,11 @@ function PlayHomeScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('Quiz')}
                 >
+                                    <Image 
+                        source={require('../assets/QuizScreen/QuizPerson.png')}
+                        style={kacheln.QuizPerson} />
                     <Text style={kacheln.titel} >Gefahren-Quiz</Text>
+                    <Text style={kacheln.h1} >Teste dein Wissen über Notfälle</Text>
                     <Text style={kacheln.orangeSchrift} >Quiz</Text>
                     <View style={kacheln.bottom} >
                     <Text style={kacheln.hiScore}>Hi-Score: 713 Punkte</Text>
@@ -66,7 +74,7 @@ const styles = StyleSheet.create({
         width: 340,
         height: 240,
         backgroundColor: '#fff',
-        borderRadius: 30,
+        borderRadius: 15,
         margin: 10,
         shadowOffset: {width: 0, height: 0},
         shadowColor: 'black',
@@ -93,7 +101,7 @@ const kacheln = StyleSheet.create({
         flex: 5,
     },
     titel: {
-        color: '#14647f',
+        color: '#000',
         flex: 1,
         fontSize: 30,
         marginTop: 10,
@@ -114,8 +122,8 @@ const kacheln = StyleSheet.create({
         width: '100%',
         height: 80,
         backgroundColor: '#ffc185',
-        borderBottomLeftRadius: 30,
-        borderBottomRightRadius: 30,
+        borderBottomLeftRadius: 15,
+        borderBottomRightRadius: 15,
     },
 
     hiScore: {
@@ -124,6 +132,29 @@ const kacheln = StyleSheet.create({
         fontSize: 20,
         textAlignVertical: 'center',
         marginLeft: 15,
+    },
+    h1: {
+        color: '#000',
+        flex: 0,
+        fontSize: 15,
+        marginLeft: 15,
+        marginBottom: 95,
+    },
+    ARPerson: {
+        width: 150,
+        height: 110,
+        position: 'absolute',
+        top: 75,
+        left: 180,
+        zIndex: 20,
+    },
+    QuizPerson: {
+        width: 110,
+        height: 150,
+        position: 'absolute',
+        top: 50,
+        left: 220,
+        zIndex: 20,
     },
 });
 

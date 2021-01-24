@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import QuizScreen from './PlayUnterseiten/QuizScreen';
+import InfoContainerScreen from './InfoContainerScreen';
 
 const Stack = createStackNavigator();
 
@@ -11,6 +12,7 @@ export default function HomeScreen() {
         <Stack.Navigator screenOptions={headerStyle}>
             <Stack.Screen name="Home" component={HomeHomeScreen} />
             <Stack.Screen name="Quiz" component={QuizScreen} />
+            <Stack.Screen name="Info" component={InfoContainerScreen} />
         </Stack.Navigator>
     );
 }
@@ -27,7 +29,8 @@ function HomeHomeScreen({navigation}) {
                 </View>
             
                 <TouchableOpacity
-                    style={styles.box}> 
+                    style={styles.box}
+                    onPress={() => navigation.navigate('Info')}> 
                     <Text style={kacheln.titel} >Weiterlesen?</Text>
                     <Text style={kacheln.h1}>Wissenswertes für den nächsten Notfall</Text>
                     <Text style={kacheln.orangeSchrift} >Info</Text>
@@ -35,7 +38,8 @@ function HomeHomeScreen({navigation}) {
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={styles.box}>
+                    style={styles.box}
+                    onPress={() => navigation.navigate('Quiz')}>
                     <Text style={kacheln.titel} >Teste dich!</Text>
                     <Text style={kacheln.h1}>Finde heraus was du weißt und lerne Neues</Text>
                     <Text style={kacheln.orangeSchrift} >Quiz AR</Text>

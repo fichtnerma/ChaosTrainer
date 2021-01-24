@@ -2,22 +2,20 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import ErsteFrageScreen from './ErsteFrageScreen';
 
 const Stack = createStackNavigator();
 
-export default function QuizScreen() {
+export default function ErsteFrageScreen() {
     return (
     <Stack.Navigator screenOptions={headerStyle}>
-        <Stack.Screen name="Quiz" component={QuizHomeScreen} />
-        <Stack.Screen name="ErsteFrage" component={ErsteFrageScreen}/>
+        <Stack.Screen name="ErsteFrage" component={ErsteFrageHomeScreen}/>
     </Stack.Navigator>
    );
 }
-function QuizHomeScreen({navigation}) {
+function ErsteFrageHomeScreen({navigation}) {
     return (
         <View style={styles.container} >            
-        <Text style={kacheln.weißeSchrift} >Quiz</Text>
+        <Text style={kacheln.weißeSchrift} >Frage</Text>
             <View style={styles.layout}>
                 <View
                     style={styles.box}
@@ -47,7 +45,7 @@ function QuizHomeScreen({navigation}) {
 
                 <View style={{flexDirection: 'row'}} >
                     <TouchableOpacity style={kacheln.button}                    
-                    onPress={() => navigation.navigate('ErsteFrage')}>
+                    onPress={() => navigation.navigate('Quiz')}>
                        
                     <Text style={kacheln.startText}>Jetzt Starten</Text>
                     </TouchableOpacity>
