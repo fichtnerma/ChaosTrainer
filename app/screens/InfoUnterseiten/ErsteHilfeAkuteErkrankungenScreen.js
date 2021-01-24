@@ -2,6 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
+import AsthmaScreen from './AsthmaScreen';
 
 const Stack = createStackNavigator();
 
@@ -9,6 +10,7 @@ export default function ErsteHilfeAkuteErkrankungenScreen() {
     return (
         <Stack.Navigator screenOptions={headerStyle}>
         <Stack.Screen name="Erste Hilfe" component={AkuteErkrankungenHomeScreen} />
+        <Stack.Screen name="Asthma Bronchiale" component={AsthmaScreen}/>
         </Stack.Navigator>
     );
 }
@@ -27,7 +29,7 @@ function AkuteErkrankungenHomeScreen({navigation}) {
                 </View>
 
                 <ScrollView>
-                <TouchableOpacity style={styles.box}>
+                <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('Asthma Bronchiale')}>
                     <Text style={kacheln.h2} >Asthma Bronchiale</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
