@@ -25,9 +25,12 @@ export default function SosScreen() {
 
 function SosHomeScreen({navigation}) {
     return (
-        <Animated.View style={styles.container}>
+        <View style={styles.container}>
             <View style={styles.layout}>
-                <TouchableOpacity style={styles.box} onPress={() => moveCard()}>
+                <TouchableOpacity
+                    style={styles.box}
+                    onPress={() => navigation.navigate('Rettungswagen')}
+                >
                     <Image
                         source={require('../assets/SosHomeScreen/Rettungswagen.png')}
                         style={kacheln.icons}
@@ -68,12 +71,8 @@ function SosHomeScreen({navigation}) {
                     <Text style={kacheln.titel}>Feuerwehr</Text>
                 </TouchableOpacity>
             </View>
-        </Animated.View>
+        </View>
     );
-}
-function moveCard() {
-    cardTranslate = 150;
-    console.log(cardTranslate);
 }
 
 const styles = StyleSheet.create({
