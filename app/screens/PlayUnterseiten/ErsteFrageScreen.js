@@ -1,65 +1,85 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Text, StyleSheet, View, Image} from 'react-native';
-import {TouchableOpacity, TouchableWithoutFeedback} from 'react-native-gesture-handler';
-import { color } from 'react-native-reanimated';
+import {
+    Text,
+    StyleSheet,
+    View,
+    Image,
+    Pressable,
+    TouchableHighlight,
+} from 'react-native';
+import {
+    TouchableOpacity,
+    TouchableWithoutFeedback,
+} from 'react-native-gesture-handler';
+import {color} from 'react-native-reanimated';
 
 const Stack = createStackNavigator();
+let aPressed = false;
+let bPressed = false;
+let cPressed = false;
+let dPressed = false;
 
 export default function ErsteFrageScreen() {
     return (
-    <Stack.Navigator screenOptions={headerStyle}>
-        <Stack.Screen name="ErsteFrage" component={ErsteFrageHomeScreen}/>
-    </Stack.Navigator>
-   );
+        <Stack.Navigator screenOptions={headerStyle}>
+            <Stack.Screen name="ErsteFrage" component={ErsteFrageHomeScreen} />
+        </Stack.Navigator>
+    );
 }
 function ErsteFrageHomeScreen({navigation}) {
     return (
-        <View style={styles.container} >            
-        <Text style={kacheln.weißeSchrift} >Quiz</Text>
+        <View style={styles.container}>
+            <Text style={kacheln.weißeSchrift}>Quiz</Text>
             <View style={styles.layout}>
-                <View
-                    style={styles.box}
-                > 
-                <View style={{ flex: 4 }}>                    
-                    <Text style={kacheln.unterueberschrift}>Markiere die richtige Antwort</Text>                
-                    <View style={{flexDirection:'row' }}>                    
-                        <View>                    
-                            <Text style={kacheln.titel} >Wie kann man einen Brand nicht löschen?</Text>
+                <View style={styles.box}>
+                    <View style={{flex: 4}}>
+                        <Text style={kacheln.unterueberschrift}>
+                            Markiere die richtige Antwort
+                        </Text>
+                        <View style={{flexDirection: 'row'}}>
+                            <View>
+                                <Text style={kacheln.titel}>
+                                    Wie kann man einen Brand nicht löschen?
+                                </Text>
+                            </View>
+                            <Image
+                                source={require('../../assets/QuizScreen/Feuer.png')}
+                                style={kacheln.feuer}
+                            />
                         </View>
-                        <Image 
-                            source={require('../../assets/QuizScreen/Feuer.png')}
-                            style={kacheln.feuer} />
-                    </View>  
-
+                    </View>
+                    <TouchableHighlight
+                        activeOpacity={1}
+                        underlayColor="#4694af"
+                        style={kacheln.antwort}
+                        onPress={() => (aPressed = true)}
+                    >
+                        <Text style={kacheln.antwortText}>A: Sand</Text>
+                    </TouchableHighlight>
+                    <TouchableWithoutFeedback style={kacheln.antwort}>
+                        <Text style={kacheln.antwortText}>B: Wasser</Text>
+                    </TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback style={kacheln.antwort}>
+                        <Text style={kacheln.antwortText}>C: Decke</Text>
+                    </TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback style={kacheln.antwort}>
+                        <Text style={kacheln.antwortText}>D: Luftpumpe</Text>
+                    </TouchableWithoutFeedback>
                 </View>
-                <TouchableWithoutFeedback
-                style={kacheln.antwort, {color: '#4694af'}}>
-                    <Text style={kacheln.antwortText}>A:  Sand</Text>
-                </TouchableWithoutFeedback>
-                <TouchableWithoutFeedback style={kacheln.antwort}>
-                    <Text style={kacheln.antwortText}>B:  Wasser</Text>
-                </TouchableWithoutFeedback>
-                <TouchableWithoutFeedback style={kacheln.antwort}>
-                    <Text style={kacheln.antwortText}>C:  Decke</Text>
-                </TouchableWithoutFeedback>
-                <TouchableWithoutFeedback style={kacheln.antwort}>
-                    <Text style={kacheln.antwortText}>D:  Luftpumpe</Text>
-                </TouchableWithoutFeedback>
-                </View>
 
-                <View style={{alignItems: 'center'}} >
-                    <TouchableOpacity style={kacheln.button}                    
-                    onPress={() => navigation.navigate('Quiz')}>
-                       
-                    <Text style={kacheln.startText}>Fertig</Text>
+                <View style={{alignItems: 'center'}}>
+                    <TouchableOpacity
+                        style={kacheln.button}
+                        onPress={() => navigation.navigate('Quiz')}
+                    >
+                        <Text style={kacheln.startText}>Fertig</Text>
                     </TouchableOpacity>
                 </View>
             </View>
         </View>
     );
-
-};
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -99,7 +119,6 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
@@ -111,7 +130,6 @@ const kacheln = StyleSheet.create({
         marginLeft: 15,
         marginRight: 80,
     },
-
 
     bottom: {
         width: '100%',
@@ -158,7 +176,7 @@ const kacheln = StyleSheet.create({
         fontWeight: 'bold',
     },
 
-    button:{
+    button: {
         backgroundColor: '#4694af',
         //flex: 1,
         width: 180,
@@ -178,7 +196,7 @@ const kacheln = StyleSheet.create({
         overflow: 'visible',
         alignItems: 'center',
     },
-    einstellungen:{
+    einstellungen: {
         backgroundColor: '#f79A42',
         //flex: 1,
         width: 80,
@@ -203,10 +221,10 @@ const kacheln = StyleSheet.create({
         textAlignVertical: 'center',
         textAlign: 'center',
     },
-    feuer:{
+    feuer: {
         width: 40,
-        height: 55, 
-        alignSelf:'center',
+        height: 55,
+        alignSelf: 'center',
         marginBottom: 70,
         marginLeft: -65,
     },
@@ -242,7 +260,7 @@ const kacheln = StyleSheet.create({
         justifyContent: 'flex-start',
         color: '#fff',
         fontSize: 20,
-        alignSelf:'flex-start',
+        alignSelf: 'flex-start',
         marginLeft: 20,
     },
 });
@@ -257,9 +275,8 @@ const headerStyle = {
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-    
+
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };
