@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import QuizScreen from './PlayUnterseiten/QuizScreen';
+import Logo from '../components/Header/Logo';
 
 const Stack = createStackNavigator();
 
@@ -17,20 +18,23 @@ export default function PlayScreen() {
 
 function PlayHomeScreen({navigation}) {
     return (
-        <View style={styles.container} >
+        <View style={styles.container}>
             <View style={styles.layout}>
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('Quiz')}
-                > 
-                <Image 
+                >
+                    <Image
                         source={require('../assets/QuizScreen/ARPerson.png')}
-                        style={kacheln.ARPerson} />
-                    <Text style={kacheln.titel} >Trainer-AR</Text>
-                    <Text style={kacheln.h1} >Erste Hilfe virtuell üben</Text>
-                    <Text style={kacheln.orangeSchrift} >AR</Text>
-                    <View style={kacheln.bottom} >
-                    <Text style={kacheln.hiScore}>Hi-Score: 2100 Punkte</Text>
+                        style={kacheln.ARPerson}
+                    />
+                    <Text style={kacheln.titel}>Trainer-AR</Text>
+                    <Text style={kacheln.h1}>Erste Hilfe virtuell üben</Text>
+                    <Text style={kacheln.orangeSchrift}>AR</Text>
+                    <View style={kacheln.bottom}>
+                        <Text style={kacheln.hiScore}>
+                            Hi-Score: 2100 Punkte
+                        </Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -39,14 +43,19 @@ function PlayHomeScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('Quiz')}
                 >
-                                    <Image 
+                    <Image
                         source={require('../assets/QuizScreen/QuizPerson.png')}
-                        style={kacheln.QuizPerson} />
-                    <Text style={kacheln.titel} >Gefahren-Quiz</Text>
-                    <Text style={kacheln.h1} >Teste dein Wissen über Notfälle</Text>
-                    <Text style={kacheln.orangeSchrift} >Quiz</Text>
-                    <View style={kacheln.bottom} >
-                    <Text style={kacheln.hiScore}>Hi-Score: 713 Punkte</Text>
+                        style={kacheln.QuizPerson}
+                    />
+                    <Text style={kacheln.titel}>Gefahren-Quiz</Text>
+                    <Text style={kacheln.h1}>
+                        Teste dein Wissen über Notfälle
+                    </Text>
+                    <Text style={kacheln.orangeSchrift}>Quiz</Text>
+                    <View style={kacheln.bottom}>
+                        <Text style={kacheln.hiScore}>
+                            Hi-Score: 713 Punkte
+                        </Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -91,7 +100,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
@@ -164,12 +172,12 @@ const headerStyle = {
         elevation: 0,
     },
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-    
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };

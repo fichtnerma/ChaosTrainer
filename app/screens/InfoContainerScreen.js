@@ -4,6 +4,7 @@ import InfoChildScreen from './InfoChildScreen';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import ErsteHilfeScreen from './InfoUnterseiten/ErsteHilfeScreen';
+import Logo from '../components/Header/Logo';
 
 const Stack = createStackNavigator();
 
@@ -152,6 +153,8 @@ const headerStyle = {
         elevation: 0,
     },
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },

@@ -3,59 +3,71 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 import AsthmaScreen from './AsthmaScreen';
+import Logo from '../../components/Header/Logo';
 
 const Stack = createStackNavigator();
 
 export default function ErsteHilfeAkuteErkrankungenScreen() {
     return (
         <Stack.Navigator screenOptions={headerStyle}>
-        <Stack.Screen name="Erste Hilfe" component={AkuteErkrankungenHomeScreen} />
-        <Stack.Screen name="Asthma Bronchiale" component={AsthmaScreen}/>
+            <Stack.Screen
+                name="Erste Hilfe"
+                component={AkuteErkrankungenHomeScreen}
+            />
+            <Stack.Screen name="Asthma Bronchiale" component={AsthmaScreen} />
         </Stack.Navigator>
     );
 }
 function AkuteErkrankungenHomeScreen({navigation}) {
     return (
-        <View style={styles.container} >
-            <View> 
-            <Text style={kacheln.titel} >ERSTE HILFE</Text>
-            <Text style={kacheln.h1} >Akute Erkrankungen</Text>
+        <View style={styles.container}>
+            <View>
+                <Text style={kacheln.titel}>ERSTE HILFE</Text>
+                <Text style={kacheln.h1}>Akute Erkrankungen</Text>
             </View>
-                <View style={kacheln.infoBox} > 
-                    <Text style={kacheln.infoText} >Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint.</Text>
-                    <Image 
-                        source={require('../../assets/InfoScreen/Ausrufezeichen.png')}
-                        style={kacheln.ausrufezeichen} />
-                </View>
-
-                <ScrollView>
-                <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('Asthma Bronchiale')}>
-                    <Text style={kacheln.h2} >Asthma Bronchiale</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Diabetes Mellitus</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Überzuckerung</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Unterzuckerung</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Schlaganfall</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Fieberkrämpfe</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Krampfanfälle</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Herzinfarkt</Text>
-                </TouchableOpacity>
-                </ScrollView>
+            <View style={kacheln.infoBox}>
+                <Text style={kacheln.infoText}>
+                    Bei einer akuten Erkrankung liegt der Unterschied zu
+                    chronischen Krankheiten darin, dass sich sie sich plötzlich
+                    und meist in kurzer Zeitdauer entwickeln - in der Regel ist
+                    ein Zeitraum von 3-14 Tagen gemeint.
+                </Text>
+                <Image
+                    source={require('../../assets/InfoScreen/Ausrufezeichen.png')}
+                    style={kacheln.ausrufezeichen}
+                />
             </View>
 
+            <ScrollView>
+                <TouchableOpacity
+                    style={styles.box}
+                    onPress={() => navigation.navigate('Asthma Bronchiale')}
+                >
+                    <Text style={kacheln.h2}>Asthma Bronchiale</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Diabetes Mellitus</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Überzuckerung</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Unterzuckerung</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Schlaganfall</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Fieberkrämpfe</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Krampfanfälle</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Herzinfarkt</Text>
+                </TouchableOpacity>
+            </ScrollView>
+        </View>
     );
 }
 
@@ -97,7 +109,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
@@ -161,14 +172,13 @@ const headerStyle = {
         backgroundColor: '#f79A42',
         elevation: 0,
     },
-    headerShown: false,
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-    
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };
