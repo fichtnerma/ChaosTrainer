@@ -1,7 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {TouchableOpacity, TouchableWithoutFeedback} from 'react-native-gesture-handler';
+import { color } from 'react-native-reanimated';
 
 const Stack = createStackNavigator();
 
@@ -15,44 +16,43 @@ export default function ErsteFrageScreen() {
 function ErsteFrageHomeScreen({navigation}) {
     return (
         <View style={styles.container} >            
-        <Text style={kacheln.weißeSchrift} >Frage</Text>
+        <Text style={kacheln.weißeSchrift} >Quiz</Text>
             <View style={styles.layout}>
                 <View
                     style={styles.box}
                 > 
-                <View style={{ flex: 4 }}>
-                    <Text style={kacheln.titel} >Gefahren-Quiz</Text>
-                    <Text style={kacheln.unterueberschrift}>Teste dein Wissen über gefahren</Text>
-                </View>  
-                <View style={{ flex: 4, flexDirection:'row' }}>
-                <Image 
-                        source={require('../../assets/QuizScreen/Feuer.png')}
-                        style={kacheln.feuer} />
-                    <View>
-                        <Text style={kacheln.hinweis}>Erfahere mehr über</Text>
-                        <Text style={kacheln.hinweis}>Brände in der Bibliothek</Text>
-                    </View>
+                <View style={{ flex: 4 }}>                    
+                    <Text style={kacheln.unterueberschrift}>Markiere die richtige Antwort</Text>                
+                    <View style={{flexDirection:'row' }}>                    
+                        <View>                    
+                            <Text style={kacheln.titel} >Wie kann man einen Brand nicht löschen?</Text>
+                        </View>
+                        <Image 
+                            source={require('../../assets/QuizScreen/Feuer.png')}
+                            style={kacheln.feuer} />
+                    </View>  
+
                 </View>
-                    <View style={kacheln.bottom} >
-                    <Text style={kacheln.hiScoreText}>Dein erreicheter Hi-Score:</Text>
-                    <Text style={kacheln.hiScore}>2100 Punkte</Text>
-                    </View> 
-                    <View style={{elevation: 20, zIndex: 40}}>
-                    <Image 
-                        source={require('../../assets/QuizScreen/QuizPerson.png')}
-                        style={kacheln.QuizPerson} /></View>
+                <TouchableWithoutFeedback
+                style={kacheln.antwort, {color: '#4694af'}}>
+                    <Text style={kacheln.antwortText}>A:  Sand</Text>
+                </TouchableWithoutFeedback>
+                <TouchableWithoutFeedback style={kacheln.antwort}>
+                    <Text style={kacheln.antwortText}>B:  Wasser</Text>
+                </TouchableWithoutFeedback>
+                <TouchableWithoutFeedback style={kacheln.antwort}>
+                    <Text style={kacheln.antwortText}>C:  Decke</Text>
+                </TouchableWithoutFeedback>
+                <TouchableWithoutFeedback style={kacheln.antwort}>
+                    <Text style={kacheln.antwortText}>D:  Luftpumpe</Text>
+                </TouchableWithoutFeedback>
                 </View>
 
-                <View style={{flexDirection: 'row'}} >
+                <View style={{alignItems: 'center'}} >
                     <TouchableOpacity style={kacheln.button}                    
                     onPress={() => navigation.navigate('Quiz')}>
                        
-                    <Text style={kacheln.startText}>Jetzt Starten</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={kacheln.einstellungen}>
-                    <Image 
-                        source={require('../../assets/QuizScreen/Einstellungen.png')}
-                        style={kacheln.zahnrad} />
+                    <Text style={kacheln.startText}>Fertig</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
 
     box: {
         width: 340,
-        height: 300,
+        height: 420,
         backgroundColor: '#fff',
         borderRadius: 15,
         margin: 10,
@@ -106,9 +106,10 @@ const kacheln = StyleSheet.create({
     titel: {
         color: '#000',
         //flex: 1,
-        fontSize: 30,
-        marginTop: 10,
+        fontSize: 25,
+        marginTop: 5,
         marginLeft: 15,
+        marginRight: 80,
     },
 
 
@@ -122,7 +123,7 @@ const kacheln = StyleSheet.create({
     },
 
     unterueberschrift: {
-        marginTop: 0,
+        marginTop: 5,
         color: '#000',
         //flex: 1,
         fontSize: 15,
@@ -158,10 +159,10 @@ const kacheln = StyleSheet.create({
     },
 
     button:{
-        backgroundColor: '#f79A42',
+        backgroundColor: '#4694af',
         //flex: 1,
-        width: 230,
-        height: 80,
+        width: 180,
+        height: 55,
         borderRadius: 15,
         margin: 10,
         shadowOffset: {width: 0, height: 0},
@@ -172,9 +173,10 @@ const kacheln = StyleSheet.create({
         shadowRadius: 5,
         elevation: 10,
         //alignItems: 'center',
-        textAlign: 'left',
-        marginTop: 70,
+        textAlign: 'center',
+        marginTop: 10,
         overflow: 'visible',
+        alignItems: 'center',
     },
     einstellungen:{
         backgroundColor: '#f79A42',
@@ -201,26 +203,12 @@ const kacheln = StyleSheet.create({
         textAlignVertical: 'center',
         textAlign: 'center',
     },
-
-    zahnrad:{
-        width: 50,
-        height: 50, 
-        alignSelf:'center',
-    },
     feuer:{
-        width: 50,
-        height: 70, 
+        width: 40,
+        height: 55, 
         alignSelf:'center',
         marginBottom: 70,
-        marginLeft: 10,
-    },
-    QuizPerson: {
-        width: 110,
-        height: 150,
-        position: 'absolute',
-        top: -69,
-        left: -15,
-        zIndex: 40,
+        marginLeft: -65,
     },
     weißeSchrift: {
         color: '#fff',
@@ -238,6 +226,24 @@ const kacheln = StyleSheet.create({
         textShadowRadius: 15,
         shadowOpacity: 0.5,
         elevation: 1,
+    },
+    antwort: {
+        width: 310,
+        height: 60,
+        backgroundColor: '#ffc185',
+        borderRadius: 15,
+        marginLeft: 15,
+        marginBottom: 15,
+        justifyContent: 'center',
+        alignContent: 'center',
+        alignItems: 'center',
+    },
+    antwortText: {
+        justifyContent: 'flex-start',
+        color: '#fff',
+        fontSize: 20,
+        alignSelf:'flex-start',
+        marginLeft: 20,
     },
 });
 
