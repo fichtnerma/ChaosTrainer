@@ -4,6 +4,7 @@ import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import QuizScreen from './PlayUnterseiten/QuizScreen';
 import InfoContainerScreen from './InfoContainerScreen';
+import Logo from '../components/Header/Logo';
 
 const Stack = createStackNavigator();
 
@@ -19,34 +20,43 @@ export default function HomeScreen() {
 
 function HomeHomeScreen({navigation}) {
     return (
-        <View style={styles.container} >
-            <View style={kacheln.infoBox} > 
-            <Text style={kacheln.orangeTitel} >Tipp des Tages</Text>
-                    <Text style={kacheln.tippText} >"Mit einem <Text style={kacheln.fett} >Feuerlöscher</Text> sprühen Sie am besten mit mehreren kurzen Stößen direkt auf das Feuer"</Text>
-                    <Image 
-                        source={require('../assets/HomeScreen/Tipp.png')}
-                        style={kacheln.tipp} />
-                </View>
-            
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => navigation.navigate('Info')}> 
-                    <Text style={kacheln.titel} >Weiterlesen?</Text>
-                    <Text style={kacheln.h1}>Wissenswertes für den nächsten Notfall</Text>
-                    <Text style={kacheln.orangeSchrift} >Info</Text>
-                    <View style={kacheln.bottom} >
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => navigation.navigate('Quiz')}>
-                    <Text style={kacheln.titel} >Teste dich!</Text>
-                    <Text style={kacheln.h1}>Finde heraus was du weißt und lerne Neues</Text>
-                    <Text style={kacheln.orangeSchrift} >Quiz AR</Text>
-                    <View style={kacheln.bottom} >
-                    </View>
-                </TouchableOpacity>
+        <View style={styles.container}>
+            <View style={kacheln.infoBox}>
+                <Text style={kacheln.orangeTitel}>Tipp des Tages</Text>
+                <Text style={kacheln.tippText}>
+                    "Mit einem <Text style={kacheln.fett}>Feuerlöscher</Text>{' '}
+                    sprühen Sie am besten mit mehreren kurzen Stößen direkt auf
+                    das Feuer"
+                </Text>
+                <Image
+                    source={require('../assets/HomeScreen/Tipp.png')}
+                    style={kacheln.tipp}
+                />
             </View>
+
+            <TouchableOpacity
+                style={styles.box}
+                onPress={() => navigation.navigate('Info')}
+            >
+                <Text style={kacheln.titel}>Weiterlesen?</Text>
+                <Text style={kacheln.h1}>
+                    Wissenswertes für den nächsten Notfall
+                </Text>
+                <Text style={kacheln.orangeSchrift}>Info</Text>
+                <View style={kacheln.bottom}></View>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.box}
+                onPress={() => navigation.navigate('Quiz')}
+            >
+                <Text style={kacheln.titel}>Teste dich!</Text>
+                <Text style={kacheln.h1}>
+                    Finde heraus was du weißt und lerne Neues
+                </Text>
+                <Text style={kacheln.orangeSchrift}>Quiz AR</Text>
+                <View style={kacheln.bottom}></View>
+            </TouchableOpacity>
+        </View>
     );
 }
 
@@ -87,11 +97,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
-     infoBox: {
+    infoBox: {
         width: 330,
         height: 140,
         backgroundColor: '#fff',
@@ -162,7 +171,7 @@ const kacheln = StyleSheet.create({
     },
     fett: {
         fontWeight: 'bold',
-    }
+    },
 });
 
 const headerStyle = {
@@ -171,12 +180,12 @@ const headerStyle = {
         elevation: 0,
     },
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-    
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };

@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import SosScreen from '../SosScreen';
+import Logo from '../../components/Header/Logo';
 
 const Stack = createStackNavigator();
 
@@ -183,10 +184,11 @@ const headerStyle = {
         elevation: 0,
     },
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-
     cardStyle: {
         backgroundColor: '#f79A42',
     },

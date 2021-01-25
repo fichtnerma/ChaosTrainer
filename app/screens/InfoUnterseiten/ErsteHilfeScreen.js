@@ -3,55 +3,62 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 import ErsteHilfeAkuteErkrankungenScreen from './ErsteHilfeAkuteErkrankungenScreen';
+import Logo from '../../components/Header/Logo';
 
 const Stack = createStackNavigator();
 
 export default function ErsteHilfeScreen() {
     return (
         <Stack.Navigator screenOptions={headerStyle}>
-        <Stack.Screen name="Erste Hilfe" component={ErsteHilfeHomeScreen} />
-        <Stack.Screen name="AkuteErkrankungen" component={ErsteHilfeAkuteErkrankungenScreen} />
+            <Stack.Screen name="Erste Hilfe" component={ErsteHilfeHomeScreen} />
+            <Stack.Screen
+                name="AkuteErkrankungen"
+                component={ErsteHilfeAkuteErkrankungenScreen}
+            />
         </Stack.Navigator>
     );
 }
 function ErsteHilfeHomeScreen({navigation}) {
     return (
-        <View style={styles.container} >
-            <View> 
-            <Text style={kacheln.titel} >ERSTE HILFE</Text>
+        <View style={styles.container}>
+            <View>
+                <Text style={kacheln.titel}>ERSTE HILFE</Text>
             </View>
-                <View style={kacheln.infoBox} > 
-                    <Text style={kacheln.infoText} >Rufe die 112 oder 110 an</Text>
-                    <Image 
-                        source={require('../../assets/InfoScreen/Ausrufezeichen.png')}
-                        style={kacheln.ausrufezeichen} />
-                </View>
-
-                <ScrollView>
-                <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('AkuteErkrankungen')}>
-                    <Text style={kacheln.h2} >Akute Erkrankungen</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Lebensmittel</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Verletzungen</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Atembeschwerden</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Vergiftungen</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Insektenstiche</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2} >Chemieunfälle</Text>
-                </TouchableOpacity>
-                </ScrollView>
+            <View style={kacheln.infoBox}>
+                <Text style={kacheln.infoText}>Rufe die 112 oder 110 an</Text>
+                <Image
+                    source={require('../../assets/InfoScreen/Ausrufezeichen.png')}
+                    style={kacheln.ausrufezeichen}
+                />
             </View>
 
+            <ScrollView>
+                <TouchableOpacity
+                    style={styles.box}
+                    onPress={() => navigation.navigate('AkuteErkrankungen')}
+                >
+                    <Text style={kacheln.h2}>Akute Erkrankungen</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Lebensmittel</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Verletzungen</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Atembeschwerden</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Vergiftungen</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Insektenstiche</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.box}>
+                    <Text style={kacheln.h2}>Chemieunfälle</Text>
+                </TouchableOpacity>
+            </ScrollView>
+        </View>
     );
 }
 
@@ -93,7 +100,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
@@ -144,14 +150,13 @@ const headerStyle = {
         backgroundColor: '#f79A42',
         elevation: 0,
     },
-    headerShown: false,
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-    
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };

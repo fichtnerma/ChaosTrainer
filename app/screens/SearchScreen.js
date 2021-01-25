@@ -1,10 +1,12 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {StyleSheet, View} from 'react-native';
+import {Dimensions, StyleSheet, View} from 'react-native';
 import {ScrollView, TextInput} from 'react-native-gesture-handler';
 import Logo from '../components/Header/Logo';
 
 const Stack = createStackNavigator();
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default function SearchScreen() {
     return (
@@ -71,7 +73,7 @@ const styles = StyleSheet.create({
 const custom = StyleSheet.create({
     searchContainer: {
         width: 340,
-        height: 50,
+        height: windowHeight * 0.07,
         backgroundColor: '#fff',
         borderRadius: 15,
         margin: 10,
@@ -83,7 +85,7 @@ const custom = StyleSheet.create({
         shadowRadius: 5,
         elevation: 10,
         textAlign: 'left',
-        marginBottom: 30,
+        marginBottom: 20,
         paddingLeft: 20,
     },
     textInput: {
@@ -94,7 +96,7 @@ const custom = StyleSheet.create({
     },
     results: {
         width: 340,
-        height: 580,
+        height: windowHeight * 0.65,
         backgroundColor: '#fff',
         borderRadius: 15,
         margin: 10,
@@ -114,6 +116,7 @@ const headerStyle = {
         elevation: 0,
     },
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
     headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',

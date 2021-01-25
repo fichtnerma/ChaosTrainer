@@ -5,6 +5,7 @@ import {
     TouchableOpacity,
     TouchableWithoutFeedback,
 } from 'react-native-gesture-handler';
+import Logo from '../../components/Header/Logo';
 
 const Stack = createStackNavigator();
 let aPressed = false;
@@ -319,12 +320,12 @@ const headerStyle = {
         backgroundColor: '#f79A42',
         elevation: 0,
     },
-    headerShown: false,
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-
     cardStyle: {
         backgroundColor: '#f79A42',
     },

@@ -3,65 +3,76 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import ErsteFrageScreen from './ErsteFrageScreen';
+import Logo from '../../components/Header/Logo';
 
 const Stack = createStackNavigator();
 
 export default function QuizScreen() {
     return (
-    <Stack.Navigator screenOptions={headerStyle}>
-        <Stack.Screen name="Quiz" component={QuizHomeScreen} />
-        <Stack.Screen name="ErsteFrage" component={ErsteFrageScreen}/>
-    </Stack.Navigator>
-   );
+        <Stack.Navigator screenOptions={headerStyle}>
+            <Stack.Screen name="Quiz" component={QuizHomeScreen} />
+            <Stack.Screen name="ErsteFrage" component={ErsteFrageScreen} />
+        </Stack.Navigator>
+    );
 }
 function QuizHomeScreen({navigation}) {
     return (
-        <View style={styles.container} >            
-        <Text style={kacheln.weißeSchrift} >Quiz</Text>
+        <View style={styles.container}>
+            <Text style={kacheln.weißeSchrift}>Quiz</Text>
             <View style={styles.layout}>
-                <View
-                    style={styles.box}
-                > 
-                <View style={{ flex: 4 }}>
-                    <Text style={kacheln.titel} >Gefahren-Quiz</Text>
-                    <Text style={kacheln.unterueberschrift}>Teste dein Wissen über gefahren</Text>
-                </View>  
-                <View style={{ flex: 4, flexDirection:'row' }}>
-                <Image 
-                        source={require('../../assets/QuizScreen/Feuer.png')}
-                        style={kacheln.feuer} />
-                    <View>
-                        <Text style={kacheln.hinweis}>Erfahere mehr über</Text>
-                        <Text style={kacheln.hinweis}>Brände in der Bibliothek</Text>
+                <View style={styles.box}>
+                    <View style={{flex: 4}}>
+                        <Text style={kacheln.titel}>Gefahren-Quiz</Text>
+                        <Text style={kacheln.unterueberschrift}>
+                            Teste dein Wissen über gefahren
+                        </Text>
+                    </View>
+                    <View style={{flex: 4, flexDirection: 'row'}}>
+                        <Image
+                            source={require('../../assets/QuizScreen/Feuer.png')}
+                            style={kacheln.feuer}
+                        />
+                        <View>
+                            <Text style={kacheln.hinweis}>
+                                Erfahere mehr über
+                            </Text>
+                            <Text style={kacheln.hinweis}>
+                                Brände in der Bibliothek
+                            </Text>
+                        </View>
+                    </View>
+                    <View style={kacheln.bottom}>
+                        <Text style={kacheln.hiScoreText}>
+                            Dein erreicheter Hi-Score:
+                        </Text>
+                        <Text style={kacheln.hiScore}>2100 Punkte</Text>
+                    </View>
+                    <View style={{elevation: 20, zIndex: 40}}>
+                        <Image
+                            source={require('../../assets/QuizScreen/QuizPerson.png')}
+                            style={kacheln.QuizPerson}
+                        />
                     </View>
                 </View>
-                    <View style={kacheln.bottom} >
-                    <Text style={kacheln.hiScoreText}>Dein erreicheter Hi-Score:</Text>
-                    <Text style={kacheln.hiScore}>2100 Punkte</Text>
-                    </View> 
-                    <View style={{elevation: 20, zIndex: 40}}>
-                    <Image 
-                        source={require('../../assets/QuizScreen/QuizPerson.png')}
-                        style={kacheln.QuizPerson} /></View>
-                </View>
 
-                <View style={{flexDirection: 'row'}} >
-                    <TouchableOpacity style={kacheln.button}                    
-                    onPress={() => navigation.navigate('ErsteFrage')}>
-                       
-                    <Text style={kacheln.startText}>Jetzt Starten</Text>
+                <View style={{flexDirection: 'row'}}>
+                    <TouchableOpacity
+                        style={kacheln.button}
+                        onPress={() => navigation.navigate('ErsteFrage')}
+                    >
+                        <Text style={kacheln.startText}>Jetzt Starten</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={kacheln.einstellungen}>
-                    <Image 
-                        source={require('../../assets/QuizScreen/Einstellungen.png')}
-                        style={kacheln.zahnrad} />
+                        <Image
+                            source={require('../../assets/QuizScreen/Einstellungen.png')}
+                            style={kacheln.zahnrad}
+                        />
                     </TouchableOpacity>
                 </View>
             </View>
         </View>
     );
-
-};
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -101,7 +112,6 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
@@ -112,7 +122,6 @@ const kacheln = StyleSheet.create({
         marginTop: 10,
         marginLeft: 15,
     },
-
 
     bottom: {
         width: '100%',
@@ -159,7 +168,7 @@ const kacheln = StyleSheet.create({
         fontWeight: 'bold',
     },
 
-    button:{
+    button: {
         backgroundColor: '#f79A42',
         //flex: 1,
         width: 230,
@@ -178,7 +187,7 @@ const kacheln = StyleSheet.create({
         marginTop: 70,
         overflow: 'visible',
     },
-    einstellungen:{
+    einstellungen: {
         backgroundColor: '#f79A42',
         //flex: 1,
         width: 80,
@@ -204,15 +213,15 @@ const kacheln = StyleSheet.create({
         textAlign: 'center',
     },
 
-    zahnrad:{
+    zahnrad: {
         width: 50,
-        height: 50, 
-        alignSelf:'center',
+        height: 50,
+        alignSelf: 'center',
     },
-    feuer:{
+    feuer: {
         width: 50,
-        height: 70, 
-        alignSelf:'center',
+        height: 70,
+        alignSelf: 'center',
         marginBottom: 70,
         marginLeft: 10,
     },
@@ -248,14 +257,13 @@ const headerStyle = {
         backgroundColor: '#f79A42',
         elevation: 0,
     },
-    headerShown: false,
     headerTintColor: '#fff',
+    headerTitleAlign: 'center',
+    headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-    
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };
