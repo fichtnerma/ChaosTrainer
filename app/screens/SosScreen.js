@@ -7,13 +7,17 @@ import ErsteHilfeScreen from './InfoUnterseiten/ErsteHilfeScreen';
 import RettungswagenScreen from './SosUnterseiten/RettungswagenScreen';
 
 const Stack = createStackNavigator();
+let cardTranslate = 0;
 
 export default function SosScreen() {
     return (
         <Stack.Navigator screenOptions={headerStyle}>
             <Stack.Screen name="Sos" component={SosHomeScreen} />
             <Stack.Screen name="InfoChild" component={InfoChildScreen} />
-            <Stack.Screen name="Rettungswagen" component={RettungswagenScreen} />
+            <Stack.Screen
+                name="Rettungswagen"
+                component={RettungswagenScreen}
+            />
             <Stack.Screen name="ErsteHilfe" component={ErsteHilfeScreen} />
         </Stack.Navigator>
     );
@@ -21,26 +25,25 @@ export default function SosScreen() {
 
 function SosHomeScreen({navigation}) {
     return (
-        <View style={styles.container} >
+        <Animated.View style={styles.container}>
             <View style={styles.layout}>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => navigation.navigate('Rettungswagen')}
-                > 
-                    <Image 
+                <TouchableOpacity style={styles.box} onPress={() => moveCard()}>
+                    <Image
                         source={require('../assets/SosHomeScreen/Rettungswagen.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Rettungswagen</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Rettungswagen</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                   <Image 
+                    <Image
                         source={require('../assets/SosHomeScreen/Polizei.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Polizei</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Polizei</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.layout}>
@@ -48,23 +51,29 @@ function SosHomeScreen({navigation}) {
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Image 
+                    <Image
                         source={require('../assets/SosHomeScreen/Gift.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Gift</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Gift</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.box}
                     onPress={() => navigation.navigate('InfoChild')}
                 >
-                    <Image 
+                    <Image
                         source={require('../assets/SosHomeScreen/feuerwehr.png')}
-                        style={kacheln.icons} />
-                    <Text style={kacheln.titel} >Feuerwehr</Text>
+                        style={kacheln.icons}
+                    />
+                    <Text style={kacheln.titel}>Feuerwehr</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </Animated.View>
     );
+}
+function moveCard() {
+    cardTranslate = 150;
+    console.log(cardTranslate);
 }
 
 const styles = StyleSheet.create({
@@ -73,6 +82,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'column',
+        transform: [{translateY: cardTranslate}],
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+    },
+    containerMoved: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        marginTop: 150,
         flexDirection: 'column',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
@@ -101,11 +120,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     layout: {
-        height: '28%',
+        //height: '28%',
         flexDirection: 'row',
         margin: 10,
     },
-
 });
 
 const kacheln = StyleSheet.create({
@@ -120,7 +138,7 @@ const kacheln = StyleSheet.create({
         flex: 1,
         fontSize: 16,
         marginBottom: 15,
-    }
+    },
 });
 
 const headerStyle = {
@@ -132,9 +150,8 @@ const headerStyle = {
     headerTitleStyle: {
         fontWeight: 'bold',
     },
-    
+
     cardStyle: {
-        backgroundColor: "#f79A42",
+        backgroundColor: '#f79A42',
     },
-    
 };
