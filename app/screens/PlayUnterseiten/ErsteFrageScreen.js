@@ -1,24 +1,14 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {
-    Text,
-    StyleSheet,
-    View,
-    Image,
-    Pressable,
-    TouchableHighlight,
-} from 'react-native';
+import {Text, StyleSheet, View, Image, TouchableHighlight} from 'react-native';
 import {
     TouchableOpacity,
     TouchableWithoutFeedback,
 } from 'react-native-gesture-handler';
-import {color} from 'react-native-reanimated';
 
 const Stack = createStackNavigator();
 let aPressed = false;
-let bPressed = false;
-let cPressed = false;
-let dPressed = false;
+let fertig = false;
 
 export default function ErsteFrageScreen() {
     return (
@@ -51,27 +41,34 @@ function ErsteFrageHomeScreen({navigation}) {
                     </View>
                     <TouchableHighlight
                         activeOpacity={1}
-                        underlayColor="#4694af"
-                        style={kacheln.antwort}
-                        onPress={() => (aPressed = true)}
+                        //underlayColor="#4694af"
+                        onPress={() => {
+                            aPressed = true;
+                            navigation.push('ErsteFrage');
+                        }}
+                        style={getStyle()}
                     >
-                        <Text style={kacheln.antwortText}>A: Sand</Text>
+                        <Text style={kacheln.antwortText}>A: Luftpumpe</Text>
                     </TouchableHighlight>
-                    <TouchableWithoutFeedback style={kacheln.antwort}>
+                    <TouchableWithoutFeedback style={getRedButton()}>
                         <Text style={kacheln.antwortText}>B: Wasser</Text>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback style={kacheln.antwort}>
+                    <TouchableWithoutFeedback style={getRedButton()}>
                         <Text style={kacheln.antwortText}>C: Decke</Text>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback style={kacheln.antwort}>
-                        <Text style={kacheln.antwortText}>D: Luftpumpe</Text>
+                    <TouchableWithoutFeedback style={getRedButton()}>
+                        <Text style={kacheln.antwortText}>D: Sand</Text>
                     </TouchableWithoutFeedback>
                 </View>
 
                 <View style={{alignItems: 'center'}}>
                     <TouchableOpacity
                         style={kacheln.button}
-                        onPress={() => navigation.navigate('Quiz')}
+                        onPress={() => {
+                            fertig = true;
+                            getStyle();
+                            navigation.push('ErsteFrage');
+                        }}
                     >
                         <Text style={kacheln.startText}>Fertig</Text>
                     </TouchableOpacity>
@@ -79,6 +76,72 @@ function ErsteFrageHomeScreen({navigation}) {
             </View>
         </View>
     );
+}
+function getRedButton() {
+    if (fertig) {
+        return {
+            width: 310,
+            height: 60,
+            backgroundColor: '#ff6042',
+            borderRadius: 15,
+            marginLeft: 15,
+            marginBottom: 15,
+            justifyContent: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
+        };
+    } else {
+        return {
+            width: 310,
+            height: 60,
+            backgroundColor: '#ffc185',
+            borderRadius: 15,
+            marginLeft: 15,
+            marginBottom: 15,
+            justifyContent: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
+        };
+    }
+}
+function getStyle() {
+    if (fertig) {
+        return {
+            width: 310,
+            height: 60,
+            backgroundColor: '#abc94c',
+            borderRadius: 15,
+            marginLeft: 15,
+            marginBottom: 15,
+            justifyContent: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
+        };
+    } else if (aPressed) {
+        return {
+            width: 310,
+            height: 60,
+            backgroundColor: '#4694af',
+            borderRadius: 15,
+            marginLeft: 15,
+            marginBottom: 15,
+            justifyContent: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
+        };
+    } else {
+        return {
+            width: 310,
+            height: 60,
+            backgroundColor: '#ffc185',
+            borderRadius: 15,
+            marginLeft: 15,
+            marginBottom: 15,
+            justifyContent: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
+        };
+    }
 }
 
 const styles = StyleSheet.create({
@@ -110,9 +173,7 @@ const styles = StyleSheet.create({
         alignContent: 'center',
         shadowRadius: 5,
         elevation: 10,
-        //alignItems: 'center',
         textAlign: 'left',
-        //flex: 4,
     },
     layout: {
         height: '80%',
@@ -124,7 +185,6 @@ const styles = StyleSheet.create({
 const kacheln = StyleSheet.create({
     titel: {
         color: '#000',
-        //flex: 1,
         fontSize: 25,
         marginTop: 5,
         marginLeft: 15,
@@ -143,7 +203,6 @@ const kacheln = StyleSheet.create({
     unterueberschrift: {
         marginTop: 5,
         color: '#000',
-        //flex: 1,
         fontSize: 15,
         textAlignVertical: 'top',
         marginLeft: 15,
@@ -151,7 +210,6 @@ const kacheln = StyleSheet.create({
 
     hinweis: {
         marginTop: 0,
-        //flex: 0.5,
         fontSize: 20,
         textAlignVertical: 'center',
         marginLeft: 20,
@@ -160,7 +218,6 @@ const kacheln = StyleSheet.create({
 
     hiScoreText: {
         color: '#fff',
-        //flex: 1,
         fontSize: 15,
         textAlignVertical: 'center',
         marginLeft: 80,
@@ -169,7 +226,6 @@ const kacheln = StyleSheet.create({
 
     hiScore: {
         color: '#fff',
-        //flex: 1,
         fontSize: 40,
         textAlignVertical: 'center',
         marginLeft: 80,
@@ -178,7 +234,6 @@ const kacheln = StyleSheet.create({
 
     button: {
         backgroundColor: '#4694af',
-        //flex: 1,
         width: 180,
         height: 55,
         borderRadius: 15,
@@ -190,7 +245,6 @@ const kacheln = StyleSheet.create({
         alignContent: 'center',
         shadowRadius: 5,
         elevation: 10,
-        //alignItems: 'center',
         textAlign: 'center',
         marginTop: 10,
         overflow: 'visible',
@@ -198,7 +252,6 @@ const kacheln = StyleSheet.create({
     },
     einstellungen: {
         backgroundColor: '#f79A42',
-        //flex: 1,
         width: 80,
         height: 80,
         borderRadius: 15,
@@ -210,13 +263,11 @@ const kacheln = StyleSheet.create({
         alignContent: 'center',
         shadowRadius: 5,
         elevation: 10,
-        //alignItems: 'center',
         textAlign: 'left',
         marginTop: 70,
     },
     startText: {
         color: '#fff',
-        //flex: 1,
         fontSize: 25,
         textAlignVertical: 'center',
         textAlign: 'center',
@@ -236,8 +287,6 @@ const kacheln = StyleSheet.create({
         alignSelf: 'flex-start',
         position: 'absolute',
         top: -5,
-        //bottom: 100,
-        //textAlignVertical: 'bottom',
         zIndex: 40,
         textShadowOffset: {width: 0, height: 0},
         textShadowColor: '#CCC',
@@ -248,7 +297,7 @@ const kacheln = StyleSheet.create({
     antwort: {
         width: 310,
         height: 60,
-        backgroundColor: '#ffc185',
+        backgroundColor: fertig ? '#ff6042' : '#ffc185',
         borderRadius: 15,
         marginLeft: 15,
         marginBottom: 15,
