@@ -1,10 +1,11 @@
-import * as React from 'react';
-import {Image, StyleSheet} from 'react-native';
+//Librarys
+import * as React from "react";
+import {Image, StyleSheet} from "react-native";
 
 export default function Logo() {
     return (
         <Image
-            source={require('../../assets/headerLogo.png')}
+            source={require("../../assets/headerLogo.png")}
             style={headerStyle.logo}
         ></Image>
     );

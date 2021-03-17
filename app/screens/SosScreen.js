@@ -1,11 +1,16 @@
-import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import InfoChildScreen from './InfoChildScreen';
-import {Text, StyleSheet, View, Image} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import ErsteHilfeScreen from './InfoUnterseiten/ErsteHilfeScreen';
-import RettungswagenScreen from './SosUnterseiten/RettungswagenScreen';
-import Logo from '../components/Header/Logo';
+//Librarys
+import React from "react";
+import {createStackNavigator} from "@react-navigation/stack";
+import {Text, StyleSheet, View, Image} from "react-native";
+import {TouchableOpacity} from "react-native-gesture-handler";
+
+//Components
+import InfoChildScreen from "./InfoChildScreen";
+import ErsteHilfeScreen from "./InfoUnterseiten/ErsteHilfeScreen";
+import RettungswagenScreen from "./SosUnterseiten/RettungswagenScreen";
+import Logo from "../components/Header/Logo";
+
+//Styles
 
 const Stack = createStackNavigator();
 let cardTranslate = 0;
@@ -30,10 +35,10 @@ function SosHomeScreen({navigation}) {
             <View style={styles.layout}>
                 <TouchableOpacity
                     style={styles.box}
-                    onPress={() => navigation.navigate('Rettungswagen')}
+                    onPress={() => navigation.navigate("Rettungswagen")}
                 >
                     <Image
-                        source={require('../assets/SosHomeScreen/Rettungswagen.png')}
+                        source={require("../assets/SosHomeScreen/Rettungswagen.png")}
                         style={kacheln.icons}
                     />
                     <Text style={kacheln.titel}>Rettungswagen</Text>
@@ -41,10 +46,10 @@ function SosHomeScreen({navigation}) {
 
                 <TouchableOpacity
                     style={styles.box}
-                    onPress={() => navigation.navigate('InfoChild')}
+                    onPress={() => navigation.navigate("InfoChild")}
                 >
                     <Image
-                        source={require('../assets/SosHomeScreen/Polizei.png')}
+                        source={require("../assets/SosHomeScreen/Polizei.png")}
                         style={kacheln.icons}
                     />
                     <Text style={kacheln.titel}>Polizei</Text>
@@ -53,20 +58,20 @@ function SosHomeScreen({navigation}) {
             <View style={styles.layout}>
                 <TouchableOpacity
                     style={styles.box}
-                    onPress={() => navigation.navigate('InfoChild')}
+                    onPress={() => navigation.navigate("InfoChild")}
                 >
                     <Image
-                        source={require('../assets/SosHomeScreen/Gift.png')}
+                        source={require("../assets/SosHomeScreen/Gift.png")}
                         style={kacheln.icons}
                     />
                     <Text style={kacheln.titel}>Gift</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.box}
-                    onPress={() => navigation.navigate('InfoChild')}
+                    onPress={() => navigation.navigate("InfoChild")}
                 >
                     <Image
-                        source={require('../assets/SosHomeScreen/feuerwehr.png')}
+                        source={require("../assets/SosHomeScreen/feuerwehr.png")}
                         style={kacheln.icons}
                     />
                     <Text style={kacheln.titel}>Feuerwehr</Text>
@@ -79,49 +84,49 @@ function SosHomeScreen({navigation}) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
         transform: [{translateY: cardTranslate}],
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
     },
     containerMoved: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
+        backgroundColor: "#fff",
+        alignItems: "center",
         marginTop: 150,
-        flexDirection: 'column',
+        flexDirection: "column",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
     },
     background: {
         flex: 1,
-        width: '100%',
-        height: '100%',
+        width: "100%",
+        height: "100%",
     },
 
     box: {
         width: 160,
         height: 160,
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
         borderRadius: 30,
         margin: 10,
         shadowOffset: {width: 0, height: 0},
-        shadowColor: 'black',
+        shadowColor: "black",
         shadowOpacity: 0.5,
-        justifyContent: 'center',
-        alignContent: 'center',
+        justifyContent: "center",
+        alignContent: "center",
         //shadowColor: '#000',
         //shadowOpacity: 0.2,
         shadowRadius: 5,
         elevation: 10,
-        alignItems: 'center',
+        alignItems: "center",
     },
     layout: {
         //height: '28%',
-        flexDirection: 'row',
+        flexDirection: "row",
         margin: 10,
     },
 });
@@ -133,8 +138,8 @@ const kacheln = StyleSheet.create({
         flex: 5,
     },
     titel: {
-        justifyContent: 'center',
-        color: '#14647f',
+        justifyContent: "center",
+        color: "#14647f",
         flex: 1,
         fontSize: 16,
         marginBottom: 15,
@@ -143,16 +148,16 @@ const kacheln = StyleSheet.create({
 
 const headerStyle = {
     headerStyle: {
-        backgroundColor: '#f79A42',
+        backgroundColor: "#f79A42",
         elevation: 0,
     },
-    headerTintColor: '#fff',
-    headerTitleAlign: 'center',
+    headerTintColor: "#fff",
+    headerTitleAlign: "center",
     headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
-        fontWeight: 'bold',
+        fontWeight: "bold",
     },
     cardStyle: {
-        backgroundColor: '#f79A42',
+        backgroundColor: "#f79A42",
     },
 };
