@@ -144,6 +144,7 @@ const kacheln = StyleSheet.create({
         flex: 1,
         fontSize: 16,
         marginBottom: 15,
+    
     },
 });
 
