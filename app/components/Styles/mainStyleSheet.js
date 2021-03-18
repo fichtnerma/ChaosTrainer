@@ -1,68 +1,98 @@
 //Librarys
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
+import Colors from "../../constants/colors.js";
 
 export default StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
-    },
+  container: {
+    flex: 1,
+    backgroundColor: Colors.white,
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+  },
 
-    box: {
-        backgroundColor: "#fff",
-        borderRadius: 15,
-        margin: 10,
-        shadowOffset: {width: 0, height: 0},
-        shadowColor: "black",
-        shadowOpacity: 0.5,
-        justifyContent: "center",
-        alignContent: "center",
-        shadowRadius: 5,
-        elevation: 10,
-        textAlign: "left",
-    },
+  box: {
+    backgroundColor: Colors.white,
+    borderRadius: 15,
+    margin: 10,
+    shadowOffset: { width: 0, height: 0 },
+    shadowColor: "black",
+    shadowOpacity: 0.5,
+    justifyContent: "center",
+    alignContent: "center",
+    shadowRadius: 5,
+    elevation: 10,
+    textAlign: "left",
+  },
 
-    titel: {
-        color: "#000",
-        flex: 1,
-        fontSize: 30,
-        marginTop: 10,
-        marginLeft: 15,
-    },
+  iconBox: {
+    backgroundColor: Colors.white,
+    borderRadius: 30,
+    margin: 10,
+    shadowOffset: { width: 0, height: 0 },
+    shadowColor: "black",
+    shadowOpacity: 0.5,
+    justifyContent: "center",
+    alignContent: "center",
+    //shadowColor: '#000',
+    //shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 10,
+    alignItems: "center",
+  },
 
-    orangeSchrift: {
-        color: "#ffc185",
-        fontSize: 70,
-        fontWeight: "bold",
-        marginLeft: 15,
-        position: "absolute",
-        textAlignVertical: "bottom",
-    },
+  titel: {
+    color: Colors.black,
+    flex: 1,
+    fontSize: 30,
+    marginTop: 10,
+    marginLeft: 15,
+  },
 
-    h1: {
-        color: "#000",
-        flex: 0,
-        fontSize: 15,
-        marginLeft: 15,
-    },
+  titleIcon: {
+    color: Colors.blue,
+    flex: 1,
+    fontSize: 16,
+    marginBottom: 15,
+  },
 
-    orangeBottomInBox: {
-        width: "100%",
-        height: 80,
-        backgroundColor: "#ffc185",
-        borderBottomLeftRadius: 15,
-        borderBottomRightRadius: 15,
-    },
+  icons: {
+    width: 160,
+    height: 160,
+    flex: 5,
+  },
 
-    hiScore: {
-        color: "#fff",
-        flex: 1,
-        fontSize: 20,
-        textAlignVertical: "center",
-        marginLeft: 15,
-    },
+  orangeSchrift: {
+    color: Colors.lightOrange,
+    fontSize: 70,
+    fontWeight: "bold",
+    marginLeft: 15,
+    position: "absolute",
+    textAlignVertical: "bottom",
+  },
+
+  h1: {
+    color: Colors.black,
+    flex: 0,
+    fontSize: 15,
+    marginLeft: 15,
+  },
+
+  orangeBottomInBox: {
+    width: "100%",
+    height: 80,
+    backgroundColor: Colors.lightOrange,
+    borderBottomLeftRadius: 15,
+    borderBottomRightRadius: 15,
+  },
+
+  hiScore: {
+    color: Colors.white,
+    flex: 1,
+    fontSize: 20,
+    textAlignVertical: "center",
+    marginLeft: 15,
+  },
 });
