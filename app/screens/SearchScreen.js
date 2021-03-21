@@ -1,35 +1,18 @@
 //Librarys
 import React from "react";
-import {createStackNavigator} from "@react-navigation/stack";
 import {Dimensions, StyleSheet, View} from "react-native";
 import {ScrollView, TextInput} from "react-native-gesture-handler";
 
-//Components
-import Logo from "../components/Header/Logo";
-
 //Styles
 
-const Stack = createStackNavigator();
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-export default function SearchScreen() {
-    return (
-        <Stack.Navigator screenOptions={headerStyle}>
-            <Stack.Screen name="Search" component={SearchHomeScreen} />
-        </Stack.Navigator>
-    );
-}
-
-function SearchHomeScreen({navigation}) {
+export default function SearchScreen({navigation}) {
     return (
         <View style={styles.container}>
             <View style={custom.searchContainer}>
-                <TextInput
-                    style={custom.textInput}
-                    placeholder="Suchen"
-                    placeholderTextColor="#f79A42"
-                ></TextInput>
+                <TextInput style={custom.textInput} placeholder="Suchen" placeholderTextColor="#f79A42"></TextInput>
             </View>
             <View style={custom.results}>
                 <ScrollView></ScrollView>
@@ -115,18 +98,3 @@ const custom = StyleSheet.create({
         textAlign: "left",
     },
 });
-const headerStyle = {
-    headerStyle: {
-        backgroundColor: "#f79A42",
-        elevation: 0,
-    },
-    headerTintColor: "#fff",
-    headerTitleAlign: "center",
-    headerTitle: (props) => <Logo {...props} />,
-    headerTitleStyle: {
-        fontWeight: "bold",
-    },
-    cardStyle: {
-        backgroundColor: "#f79A42",
-    },
-};
