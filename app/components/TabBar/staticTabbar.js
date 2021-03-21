@@ -1,15 +1,16 @@
-import React, {Component} from 'react';
+//Librarys
+import React, {Component} from "react";
 import {
     View,
     StyleSheet,
     TouchableWithoutFeedback,
     Animated,
     Dimensions,
-} from 'react-native';
-import {Feather as Icon} from '@expo/vector-icons';
+} from "react-native";
+import {Feather as Icon} from "@expo/vector-icons";
 
 export const tabHeight = 60;
-const width = Dimensions.get('window').width;
+const width = Dimensions.get("window").width;
 
 export default class StaticTabbar extends Component {
     constructor(props) {
@@ -62,7 +63,7 @@ export default class StaticTabbar extends Component {
                             -width + tabWidth * (key + 1),
                         ],
                         outputRange: [1, 0, 1],
-                        extrapolate: 'clamp',
+                        extrapolate: "clamp",
                     });
                     const translateY = activeValue.interpolate({
                         inputRange: [0, 0.9],
@@ -76,25 +77,25 @@ export default class StaticTabbar extends Component {
                                     console.log(currentScreen);
                                     switch (key) {
                                         case 0:
-                                            this.navigation.navigate('Home');
+                                            this.navigation.navigate("Home");
                                             break;
                                         case 1:
-                                            this.navigation.navigate('Play');
+                                            this.navigation.navigate("Play");
                                             break;
                                         case 2:
-                                            this.navigation.navigate('Sos');
+                                            this.navigation.navigate("Sos");
                                             break;
                                         case 3:
-                                            if (currentScreen == 'Info') {
+                                            if (currentScreen == "Info") {
                                                 this.navigation.goBack();
                                             } else {
                                                 this.navigation.navigate(
-                                                    'Info'
+                                                    "Info"
                                                 );
                                             }
                                             break;
                                         case 4:
-                                            this.navigation.navigate('Search');
+                                            this.navigation.navigate("Search");
                                             break;
                                     }
                                     this.onPress(key);
@@ -107,13 +108,13 @@ export default class StaticTabbar extends Component {
                             </TouchableWithoutFeedback>
                             <Animated.View
                                 style={{
-                                    position: 'absolute',
+                                    position: "absolute",
                                     width: tabWidth,
                                     top: -8,
                                     left: tabWidth * key,
                                     height: tabHeight,
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
+                                    justifyContent: "center",
+                                    alignItems: "center",
                                     transform: [{translateY}],
                                 }}
                             >
@@ -131,20 +132,20 @@ export default class StaticTabbar extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row',
+        flexDirection: "row",
     },
     tab: {
         flex: 1,
         height: tabHeight,
-        justifyContent: 'center',
-        alignItems: 'center',
+        justifyContent: "center",
+        alignItems: "center",
     },
     circle: {
         width: 50,
         height: 50,
         borderRadius: 60,
-        backgroundColor: '#f79A42',
-        justifyContent: 'center',
-        alignItems: 'center',
+        backgroundColor: "#f79A42",
+        justifyContent: "center",
+        alignItems: "center",
     },
 });

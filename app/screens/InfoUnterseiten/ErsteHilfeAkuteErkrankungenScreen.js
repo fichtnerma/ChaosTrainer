@@ -1,24 +1,8 @@
-import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {Text, StyleSheet, View, Image} from 'react-native';
-import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
-import AsthmaScreen from './AsthmaScreen';
-import Logo from '../../components/Header/Logo';
+import React from "react";
+import {Text, StyleSheet, View, Image} from "react-native";
+import {ScrollView, TouchableOpacity} from "react-native-gesture-handler";
 
-const Stack = createStackNavigator();
-
-export default function ErsteHilfeAkuteErkrankungenScreen() {
-    return (
-        <Stack.Navigator screenOptions={headerStyle}>
-            <Stack.Screen
-                name="Erste Hilfe"
-                component={AkuteErkrankungenHomeScreen}
-            />
-            <Stack.Screen name="Asthma Bronchiale" component={AsthmaScreen} />
-        </Stack.Navigator>
-    );
-}
-function AkuteErkrankungenHomeScreen({navigation}) {
+export default function AkuteErkrankungenScreen({navigation}) {
     return (
         <View style={styles.container}>
             <View>
@@ -27,22 +11,14 @@ function AkuteErkrankungenHomeScreen({navigation}) {
             </View>
             <View style={kacheln.infoBox}>
                 <Text style={kacheln.infoText}>
-                    Bei einer akuten Erkrankung liegt der Unterschied zu
-                    chronischen Krankheiten darin, dass sich sie sich plötzlich
-                    und meist in kurzer Zeitdauer entwickeln - in der Regel ist
-                    ein Zeitraum von 3-14 Tagen gemeint.
+                    Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in
+                    kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint.
                 </Text>
-                <Image
-                    source={require('../../assets/InfoScreen/Ausrufezeichen.png')}
-                    style={kacheln.ausrufezeichen}
-                />
+                <Image source={require("../../assets/InfoScreen/Ausrufezeichen.png")} style={kacheln.ausrufezeichen} />
             </View>
 
             <ScrollView>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => navigation.navigate('Asthma Bronchiale')}
-                >
+                <TouchableOpacity style={styles.box} onPress={() => navigation.navigate("Asthma")}>
                     <Text style={kacheln.h2}>Asthma Bronchiale</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
@@ -74,39 +50,39 @@ function AkuteErkrankungenHomeScreen({navigation}) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        flexDirection: 'column',
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        flexDirection: "column",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
     },
     background: {
         flex: 1,
-        width: '100%',
-        height: '100%',
+        width: "100%",
+        height: "100%",
     },
 
     box: {
         width: 330,
         height: 60,
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
         borderRadius: 15,
         margin: 10,
         shadowOffset: {width: 0, height: 0},
-        shadowColor: 'black',
+        shadowColor: "black",
         shadowOpacity: 0.5,
-        justifyContent: 'center',
-        alignContent: 'center',
+        justifyContent: "center",
+        alignContent: "center",
         //shadowColor: '#000',
         //shadowOpacity: 0.2,
         shadowRadius: 5,
         elevation: 10,
-        alignItems: 'center',
+        alignItems: "center",
     },
     layout: {
-        height: '28%',
-        flexDirection: 'row',
+        height: "28%",
+        flexDirection: "row",
         margin: 10,
     },
 });
@@ -115,70 +91,54 @@ const kacheln = StyleSheet.create({
     infoBox: {
         width: 330,
         height: 200,
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
         borderRadius: 15,
         margin: 10,
         shadowOffset: {width: 0, height: 0},
-        shadowColor: 'black',
+        shadowColor: "black",
         shadowOpacity: 0.5,
-        justifyContent: 'center',
-        alignContent: 'center',
+        justifyContent: "center",
+        alignContent: "center",
         //shadowColor: '#000',
         //shadowOpacity: 0.2,
         shadowRadius: 5,
         elevation: 10,
-        alignItems: 'center',
+        alignItems: "center",
     },
     titel: {
-        alignSelf: 'center',
+        alignSelf: "center",
         marginTop: 10,
         marginBottom: 0,
-        justifyContent: 'center',
-        color: '#f79A42',
+        justifyContent: "center",
+        color: "#f79A42",
         fontSize: 45,
     },
     infoText: {
-        justifyContent: 'flex-start',
-        color: '#000',
+        justifyContent: "flex-start",
+        color: "#000",
         fontSize: 16,
         marginLeft: 80,
         marginRight: 20,
     },
     h1: {
-        alignSelf: 'center',
+        alignSelf: "center",
         margin: 0,
-        justifyContent: 'center',
-        color: '#f79A42',
+        justifyContent: "center",
+        color: "#f79A42",
         fontSize: 24,
     },
     h2: {
-        justifyContent: 'flex-start',
-        color: '#000',
+        justifyContent: "flex-start",
+        color: "#000",
         fontSize: 24,
     },
 
     ausrufezeichen: {
         width: 80,
         height: 190,
-        position: 'absolute',
+        position: "absolute",
         top: 0,
         left: 0,
         marginTop: 30,
     },
 });
-
-const headerStyle = {
-    headerStyle: {
-        backgroundColor: '#f79A42',
-        elevation: 0,
-    },
-    headerTintColor: '#fff',
-    headerTitleAlign: 'center',
-    headerTitle: (props) => <Logo {...props} />,
-    headerTitleStyle: {
-        fontWeight: 'bold',
-    },
-    cardStyle: {
-        backgroundColor: '#f79A42',
-    },
-};

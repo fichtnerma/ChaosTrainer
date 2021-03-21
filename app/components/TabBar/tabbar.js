@@ -1,17 +1,20 @@
-import React, {Component} from 'react';
-import {View, StyleSheet, Dimensions, Animated} from 'react-native';
-import * as shape from 'd3-shape';
-import Svg, {Path} from 'react-native-svg';
-import StaticTabbar, {tabHeight as height} from './staticTabbar';
+//Librarys
+import React, {Component} from "react";
+import {View, StyleSheet, Dimensions, Animated} from "react-native";
+import * as shape from "d3-shape";
+import Svg, {Path} from "react-native-svg";
 
-const width = Dimensions.get('window').width;
+//Components
+import StaticTabbar, {tabHeight as height} from "./staticTabbar";
+
+const width = Dimensions.get("window").width;
 
 const tabs = [
-    {name: 'home'},
-    {name: 'play'},
-    {name: 'heart'},
-    {name: 'grid'},
-    {name: 'search'},
+    {name: "home"},
+    {name: "play"},
+    {name: "heart"},
+    {name: "grid"},
+    {name: "search"},
 ];
 const tabWidth = width / tabs.length;
 const AnimatedSvg = Animated.createAnimatedComponent(Svg);
@@ -87,6 +90,6 @@ export default class Tabbar extends Component {
 
 const styles = StyleSheet.create({
     safeArea: {
-        backgroundColor: 'white',
+        backgroundColor: "white",
     },
 });
