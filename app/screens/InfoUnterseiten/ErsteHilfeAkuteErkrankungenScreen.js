@@ -1,9 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Text, StyleSheet, View, Image} from 'react-native';
+import {
+    Text,
+    StyleSheet,
+    View,
+    Image,
+    Modal,
+    Alert,
+    Dimensions,
+} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 import AsthmaScreen from './AsthmaScreen';
 import Logo from '../../components/Header/Logo';
+
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
+const data = require('../../assets/content/Infoseiten/Asthma.json');
 
 const Stack = createStackNavigator();
 
@@ -19,6 +31,12 @@ export default function ErsteHilfeAkuteErkrankungenScreen() {
     );
 }
 function AkuteErkrankungenHomeScreen({navigation}) {
+    const [modalVisible, setModalVisible] = useState(false);
+    const [currentData, setCurrentData] = useState(data['asthma']);
+    function openModal(content) {
+        setModalVisible(!modalVisible);
+        setCurrentData(data[content]);
+    }
     return (
         <View style={styles.container}>
             <View>
@@ -37,15 +55,43 @@ function AkuteErkrankungenHomeScreen({navigation}) {
                     style={kacheln.ausrufezeichen}
                 />
             </View>
-
+            <View>
+                <Modal
+                    animationType="slide"
+                    transparent={true}
+                    visible={modalVisible}
+                    onRequestClose={() => {
+                        Alert.alert('Modal has been closed.');
+                        setModalVisible(!modalVisible);
+                    }}
+                >
+                    <View style={styles.centeredView}>
+                        <View style={styles.modalView}>
+                            <Text style={kacheln.h2}>{currentData.name}</Text>
+                            <Text style={kacheln.h2}>{currentData.cause}</Text>
+                            <Text style={kacheln.h2}>
+                                {currentData.symptoms}
+                            </Text>
+                            <TouchableOpacity
+                                onPress={() => setModalVisible(!modalVisible)}
+                            >
+                                <Text style={styles.textStyle}>Hide Modal</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
             <ScrollView>
                 <TouchableOpacity
                     style={styles.box}
-                    onPress={() => navigation.navigate('Asthma Bronchiale')}
+                    onPress={() => openModal('asthma')}
                 >
                     <Text style={kacheln.h2}>Asthma Bronchiale</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
+                <TouchableOpacity
+                    style={styles.box}
+                    onPress={() => openModal('diabetes')}
+                >
                     <Text style={kacheln.h2}>Diabetes Mellitus</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
@@ -70,7 +116,6 @@ function AkuteErkrankungenHomeScreen({navigation}) {
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -81,12 +126,33 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
     },
+    modalView: {
+        backgroundColor: '#fff',
+        borderRadius: 20,
+        width: windowWidth,
+        height: windowHeight * 0.79,
+        padding: 35,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 1,
+    },
     background: {
         flex: 1,
         width: '100%',
         height: '100%',
     },
-
+    centeredView: {
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        marginTop: 22,
+    },
     box: {
         width: 330,
         height: 60,

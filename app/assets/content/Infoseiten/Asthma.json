@@ -1,5 +1,12 @@
 {
-    "name": "Asthma Bronchiale",
-    "cause": "Ursache sind allergische Reaktionen, psychische Einflüsse und wiederkehrende Infektionen der Luftwege. Dabei entsteht die Atemnot durch eine Verkrampfung oder Verschleimung der tieferliegenden feinen Bronchialäste in der Lunge.",
-    "symptoms": "Mühe beim Lufteinatmen, das Ausatmen fällt ihm schwer"
+    "asthma": {
+        "name": "Asthma Bronchiale",
+        "cause": "Ursache sind allergische Reaktionen, psychische Einflüsse und wiederkehrende Infektionen der Luftwege. Dabei entsteht die Atemnot durch eine Verkrampfung oder Verschleimung der tieferliegenden feinen Bronchialäste in der Lunge.",
+        "symptoms": "Mühe beim Lufteinatmen, das Ausatmen fällt ihm schwer"
+    },
+    "diabetes" : {
+        "name": "Diabetes Mellitus",
+        "cause": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "symptoms": "Probleme Zuckerhaushalt zu regeln."
+    }
 }
