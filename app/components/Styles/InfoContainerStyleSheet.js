@@ -1,10 +1,13 @@
 //Librarys
 import { StyleSheet } from "react-native";
+import {Dimensions} from "react-native";
+
+const windowWidth = Dimensions.get("window").width;
 
 export default StyleSheet.create({
   boxSize: {
-    width: 160,
-    height: 160,
+    height: windowWidth*0.42,
+    width: windowWidth*0.42,
   },
   layout: {
     height: "28%",
