@@ -31,36 +31,11 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
     },
-    background: {
-        flex: 1,
-        width: "100%",
-        height: "100%",
-    },
-    box: {
-        width: 340,
-        height: 300,
-        backgroundColor: "#fff",
-        borderRadius: 30,
-        margin: 10,
-        shadowOffset: {width: 0, height: 0},
-        shadowColor: "black",
-        shadowOpacity: 0.5,
-        justifyContent: "center",
-        alignContent: "center",
-        shadowRadius: 5,
-        elevation: 10,
-        textAlign: "left",
-    },
-    layout: {
-        height: "75%",
-        flexDirection: "row",
-        margin: 10,
-    },
 });
 
 const custom = StyleSheet.create({
     searchContainer: {
-        width: 340,
+        width: windowWidth * 0.88, //340
         height: windowHeight * 0.07,
         backgroundColor: "#fff",
         borderRadius: 15,
@@ -83,7 +58,7 @@ const custom = StyleSheet.create({
         fontSize: 16,
     },
     results: {
-        width: 340,
+        width: windowWidth * 0.88, //340
         height: windowHeight * 0.65,
         backgroundColor: "#fff",
         borderRadius: 15,
