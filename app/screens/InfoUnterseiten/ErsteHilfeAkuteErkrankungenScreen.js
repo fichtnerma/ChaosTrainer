@@ -1,14 +1,6 @@
 import React, {useState} from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {
-    Text,
-    StyleSheet,
-    View,
-    Image,
-    Modal,
-    Alert,
-    Dimensions,
-} from 'react-native';
+import {Text, StyleSheet, View, Image, Modal, Dimensions, TouchableNativeFeedback} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 import AsthmaScreen from './AsthmaScreen';
 import Logo from '../../components/Header/Logo';
@@ -22,10 +14,7 @@ const Stack = createStackNavigator();
 export default function ErsteHilfeAkuteErkrankungenScreen() {
     return (
         <Stack.Navigator screenOptions={headerStyle}>
-            <Stack.Screen
-                name="Erste Hilfe"
-                component={AkuteErkrankungenHomeScreen}
-            />
+            <Stack.Screen name="Erste Hilfe" component={AkuteErkrankungenHomeScreen} />
             <Stack.Screen name="Asthma Bronchiale" component={AsthmaScreen} />
         </Stack.Navigator>
     );
@@ -45,15 +34,10 @@ function AkuteErkrankungenHomeScreen({navigation}) {
             </View>
             <View style={kacheln.infoBox}>
                 <Text style={kacheln.infoText}>
-                    Bei einer akuten Erkrankung liegt der Unterschied zu
-                    chronischen Krankheiten darin, dass sich sie sich plötzlich
-                    und meist in kurzer Zeitdauer entwickeln - in der Regel ist
-                    ein Zeitraum von 3-14 Tagen gemeint.
+                    Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in
+                    kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint.
                 </Text>
-                <Image
-                    source={require('../../assets/InfoScreen/Ausrufezeichen.png')}
-                    style={kacheln.ausrufezeichen}
-                />
+                <Image source={require('../../assets/InfoScreen/Ausrufezeichen.png')} style={kacheln.ausrufezeichen} />
             </View>
             <View>
                 <Modal
@@ -61,7 +45,6 @@ function AkuteErkrankungenHomeScreen({navigation}) {
                     transparent={true}
                     visible={modalVisible}
                     onRequestClose={() => {
-                        Alert.alert('Modal has been closed.');
                         setModalVisible(!modalVisible);
                     }}
                 >
@@ -69,29 +52,19 @@ function AkuteErkrankungenHomeScreen({navigation}) {
                         <View style={styles.modalView}>
                             <Text style={kacheln.h2}>{currentData.name}</Text>
                             <Text style={kacheln.h2}>{currentData.cause}</Text>
-                            <Text style={kacheln.h2}>
-                                {currentData.symptoms}
-                            </Text>
-                            <TouchableOpacity
-                                onPress={() => setModalVisible(!modalVisible)}
-                            >
+                            <Text style={kacheln.h2}>{currentData.symptoms}</Text>
+                            <TouchableNativeFeedback onPress={() => setModalVisible(!modalVisible)}>
                                 <Text style={styles.textStyle}>Hide Modal</Text>
-                            </TouchableOpacity>
+                            </TouchableNativeFeedback>
                         </View>
                     </View>
                 </Modal>
             </View>
             <ScrollView>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => openModal('asthma')}
-                >
+                <TouchableOpacity style={styles.box} onPress={() => openModal('asthma')}>
                     <Text style={kacheln.h2}>Asthma Bronchiale</Text>
                 </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.box}
-                    onPress={() => openModal('diabetes')}
-                >
+                <TouchableOpacity style={styles.box} onPress={() => openModal('diabetes')}>
                     <Text style={kacheln.h2}>Diabetes Mellitus</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.box}>
@@ -128,7 +101,8 @@ const styles = StyleSheet.create({
     },
     modalView: {
         backgroundColor: '#fff',
-        borderRadius: 20,
+        borderTopRightRadius: 30,
+        borderTopLeftRadius: 30,
         width: windowWidth,
         height: windowHeight * 0.79,
         padding: 35,
@@ -140,7 +114,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 4,
-        elevation: 1,
+        elevation: 5,
     },
     background: {
         flex: 1,
