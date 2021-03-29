@@ -37,7 +37,7 @@ export default function News() {
     }, []);
 
     function filterData(apiData) {
-        return apiData.filter((apiData) => apiData.attributes.LAN_ew_GEN == 'Bayern');
+        return apiData.filter((api) => api.attributes.LAN_ew_GEN == 'Bayern');
     }
     return (
         <View style={{padding: 24, height: 250, marginBottom: 10}}>

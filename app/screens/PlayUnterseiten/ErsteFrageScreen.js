@@ -1,11 +1,15 @@
 //Librarys
 import React from "react";
-import {Text, StyleSheet, View, Image, TouchableHighlight} from "react-native";
+import {Text, StyleSheet, View, Image, TouchableHighlight, Dimensions} from "react-native";
 import {TouchableOpacity, TouchableWithoutFeedback} from "react-native-gesture-handler";
 
 //Styles
 import mainStyle from "../../components/Styles/mainStyleSheet.js";
 import quizStyle from "../../components/Styles/QuizStyleSheet.js";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
+
 
 let aPressed = false;
 let fertig = false;
@@ -66,8 +70,8 @@ export default function ErsteFrageHomeScreen({navigation}) {
 function getRedButton() {
     if (fertig) {
         return {
-            width: 310,
-            height: 60,
+            width: windowWidth * 0.8,
+            height: windowHeight * 0.07,
             backgroundColor: "#ff6042",
             borderRadius: 15,
             marginLeft: 15,
@@ -78,8 +82,8 @@ function getRedButton() {
         };
     } else {
         return {
-            width: 310,
-            height: 60,
+            width: windowWidth * 0.8,
+            height: windowHeight * 0.07,
             backgroundColor: "#ffc185",
             borderRadius: 15,
             marginLeft: 15,
@@ -93,8 +97,8 @@ function getRedButton() {
 function getStyle() {
     if (fertig) {
         return {
-            width: 310,
-            height: 60,
+            width: windowWidth * 0.8, //310
+            height: windowHeight * 0.07, //60
             backgroundColor: "#abc94c",
             borderRadius: 15,
             marginLeft: 15,
@@ -105,8 +109,8 @@ function getStyle() {
         };
     } else if (aPressed) {
         return {
-            width: 310,
-            height: 60,
+            width: windowWidth * 0.8,
+            height: windowHeight * 0.07,
             backgroundColor: "#4694af",
             borderRadius: 15,
             marginLeft: 15,
@@ -117,8 +121,8 @@ function getStyle() {
         };
     } else {
         return {
-            width: 310,
-            height: 60,
+            width: windowWidth * 0.8,
+            height: windowHeight * 0.07,
             backgroundColor: "#ffc185",
             borderRadius: 15,
             marginLeft: 15,
@@ -132,34 +136,22 @@ function getStyle() {
 
 const styles = StyleSheet.create({
     boxSize: {
-        width: 340,
-        height: 420,
+        width: windowWidth * 0.88, //340
+        height: windowHeight * 0.55, //420
     },
 
     layout: {
-        height: "80%",
+        height: windowHeight * 0.65, //"80%"
         flexDirection: "column",
         margin: 10,
     },
 
     button: {
         backgroundColor: "#4694af",
-        width: 180,
-        height: 55,
+        width: windowWidth * 0.45, //180
+        height: windowHeight * 0.07, //55
         marginTop: 10,
         overflow: "visible",
-        alignItems: "center",
-    },
-
-    antwort: {
-        width: 310,
-        height: 60,
-        backgroundColor: fertig ? "#ff6042" : "#ffc185",
-        borderRadius: 15,
-        marginLeft: 15,
-        marginBottom: 15,
-        justifyContent: "center",
-        alignContent: "center",
         alignItems: "center",
     },
 
