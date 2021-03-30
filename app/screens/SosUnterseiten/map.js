@@ -1,7 +1,17 @@
 import React from "react";
-import { View, Text, PermissionsAndroid, Alert, Platform } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Dimensions,
+  Text,
+  PermissionsAndroid,
+  Alert,
+  Platform,
+} from "react-native";
 import Geolocation from "react-native-geolocation-service";
 import MapView, { PROVIDER_GOOGLE, Marker, Polyline } from "react-native-maps";
+
+import { mapsStyle } from "../../components/Styles/mapStyleSheet";
 
 export default class Map extends React.Component {
   constructor(props) {
@@ -64,7 +74,7 @@ export default class Map extends React.Component {
       <View style={{ flex: 1 }}>
         <MapView
           provider={PROVIDER_GOOGLE}
-          customMapStyle={styles.map}
+          customMapStyle={mapsStyle}
           style={{ flex: 1 }}
           region={{
             latitude: this.state.latitude,
