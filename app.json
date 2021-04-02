@@ -17,13 +17,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chaosTrainer.chaosTrainerApp"
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
     },
     "android": {
-      "package": "ca.brentvatne.growlerprowler",
+      "package": "com.chaosTrainer.chaosTrainerApp",
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyDT6co5rEO_ZMSU77RKJcsaQpisALYsjeE"
