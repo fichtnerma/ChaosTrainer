@@ -25,7 +25,7 @@ export default function RettungswagenScreen({ navigation }) {
           />
         </TouchableOpacity>
       </View>
-      <View /*style={styles.kacheln}*/>
+      <View>
         <View>
           <View style={[mainStyle.box, styles.boxSize]}>
             <View>

@@ -3,7 +3,12 @@ import { StyleSheet, Text, View, Dimensions, Image } from "react-native";
 import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
 import MapView, { Marker } from "react-native-maps";
+
+//Styles
 import mainStyle from "../../components/Styles/mainStyleSheet.js";
+import mapStyle from "../../components/Styles/mapStyleSheet.js";
+
+import Colors from "../../constants/colors.js";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
@@ -15,6 +20,7 @@ export default class Map extends React.Component {
     geocode: null,
     errorMessage: "",
   };
+
   componentDidMount() {
     this.getLocationAsync();
   }
@@ -54,12 +60,12 @@ export default class Map extends React.Component {
   render() {
     const { location, geocode, errorMessage } = this.state;
     return (
-      <View style={styles.container}>
-        <View style={[mainStyle.box, styles.boxSize]}>
+      <View style={mapStyle.container}>
+        <View style={[mainStyle.box, mapStyle.boxSize]}>
           <View>
             <Image
               source={require("../../assets/SosHomeScreen/location.png")}
-              style={styles.locationIcon}
+              style={mapStyle.locationIcon}
             />
           </View>
           <View style={{ marginTop: 20 }}>
@@ -74,18 +80,18 @@ export default class Map extends React.Component {
             <Text style={mainStyle.h1}>{errorMessage}</Text>
           </View>
         </View>
-        <View style={styles.mapContainer}>
+        <View style={mapStyle.mapContainer}>
           <MapView
-            style={styles.map}
+            style={mapStyle.map}
             region={this.state.mapRegion}
             onRegionChange={this.handleMapRegionChange}
           >
             <Marker
               coordinate={{
-                latitude: 0.0922,
+                latitude: 0.0457,
                 longitude: 0.0421,
               }}
-              pinColor="#f79A42"
+              pinColor={Colors.orange}
             />
           </MapView>
         </View>
@@ -93,48 +99,3 @@ export default class Map extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-  },
-  mapContainer: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    //borderRadius: 30,
-    //overflow: "hidden",
-  },
-  containerText: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    zIndex: 20,
-  },
-
-  locationIcon: {
-    width: windowWidth * 0.15,
-    height: windowWidth * 0.15,
-    marginRight: 20,
-    marginLeft: -20,
-  },
-  map: {
-    width: windowWidth * 0.9, //160
-    height: windowWidth * 0.75,
-  },
-  heading: {
-    justifyContent: "center",
-    color: "#000",
-    fontSize: 20,
-  },
-  boxSize: {
-    width: windowWidth * 0.85, //160
-    height: windowWidth * 0.2,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    position: "absolute",
-  },
-});
