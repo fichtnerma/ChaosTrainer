@@ -6,23 +6,12 @@ import {TouchableOpacity} from "react-native-gesture-handler";
 //Styles
 import mainStyle from "../components/Styles/mainStyleSheet.js";
 import homeStyle from "../components/Styles/homeStyleSheet.js";
+import TagesTip from "../components/News/TagesTip.js";
 
 export default function HomeScreen({navigation}) {
     return (
         <View style={mainStyle.container}>
-            <View style={homeStyle.tippDesTagesBox}>
-                <Text style={homeStyle.tippDesTagesTitel}>Tipp des Tages</Text>
-                <Text style={homeStyle.tippDesTagesText}>
-                    "Mit einem{" "}
-                    <Text style={{fontWeight: "bold"}}>Feuerlöscher</Text>{" "}
-                    sprühen Sie am besten mit mehreren kurzen Stößen direkt auf
-                    das Feuer"
-                </Text>
-                <Image
-                    source={require("../assets/HomeScreen/Tipp.png")}
-                    style={homeStyle.tippDesTagesImage}
-                />
-            </View>
+            <TagesTip navigation={navigation} />
 
             <TouchableOpacity
                 style={[mainStyle.box, homeStyle.boxSize]}
