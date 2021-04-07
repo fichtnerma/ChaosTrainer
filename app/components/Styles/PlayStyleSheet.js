@@ -1,7 +1,6 @@
 //Librarys
 import { StyleSheet } from "react-native";
 import {Dimensions} from "react-native";
-
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
@@ -22,7 +21,7 @@ export default StyleSheet.create({
     width: 150,
     height: 110,
     position: "absolute",
-    top: 75,
+    top: windowHeight*0.105,
     left: 180,
     zIndex: 20,
   },
