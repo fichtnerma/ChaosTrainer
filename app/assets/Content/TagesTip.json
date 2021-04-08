@@ -1,0 +1,133 @@
+{
+    "TagesTip":[
+        {
+            "Text":"Achten Sie bei einem Sturm auf herunterfallende Dachziegel.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Meiden Sie bei starken Stürmen Räume mit großer Deckenspannweite wie z. B. Hallen.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Suchen Sie bei einem Sturm möglichst einen tief liegenden Raum, z. B. Keller oder einen innen liegenden Raum Ihres Wohnbereiches auf.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Halten Sie sich bei Gewitter von hohen Punkten fern z. B. aufragende Bäume, Masten, Antennen und dergleichen.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Sichern Sie bei Überschwemmungen den Heizöltank gegen den Auftrieb durch das Wasser, indem Sie ihn z. B. an der Wand verankern oder mit Ballast beschweren.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Schalten Sie bei Hochwasser im Haus elektrische Geräte und Heizungen ab. Denken Sie an die Stromschlaggefahr.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Betreten Sie bei Überschwemmungen keine Uferbereiche wegen der Gefahr von Unterspülungen oder Abbrüchen.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Beachten Sie bei Stürmen und Unwettern stets die aktuellen Wetterwarnungen des DWD.", 
+            "Link":"Naturkatastrophen"
+        },
+        {
+            "Text":"Um andere zu schützen: beim Husten oder Niesen Abstand halten, abwenden und in die Ellenbeuge (nicht in die Hände) niesen.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"In normalen Räumen mindestens einmal stündlich lüften für 5 bis 10 Minuten, in Besprechungsräumen alle 20 Minuten stoßlüften.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Je weniger Sie mit anderen Leuten in direktem Kontakt sind, desto geringer ist das Risiko einer Übertragung von Covid-19.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Waschen Sie Ihre Hände regelmäßig mit Seife für mindestens 20 Sekunden - vor allem, wenn Sie gerade nach Hause kommen.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Obwohl bei Ihnen keine Symptome erkennbar sind, können Sie trotzdem andere mit Covid-19 infizieren.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Tragen Sie am besten eine FFP2 Maske, da diese den Nutzer und die Umgebung schützt.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Normale Alltagsmasken bzw. OP-Masken schützen nicht den Träger - deswegen empfiehlt sich eine FFP2 Maske.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Verwenden Sie die Corona-Warn-App. Sie informiert Sie, wenn Sie Kontakt zu einer infizierten Person hatten.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Achten Sie auf die 'Drei G', welche ein erhöhtes Corona-Risiko besitzen: Geschlossene Räume, Gruppen und Gedrängel, Gespräche.", 
+            "Link":"Virus"
+        },
+        {
+            "Text":"Führen Sie immer mindestens eine Warnweste im Auto mit. Ratsam ist es allerdings jeweils eine Warnweste pro Insasse mitzuführen.", 
+            "Link":"Verkehrsunfälle"
+        },
+        {
+            "Text":"Kontrollieren Sie hin und wieder, ob Ihr Verbandskasten im Auto noch gültig ist.", 
+            "Link":"Verkehrsunfälle"
+        },
+        {
+            "Text":"Kontrollieren Sie vor längeren Autofahrten den Reifenluftdruck.", 
+            "Link":"Verkehrsunfälle"
+        },
+        {
+            "Text":"Stellen Sie das Warndreieck bei Kurven oder Bergkuppen davor auf.", 
+            "Link":"Verkehrsunfälle"
+        },
+        {
+            "Text":"Vergessen Sie nicht am Unfallort Beweise zu sammeln.", 
+            "Link":"Verkehrsunfälle"
+        },
+        {
+            "Text":"Nehmen Sie auf gar keinen Fall unachtsam den Helm bei einem Motorradunfall ab. Folgen Sie der Anleitung zur Helmabnahme.", 
+            "Link":"Verkehrsunfälle"
+        },
+        {
+            "Text":"Vergessen Sie das Wegräumen von Blechteilen und Scherben nicht nach einem Verkehrsunfall.", 
+            "Link":"Verkehrsunfälle"
+        },
+        {
+            "Text":"Harmlose Lebensmittel wie Nüsse können eine Allergie bei den Betroffenen hervorrufen.", 
+            "Link":"Lebensmittel"
+        },
+        {
+            "Text":"Bei einem verletzten Gelenk sollte die Stelle ruhig gestellt werden und nicht mehr belastet werden.", 
+            "Link":"Verletzung"
+        },
+        {
+            "Text":"Bei einen Knochenbruch sollte umgehend der Notruf getätigt werden.", 
+            "Link":"Verletzung"
+        },
+        {
+            "Text":"Bei einer Wunde sollte wegen zusätzlicher Infektionsgefahr keimfrei bedeckt werden.", 
+            "Link":"Verletzung"
+        },
+        {
+            "Text":"Ist der Betroffene nicht richtig ansprechbar bzw. ein Teil seines Körpers gelähmt - ist das ein Anzeichen für einen Schlaganfall.", 
+            "Link":"AkuteErkrankungen"
+        },
+        {
+            "Text":"Gifte können über die Atemwege, Verdauungswege, direkt über den Blutkreislauf oder über die Haut gelangen.", 
+            "Link":"Vergiftungen"
+        },
+        {
+            "Text":"Bei der Verwendung von chemischen Produkten immer mit den richtigen Maßnahmen vorgehen.", 
+            "Link":"Chemieunfälle"
+        },
+        {
+            "Text":"Tritt ein akuter Pseudokrupp-Anfall bei einem Säugling oder Kleinkind auf, gilt es, sofort den Notruf zu tätigen.", 
+            "Link":"Atembeschwerden"
+        }
+
+    ]
+}
