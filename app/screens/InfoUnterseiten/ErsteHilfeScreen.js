@@ -6,7 +6,7 @@ export default function ErsteHilfeScreen({navigation}) {
     return (
         <View style={styles.container}>
             <View>
-                <Text style={kacheln.titel}>ERSTE HILFE</Text>
+                <Text style={kacheln.titel}>Erste Hilfe</Text>
             </View>
             <View style={kacheln.infoBox}>
                 <Text style={kacheln.infoText}>Rufe die 112 oder 110 an</Text>
@@ -100,9 +100,11 @@ const kacheln = StyleSheet.create({
     },
     titel: {
         margin: 10,
+        marginLeft: -163,
+        marginTop: 20,
         justifyContent: "flex-start",
         color: "#f79A42",
-        fontSize: 45,
+        fontSize: 30,
     },
     infoText: {
         justifyContent: "flex-start",

@@ -1,6 +1,8 @@
 //Librarys
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import Colors from "../../constants/colors.js";
+
+const windowHeight = Dimensions.get("window").height;
 
 export default StyleSheet.create({
   container: {
@@ -71,18 +73,19 @@ export default StyleSheet.create({
     marginLeft: 15,
     position: "absolute",
     textAlignVertical: "bottom",
+    height: windowHeight*0.105,
   },
 
   h1: {
     color: Colors.black,
-    flex: 0,
+    flex: 2.5,
     fontSize: 15,
     marginLeft: 15,
   },
 
   orangeBottomInBox: {
     width: "100%",
-    height: 80,
+    height: windowHeight*0.105,
     backgroundColor: Colors.lightOrange,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
@@ -90,7 +93,7 @@ export default StyleSheet.create({
 
   hiScore: {
     color: Colors.white,
-    flex: 1,
+    marginTop: 25,
     fontSize: 20,
     textAlignVertical: "center",
     marginLeft: 15,
