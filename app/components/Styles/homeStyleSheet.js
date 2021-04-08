@@ -1,15 +1,18 @@
 //Librarys
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import Colors from "../../constants/colors.js";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 export default StyleSheet.create({
   boxSize: {
-    width: 340,
-    height: 180,
+    width: windowWidth*0.9,
+    height: windowHeight*0.245,
   },
 
   tippDesTagesBox: {
-    width: 330,
+    width: windowWidth*0.9,
     height: 140,
     backgroundColor: Colors.white,
     borderRadius: 15,
@@ -29,7 +32,7 @@ export default StyleSheet.create({
     fontSize: 30,
     marginLeft: 15,
     marginBottom: 5,
-    fontWeight: "bold",
+    //fontWeight: "bold",
   },
 
   tippDesTagesText: {

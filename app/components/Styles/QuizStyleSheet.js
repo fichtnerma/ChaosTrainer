@@ -1,13 +1,16 @@
 //Librarys
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
 //Constants
 import Colors from "../../constants/colors.js";
 
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
+
 export default StyleSheet.create({
   boxSize: {
-    width: 340,
-    height: 300,
+    width: windowWidth*0.9,
+    height: windowHeight*0.4,
   },
   layout: {
     height: "80%",
@@ -23,8 +26,8 @@ export default StyleSheet.create({
     marginLeft: 40,
     alignSelf: "flex-start",
     position: "absolute",
-    top: -5,
-    zIndex: 40,
+    top: -4,
+    zIndex: 1,
     textShadowOffset: { width: 0, height: 0 },
     textShadowColor: "#CCC",
     textShadowRadius: 15,

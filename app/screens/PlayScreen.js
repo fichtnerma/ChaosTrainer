@@ -20,7 +20,7 @@ export default function PlayScreen({navigation}) {
                         style={playStyle.ARPersonImage}
                     />
                     <Text style={mainStyle.titel}>Trainer-AR</Text>
-                    <Text style={[mainStyle.h1, {marginBottom: 95}]}>
+                    <Text style={[mainStyle.h1, {marginBottom: 32}]}>
                         Erste Hilfe virtuell üben
                     </Text>
                     <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>
@@ -43,7 +43,7 @@ export default function PlayScreen({navigation}) {
                         style={playStyle.QuizPersonImage}
                     />
                     <Text style={mainStyle.titel}>Gefahren-Quiz</Text>
-                    <Text style={[mainStyle.h1, {marginBottom: 95}]}>
+                    <Text style={[mainStyle.h1, {marginBottom: 32}]}>
                         Teste dein Wissen über Notfälle
                     </Text>
                     <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>

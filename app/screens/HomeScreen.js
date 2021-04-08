@@ -1,11 +1,14 @@
 //Librarys
 import React from "react";
-import {Text, View, Image} from "react-native";
+import {Text, View, Image, Dimensions} from "react-native";
 import {TouchableOpacity} from "react-native-gesture-handler";
 
 //Styles
 import mainStyle from "../components/Styles/mainStyleSheet.js";
 import homeStyle from "../components/Styles/homeStyleSheet.js";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 export default function HomeScreen({navigation}) {
     return (
@@ -29,14 +32,14 @@ export default function HomeScreen({navigation}) {
                 onPress={() => navigation.navigate("Info")}
             >
                 <Text style={mainStyle.titel}>Weiterlesen?</Text>
-                <Text style={[mainStyle.h1, {marginBottom: 65}]}>
+                <Text style={[mainStyle.h1,]}>
                     Wissenswertes für den nächsten Notfall
                 </Text>
-                <Text style={[mainStyle.orangeSchrift, {bottom: 30}]}>
+                <Text style={[mainStyle.orangeSchrift, {bottom: windowHeight*0.045}]}>
                     Info
                 </Text>
                 <View
-                    style={[mainStyle.orangeBottomInBox, {height: 50}]}
+                    style={[mainStyle.orangeBottomInBox, {height: windowHeight*0.073}]}
                 ></View>
             </TouchableOpacity>
             <TouchableOpacity
@@ -44,14 +47,14 @@ export default function HomeScreen({navigation}) {
                 onPress={() => navigation.navigate("Play")}
             >
                 <Text style={mainStyle.titel}>Teste dich!</Text>
-                <Text style={[mainStyle.h1, {marginBottom: 65}]}>
+                <Text style={[mainStyle.h1, ]}>
                     Finde heraus was du weißt und lerne Neues
                 </Text>
-                <Text style={[mainStyle.orangeSchrift, {bottom: 30}]}>
+                <Text style={[mainStyle.orangeSchrift, {bottom: windowHeight*0.045}]}>
                     Quiz AR
                 </Text>
                 <View
-                    style={[mainStyle.orangeBottomInBox, {height: 50}]}
+                    style={[mainStyle.orangeBottomInBox, {height: windowHeight*0.073}]}
                 ></View>
             </TouchableOpacity>
         </View>
