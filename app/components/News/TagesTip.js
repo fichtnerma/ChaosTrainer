@@ -1,5 +1,5 @@
 //Librarys
-import React, { useEffect } from "react";
+import React from "react";
 import {Text, Image} from "react-native";
 import {TouchableOpacity} from "react-native-gesture-handler";
 
@@ -9,7 +9,6 @@ import homeStyle from "../Styles/homeStyleSheet.js";
 
 const data = require("../../assets/Content/TagesTip.json");
 const random = Math.floor(Math.random()*31)+0;
-//console.log(random);
 
 
 
