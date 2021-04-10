@@ -1,31 +1,22 @@
 //Librarys
-import React, {Component} from "react";
-import {
-    View,
-    StyleSheet,
-    TouchableWithoutFeedback,
-    Animated,
-    Dimensions,
-} from "react-native";
-import {Feather as Icon} from "@expo/vector-icons";
+import React, {Component} from 'react';
+import {View, StyleSheet, TouchableWithoutFeedback, Animated, Dimensions, Image} from 'react-native';
 
 export const tabHeight = 60;
-const width = Dimensions.get("window").width;
+const width = Dimensions.get('window').width;
 
 export default class StaticTabbar extends Component {
     constructor(props) {
         super(props);
         const {tabs} = this.props;
 
-        this.values = tabs.map(
-            (tab, index) => new Animated.Value(index === 0 ? 1 : 0)
-        );
+        this.values = tabs.map((tab, index) => new Animated.Value(index === 0 ? 1 : 0));
         this.navigation = this.props.navigation;
         this.state = {
             // values: new Animated.Value(0)
         };
     }
-    onPress = (index) => {
+    onChangeTab = (index) => {
         const {value, tabs} = this.props;
         const tabWidth = width / tabs.length;
         Animated.sequence([
@@ -49,7 +40,7 @@ export default class StaticTabbar extends Component {
         ]).start();
     };
     render() {
-        const {tabs, value} = this.props;
+        const {tabs, value, navigation} = this.props;
         const tabWidth = width / tabs.length;
 
         return (
@@ -57,13 +48,9 @@ export default class StaticTabbar extends Component {
                 {tabs.map((item, key) => {
                     const activeValue = this.values[key];
                     const opacity = value.interpolate({
-                        inputRange: [
-                            -width + tabWidth * (key - 1),
-                            -width + tabWidth * key,
-                            -width + tabWidth * (key + 1),
-                        ],
+                        inputRange: [-width + tabWidth * (key - 1), -width + tabWidth * key, -width + tabWidth * (key + 1)],
                         outputRange: [1, 0, 1],
-                        extrapolate: "clamp",
+                        extrapolate: 'clamp',
                     });
                     const translateY = activeValue.interpolate({
                         inputRange: [0, 0.9],
@@ -73,53 +60,45 @@ export default class StaticTabbar extends Component {
                         <React.Fragment {...{key}}>
                             <TouchableWithoutFeedback
                                 onPress={() => {
-                                    let currentScreen = this.props.navigation;
-                                    console.log(currentScreen);
                                     switch (key) {
                                         case 0:
-                                            this.navigation.navigate("Home");
+                                            navigation.navigate('Home');
                                             break;
                                         case 1:
-                                            this.navigation.navigate("Play");
+                                            navigation.navigate('Play');
                                             break;
                                         case 2:
-                                            this.navigation.navigate("Sos");
+                                            navigation.navigate('Sos');
                                             break;
                                         case 3:
-                                            if (currentScreen == "Info") {
-                                                this.navigation.goBack();
-                                            } else {
-                                                this.navigation.navigate(
-                                                    "Info"
-                                                );
-                                            }
+                                            navigation.navigate('Info');
                                             break;
                                         case 4:
-                                            this.navigation.navigate("Search");
+                                            navigation.navigate('Search');
                                             break;
                                     }
-                                    this.onPress(key);
+                                    this.onChangeTab(key);
                                 }}
                             >
                                 <Animated.View style={[styles.tab, {opacity}]}>
-                                    <Icon size={22} name={item.name} />
-                                    {/* <Text style={{fontSize: 12}}>{item.title}</Text> */}
+                                    {/* <Icon size={22} name={item.name} /> */}
+                                    <Image style={{height: 25, width: 25}} source={getIcon(item.name)} />
                                 </Animated.View>
                             </TouchableWithoutFeedback>
                             <Animated.View
                                 style={{
-                                    position: "absolute",
+                                    position: 'absolute',
                                     width: tabWidth,
                                     top: -8,
                                     left: tabWidth * key,
                                     height: tabHeight,
-                                    justifyContent: "center",
-                                    alignItems: "center",
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
                                     transform: [{translateY}],
                                 }}
                             >
                                 <View style={styles.circle}>
-                                    <Icon size={22} name={item.name} />
+                                    <Image style={{height: 25, width: 25}} source={getIcon(item.name, true)} />
                                 </View>
                             </Animated.View>
                         </React.Fragment>
@@ -129,23 +108,60 @@ export default class StaticTabbar extends Component {
         );
     }
 }
+function getIcon(icon, focused = false) {
+    if (!focused) {
+        if (icon == 'home') {
+            return home;
+        } else if (icon == 'play') {
+            return play;
+        } else if (icon == 'sos') {
+            return sos;
+        } else if (icon == 'info') {
+            return info;
+        } else {
+            return search;
+        }
+    } else {
+        if (icon == 'home') {
+            return home_fokus;
+        } else if (icon == 'play') {
+            return play_fokus;
+        } else if (icon == 'sos') {
+            return sos_fokus;
+        } else if (icon == 'info') {
+            return info_fokus;
+        } else {
+            return search_fokus;
+        }
+    }
+}
+const home = require('../../assets/Icons/Home.png');
+const play = require('../../assets/Icons/Game.png');
+const sos = require('../../assets/Icons/Notfall.png');
+const info = require('../../assets/Icons/Info.png');
+const search = require('../../assets/Icons/Suche.png');
+const home_fokus = require('../../assets/Icons/FokusHome.png');
+const play_fokus = require('../../assets/Icons/FokusGame.png');
+const sos_fokus = require('../../assets/Icons/FokusNotfall.png');
+const info_fokus = require('../../assets/Icons/FokusInfo.png');
+const search_fokus = require('../../assets/Icons/FokusSuche.png');
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: "row",
+        flexDirection: 'row',
     },
     tab: {
         flex: 1,
         height: tabHeight,
-        justifyContent: "center",
-        alignItems: "center",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     circle: {
         width: 50,
         height: 50,
         borderRadius: 60,
-        backgroundColor: "#f79A42",
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor: '#f79A42',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });

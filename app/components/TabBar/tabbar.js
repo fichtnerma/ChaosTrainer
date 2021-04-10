@@ -1,23 +1,18 @@
 //Librarys
-import React, {Component} from "react";
-import {View, StyleSheet, Dimensions, Animated} from "react-native";
-import * as shape from "d3-shape";
-import Svg, {Path} from "react-native-svg";
+import React, {Component} from 'react';
+import {View, StyleSheet, Dimensions, Animated} from 'react-native';
+import * as shape from 'd3-shape';
+import Svg, {Path} from 'react-native-svg';
 
 //Components
-import StaticTabbar, {tabHeight as height} from "./staticTabbar";
+import StaticTabbar, {tabHeight as height} from './staticTabbar';
 
-const width = Dimensions.get("window").width;
+const width = Dimensions.get('window').width;
 
-const tabs = [
-    {name: "home"},
-    {name: "play"},
-    {name: "heart"},
-    {name: "grid"},
-    {name: "search"},
-];
+const tabs = [{name: 'home'}, {name: 'play'}, {name: 'sos'}, {name: 'info'}, {name: 'search'}];
 const tabWidth = width / tabs.length;
 const AnimatedSvg = Animated.createAnimatedComponent(Svg);
+const CurrentTab = React.createRef();
 
 const left = shape
     .line()
@@ -62,24 +57,37 @@ export default class Tabbar extends Component {
             value: new Animated.Value(-width),
         };
     }
+
+    changeCurrentTab = () => {
+        let currentScreen = this.props.navigation.dangerouslyGetState().routes[this.props.navigation.dangerouslyGetState().index];
+        switch (currentScreen.name) {
+            case 'Home':
+                CurrentTab.current.onChangeTab(0);
+                break;
+            case 'Play':
+                CurrentTab.current.onChangeTab(1);
+                break;
+            case 'SOS':
+                CurrentTab.current.onChangeTab(2);
+                break;
+            case 'Info':
+                CurrentTab.current.onChangeTab(3);
+                break;
+            case 'Search':
+                CurrentTab.current.onChangeTab(4);
+                break;
+        }
+    };
     render() {
         const {value: translateX} = this.state;
         return (
             <View style={StyleSheet.safeArea}>
                 <View {...{width, height}}>
-                    <AnimatedSvg
-                        width={width * 2.5}
-                        {...{height}}
-                        style={{transform: [{translateX}]}}
-                    >
+                    <AnimatedSvg width={width * 2.5} {...{height}} style={{transform: [{translateX}]}}>
                         <Path {...{d}} fill="#f79A42" />
                     </AnimatedSvg>
                     <View style={StyleSheet.absoluteFill}>
-                        <StaticTabbar
-                            value={translateX}
-                            navigation={this.props.nav}
-                            {...{tabs}}
-                        />
+                        <StaticTabbar ref={CurrentTab} value={translateX} navigation={this.props.navigation} route={this.props.route} {...{tabs}} />
                     </View>
                 </View>
                 <View style={StyleSheet.safeArea}></View>
@@ -90,6 +98,6 @@ export default class Tabbar extends Component {
 
 const styles = StyleSheet.create({
     safeArea: {
-        backgroundColor: "white",
+        backgroundColor: 'white',
     },
 });
