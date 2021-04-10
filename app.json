@@ -17,10 +17,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chaosTrainer.chaosTrainerApp",
+      "config": {
+        "googleMapsApiKey": "AIzaSyA48_unhcN67wo1b32Kot68IWEmDgmMK_8"
+      }
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
+    },
+    "android": {
+      "package": "com.chaosTrainer.chaosTrainerApp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDT6co5rEO_ZMSU77RKJcsaQpisALYsjeE"
+        }
+      }
     }
   }
 }
