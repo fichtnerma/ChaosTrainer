@@ -16,7 +16,7 @@ export default class StaticTabbar extends Component {
             // values: new Animated.Value(0)
         };
     }
-    onPress = (index) => {
+    onChangeTab = (index) => {
         const {value, tabs} = this.props;
         const tabWidth = width / tabs.length;
         Animated.sequence([
@@ -77,16 +77,12 @@ export default class StaticTabbar extends Component {
                                             navigation.navigate('Search');
                                             break;
                                     }
-                                    this.onPress(key);
-                                    let currentScreen = this.props.navigation.dangerouslyGetState().routes[
-                                        this.props.navigation.dangerouslyGetState().index
-                                    ];
-                                    console.log(currentScreen);
+                                    this.onChangeTab(key);
                                 }}
                             >
                                 <Animated.View style={[styles.tab, {opacity}]}>
                                     {/* <Icon size={22} name={item.name} /> */}
-                                    <Image style={{height: 22, width: 22}} source={getIcon(item.name)} />
+                                    <Image style={{height: 25, width: 25}} source={getIcon(item.name)} />
                                 </Animated.View>
                             </TouchableWithoutFeedback>
                             <Animated.View
@@ -102,7 +98,7 @@ export default class StaticTabbar extends Component {
                                 }}
                             >
                                 <View style={styles.circle}>
-                                    <Image style={{height: 22, width: 22}} source={getIcon(item.name)} />
+                                    <Image style={{height: 25, width: 25}} source={getIcon(item.name, true)} />
                                 </View>
                             </Animated.View>
                         </React.Fragment>
@@ -112,17 +108,31 @@ export default class StaticTabbar extends Component {
         );
     }
 }
-function getIcon(icon) {
-    if (icon == 'home') {
-        return home;
-    } else if (icon == 'play') {
-        return play;
-    } else if (icon == 'sos') {
-        return sos;
-    } else if (icon == 'info') {
-        return info;
+function getIcon(icon, focused = false) {
+    if (!focused) {
+        if (icon == 'home') {
+            return home;
+        } else if (icon == 'play') {
+            return play;
+        } else if (icon == 'sos') {
+            return sos;
+        } else if (icon == 'info') {
+            return info;
+        } else {
+            return search;
+        }
     } else {
-        return search;
+        if (icon == 'home') {
+            return home_fokus;
+        } else if (icon == 'play') {
+            return play_fokus;
+        } else if (icon == 'sos') {
+            return sos_fokus;
+        } else if (icon == 'info') {
+            return info_fokus;
+        } else {
+            return search_fokus;
+        }
     }
 }
 const home = require('../../assets/Icons/Home.png');
@@ -130,6 +140,36 @@ const play = require('../../assets/Icons/Game.png');
 const sos = require('../../assets/Icons/Notfall.png');
 const info = require('../../assets/Icons/Info.png');
 const search = require('../../assets/Icons/Suche.png');
+const home_fokus = require('../../assets/Icons/FokusHome.png');
+const play_fokus = require('../../assets/Icons/FokusGame.png');
+const sos_fokus = require('../../assets/Icons/FokusNotfall.png');
+const info_fokus = require('../../assets/Icons/FokusInfo.png');
+const search_fokus = require('../../assets/Icons/FokusSuche.png');
+
+function changeTab(index) {
+    const {value, tabs} = this.props;
+    const tabWidth = width / tabs.length;
+    Animated.sequence([
+        ...this.values.map((value) =>
+            Animated.timing(value, {
+                toValue: 0,
+                duration: 0,
+                useNativeDriver: true,
+            })
+        ),
+        Animated.parallel([
+            Animated.spring(this.values[index], {
+                toValue: 1,
+                useNativeDriver: true,
+            }),
+            Animated.spring(value, {
+                toValue: -width + tabWidth * index,
+                useNativeDriver: true,
+            }),
+        ]),
+    ]).start();
+}
+
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',

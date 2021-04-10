@@ -20,14 +20,16 @@ import ErsteHilfeScreen from './app/screens/InfoUnterseiten/ErsteHilfeScreen';
 import AkuteErkrankungenScreen from './app/screens/InfoUnterseiten/ErsteHilfeAkuteErkrankungenScreen';
 import AsthmaScreen from './app/screens/InfoUnterseiten/AsthmaScreen';
 import Tabbar from './app/components/TabBar/tabbar';
+import react from 'react';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
+const CurrentTab = react.createRef();
 
 function App() {
     return (
-        <NavigationContainer>
-            <Tab.Navigator style={{backgroundColor: 'red'}} tabBar={(props) => <Tabbar {...props} />}>
+        <NavigationContainer onStateChange={() => changeFocus()}>
+            <Tab.Navigator style={{backgroundColor: 'red'}} tabBar={(props) => <Tabbar {...props} ref={CurrentTab} />}>
                 <Tab.Screen name="Home" component={HomeStack} />
                 <Tab.Screen name="Sos" component={SosStack} />
                 <Tab.Screen name="Info" component={InfoStack} />
@@ -36,6 +38,10 @@ function App() {
             </Tab.Navigator>
         </NavigationContainer>
     );
+}
+
+function changeFocus() {
+    CurrentTab.current.changeCurrentTab();
 }
 
 function HomeStack() {
