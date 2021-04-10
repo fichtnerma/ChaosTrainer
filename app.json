@@ -18,7 +18,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.chaosTrainer.chaosTrainerApp"
+      "bundleIdentifier": "com.chaosTrainer.chaosTrainerApp",
+      "config": {
+        "googleMapsApiKey": "AIzaSyA48_unhcN67wo1b32Kot68IWEmDgmMK_8"
+      }
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
