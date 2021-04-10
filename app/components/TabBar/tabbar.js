@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import {View, StyleSheet, Dimensions, Animated} from 'react-native';
 import * as shape from 'd3-shape';
 import Svg, {Path} from 'react-native-svg';
-import react from 'react';
 
 //Components
 import StaticTabbar, {tabHeight as height} from './staticTabbar';
@@ -13,7 +12,7 @@ const width = Dimensions.get('window').width;
 const tabs = [{name: 'home'}, {name: 'play'}, {name: 'sos'}, {name: 'info'}, {name: 'search'}];
 const tabWidth = width / tabs.length;
 const AnimatedSvg = Animated.createAnimatedComponent(Svg);
-const CurrentTab = react.createRef();
+const CurrentTab = React.createRef();
 
 const left = shape
     .line()
@@ -61,24 +60,22 @@ export default class Tabbar extends Component {
 
     changeCurrentTab = () => {
         let currentScreen = this.props.navigation.dangerouslyGetState().routes[this.props.navigation.dangerouslyGetState().index];
-        if (true) {
-            switch (currentScreen.name) {
-                case 'Home':
-                    CurrentTab.current.onChangeTab(0);
-                    break;
-                case 'Play':
-                    CurrentTab.current.onChangeTab(1);
-                    break;
-                case 'SOS':
-                    CurrentTab.current.onChangeTab(2);
-                    break;
-                case 'Info':
-                    CurrentTab.current.onChangeTab(3);
-                    break;
-                case 'Search':
-                    CurrentTab.current.onChangeTab(4);
-                    break;
-            }
+        switch (currentScreen.name) {
+            case 'Home':
+                CurrentTab.current.onChangeTab(0);
+                break;
+            case 'Play':
+                CurrentTab.current.onChangeTab(1);
+                break;
+            case 'SOS':
+                CurrentTab.current.onChangeTab(2);
+                break;
+            case 'Info':
+                CurrentTab.current.onChangeTab(3);
+                break;
+            case 'Search':
+                CurrentTab.current.onChangeTab(4);
+                break;
         }
     };
     render() {

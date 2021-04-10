@@ -40,7 +40,7 @@ export default class StaticTabbar extends Component {
         ]).start();
     };
     render() {
-        const {tabs, value, navigation, route} = this.props;
+        const {tabs, value, navigation} = this.props;
         const tabWidth = width / tabs.length;
 
         return (
@@ -145,30 +145,6 @@ const play_fokus = require('../../assets/Icons/FokusGame.png');
 const sos_fokus = require('../../assets/Icons/FokusNotfall.png');
 const info_fokus = require('../../assets/Icons/FokusInfo.png');
 const search_fokus = require('../../assets/Icons/FokusSuche.png');
-
-function changeTab(index) {
-    const {value, tabs} = this.props;
-    const tabWidth = width / tabs.length;
-    Animated.sequence([
-        ...this.values.map((value) =>
-            Animated.timing(value, {
-                toValue: 0,
-                duration: 0,
-                useNativeDriver: true,
-            })
-        ),
-        Animated.parallel([
-            Animated.spring(this.values[index], {
-                toValue: 1,
-                useNativeDriver: true,
-            }),
-            Animated.spring(value, {
-                toValue: -width + tabWidth * index,
-                useNativeDriver: true,
-            }),
-        ]),
-    ]).start();
-}
 
 const styles = StyleSheet.create({
     container: {

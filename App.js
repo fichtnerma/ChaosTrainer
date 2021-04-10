@@ -20,11 +20,10 @@ import ErsteHilfeScreen from './app/screens/InfoUnterseiten/ErsteHilfeScreen';
 import AkuteErkrankungenScreen from './app/screens/InfoUnterseiten/ErsteHilfeAkuteErkrankungenScreen';
 import AsthmaScreen from './app/screens/InfoUnterseiten/AsthmaScreen';
 import Tabbar from './app/components/TabBar/tabbar';
-import react from 'react';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
-const CurrentTab = react.createRef();
+const CurrentTab = React.createRef();
 
 function App() {
     return (
