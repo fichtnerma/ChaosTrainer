@@ -9,8 +9,8 @@ const windowHeight = Dimensions.get("window").height;
 
 export default StyleSheet.create({
   boxSize: {
-    width: windowWidth*0.9,
-    height: windowHeight*0.4,
+    width: windowWidth * 0.9,
+    height: windowHeight * 0.4,
   },
   layout: {
     height: "80%",
@@ -100,5 +100,30 @@ export default StyleSheet.create({
     top: -69,
     left: -15,
     zIndex: 40,
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalView: {
+    justifyContent: "flex-start",
+    width: windowWidth * 0.9,
+    height: windowHeight * 0.65,
+  },
+  kategorienContainer: {
+    backgroundColor: Colors.lightOrange,
+  },
+  kategorieText: {
+    color: Colors.white,
+    fontSize: 25,
+    marginTop: 10,
+    marginLeft: 15,
+  },
+  kategorien: {
+    color: Colors.white,
+    fontSize: 16,
+    marginTop: 10,
+    marginLeft: 15,
   },
 });
