@@ -65,7 +65,7 @@ export default class Map extends React.Component {
                     <View>
                         <Image source={require('../assets/SosHomeScreen/location.png')} style={mapStyle.locationIcon} />
                     </View>
-                    <View style={{marginTop: 20}}>
+                    <View style={{marginTop: 0, top: 7}}>
                         <Text style={mainStyle.h1}>{geocode ? geocode[0].city : ''}</Text>
                         <Text style={mainStyle.h1}>
                             {geocode ? geocode[0].street : ''} {geocode ? geocode[0].name : ''}
