@@ -1,8 +1,9 @@
 //Librarys
 import React, { useState } from "react";
-import { Text, View, Image, Modal, CheckBox } from "react-native";
+import { Text, View, Image, Modal } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { MaterialIcons } from "@expo/vector-icons";
+import CheckBox from "@react-native-community/checkbox";
 
 //Styles
 import mainStyle from "../../components/Styles/mainStyleSheet.js";

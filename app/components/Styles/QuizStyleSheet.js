@@ -108,7 +108,7 @@ export default StyleSheet.create({
   },
   modalView: {
     justifyContent: "flex-start",
-    width: windowWidth * 0.9,
+    width: windowWidth * 0.92,
     height: windowHeight * 0.65,
   },
   kategorienContainer: {
