@@ -20,7 +20,7 @@ export default StyleSheet.create({
     shadowOffset: { width: 0, height: 0 },
     shadowColor: "black",
     shadowOpacity: 0.5,
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignContent: "center",
     shadowRadius: 5,
     elevation: 10,
@@ -32,6 +32,8 @@ export default StyleSheet.create({
     fontSize: 30,
     marginLeft: 15,
     marginBottom: 5,
+    top: 8,
+    position: "absolute",
     //fontWeight: "bold",
   },
 
@@ -40,6 +42,7 @@ export default StyleSheet.create({
     fontSize: 16,
     marginLeft: 15,
     marginRight: 100,
+    marginTop: 25,
   },
 
   //Images
@@ -47,7 +50,7 @@ export default StyleSheet.create({
     width: 100,
     height: 90,
     position: "absolute",
-    top: 50,
-    left: 220,
+    top: 90,
+    left: 230,
   },
 });

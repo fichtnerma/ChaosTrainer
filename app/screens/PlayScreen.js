@@ -23,7 +23,7 @@ export default function PlayScreen({navigation}) {
                     <Text style={[mainStyle.h1, {marginBottom: 32}]}>
                         Erste Hilfe virtuell üben
                     </Text>
-                    <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>
+                    <Text style={[mainStyle.orangeSchrift, {bottom: 56}]}>
                         AR
                     </Text>
                     <View style={mainStyle.orangeBottomInBox}>
@@ -46,7 +46,7 @@ export default function PlayScreen({navigation}) {
                     <Text style={[mainStyle.h1, {marginBottom: 32}]}>
                         Teste dein Wissen über Notfälle
                     </Text>
-                    <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>
+                    <Text style={[mainStyle.orangeSchrift, {bottom: 56}]}>
                         Quiz
                     </Text>
                     <View style={mainStyle.orangeBottomInBox}>
