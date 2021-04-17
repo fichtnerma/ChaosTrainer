@@ -3,6 +3,7 @@ import {Text, StyleSheet, View, Image, Dimensions} from 'react-native';
 import {ScrollView, TouchableNativeFeedback} from 'react-native-gesture-handler';
 import Modal from 'react-native-modalbox';
 import Colors from '../constants/colors.js';
+import {MaterialIcons} from '@expo/vector-icons';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -39,8 +40,10 @@ export default class CustomModal extends Component {
                                 {subtopic.list ? (
                                     <View key={index}>
                                         {subtopic.list.map((list, index) => (
-                                            <View style={{flexDirection: 'row'}}>
-                                                <Text style={styles.listPoint}>&#8226;</Text>
+                                            <View style={{flexDirection: 'row'}} key={index}>
+                                                <Text style={styles.listPoint} key={'point' + index}>
+                                                    &#8226;
+                                                </Text>
                                                 <Text key={'list' + index} style={styles.listText}>
                                                     {list}
                                                 </Text>
@@ -70,12 +73,8 @@ export default class CustomModal extends Component {
             >
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
-                        <ScrollView>
-                            {modalText}
-                            <TouchableNativeFeedback onPress={() => this.setModalVisible()}>
-                                <Text>Go Back</Text>
-                            </TouchableNativeFeedback>
-                        </ScrollView>
+                        <MaterialIcons name="close" color={Colors.orange} size={35} style={styles.closeIcon} onPress={() => this.setModalVisible()} />
+                        <ScrollView>{modalText}</ScrollView>
                     </View>
                 </View>
             </Modal>
@@ -114,9 +113,14 @@ const styles = StyleSheet.create({
         marginTop: 22,
     },
 
+    closeIcon: {
+        alignSelf: 'flex-end',
+        marginRight: 5,
+    },
+
     headlineText: {
         margin: 10,
-        marginTop: 20,
+        marginTop: 0,
         marginRight: 30,
         justifyContent: 'flex-start',
         color: Colors.orange,
