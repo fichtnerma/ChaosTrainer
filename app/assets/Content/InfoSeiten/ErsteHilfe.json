@@ -1,0 +1,73 @@
+{
+    "ersteHilfe": {
+        "infoText": "test",
+        "categories": [
+        {
+            "name": "Akute Erkrankungen",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint."
+                },
+                {
+                    "headline": "Asthma",
+                    "text": "Ursache sind allergische Reaktionen, psychische Einflüsse und wiederkehrende Infektionen der Luftwege. Dabei entsteht die Atemnot durch eine Verkrampfung oder Verschleimung der tieferliegenden feinen Bronchialäste in der Lunge",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Mühe beim Lufteinatmen, das Ausatmen fällt ihm schwer",
+                                "Betroffene ringt keuchend nach Luft - infolge des Sauerstoffmangels blau im Gesicht (besonders an den Lippen erkennbar)",
+                                "Betroffener hat Angst und ist sehr unruhig"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Betroffenen beruhigen und ihn auffordern, bei aufrechtem Oberkörper (stehend oder sitzend) ruhig zu atmen",
+                                "Einnahme von Medikamenten (Inhalation) unterstützen",
+                                "Für Arztbehandlung sorgen bzw. Notruf tätigen"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Lebensmittel",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Durch Zufuhr von Lebensmittel kann es oftmals zu Beschwerden kommen - selbst harmlose Lebensmittel wie Nüsse können eine Allergie bei den Betroffenen hervorrufen."
+                },
+                {
+                    "headline": "Lebensmittelvergiftung",
+                    "text": "Ursache sind allergische Reaktionen, psychische Einflüsse und wiederkehrende Infektionen der Luftwege. Dabei entsteht die Atemnot durch eine Verkrampfung oder Verschleimung der tieferliegenden feinen Bronchialäste in der Lunge",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Betroffene hat Übelkeit, Erbrechen, Durchfall oder Bauchkrämpfe"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Bei leichten Beschwerden hilft viel Wasser trinken",
+                                "Bei stärkerem Durchfall empfiehlt sich eine Salz-Zucker-Lösung",
+                                "Falls die Symptome wie Durchfall und Erbrechen nicht innerhalb weniger Tage von alleine verschwinden, sollte ein Arztbesuch folgen!"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        }
+    ]
+    }
+}
