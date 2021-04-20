@@ -1,0 +1,84 @@
+{
+    "quizFragen":  [ 
+        {
+            "Virus": [
+                {
+                    "question": "Was bedeutet 'Corona'? ",
+                    "Antworten": [
+                        {"antwort": ["Kreis", false]},
+                        {"antwort": ["Kopf", false]},
+                        {"antwort": ["Frei erfunden", false]},
+                        {"antowrt": ["Krone", true]}
+                    ]
+                },
+                {
+                    "question": "Wofür steht die AHA-Formel? ",
+                    "Antworten": [
+                        {"antwort": ["Abstand, Hygiene, Alltagsmaske", true]},
+                        {"antwort": ["Aufpassen, Homeoffice, Alltagsspaziergang", false]},
+                        {"antwort": ["Abstand, Hochinformiert, App", false]},
+                        {"antowrt": ["Achtung, Händewaschen, Atmen", false]}
+                    ]
+                },
+                {
+                    "question": "Wo trat das Coronavirus zum ersten Mal auf",
+                    "Antworten": [
+                        {"antwort": ["Korea", false]},
+                        {"antwort": ["Italien", false]},
+                        {"antwort": ["China", true]},
+                        {"antowrt": ["Deutschland", false]}
+                    ]
+                }
+            ]
+        },
+        {
+            "Verkehrsunfall": [
+                {
+                    "question": "Wann wird die Polizei bei einem Verkehrsunfall nicht gerufen?",
+                    "False": [
+                        {"antwort": ["Wenn jemand verletzt wurde", false]},
+                        {"antowrt": ["Bei Lackschäden", true]},
+                        {"antwort": ["Bei Miet- und Firmenwagen", false]},
+                        {"antwort": ["Bei einem Streit mit dem Gegner", false]}                        
+                    ]
+                },
+                {
+                    "question": "In welcher Entfernung muss das Warndreieck bei schnellem Verkehr aufgestellt werden?",
+                    "False": [
+                        {"antwort": ["25 m", false]},
+                        {"antowrt": ["50 m", false]},
+                        {"antwort": ["100 m", true]},
+                        {"antwort": ["200 m", false]}                        
+                    ]
+                },
+                {
+                    "question": "Wie heißt der Bericht, der gemeinsam mit dem Crashgegner ausgefüllt werden muss?",
+                    "False": [
+                        {"antwort": ["Schadenbericht", false]},
+                        {"antowrt": ["Zeugenbericht", false]},
+                        {"antwort": ["KFZ-Bericht", false]},
+                        {"antwort": ["Unfallbericht", true]}                        
+                    ]
+                },
+                {
+                    "question": "Wie viele Warnwesten müssen in Deutschland im Auto mindestens mitgeführt werden?",
+                    "False": [
+                        {"antwort": ["pro Person eine", false]},
+                        {"antowrt": ["eine", true]},
+                        {"antwort": ["zwei", false]},
+                        {"antwort": ["vier", false]}                        
+                    ]
+                },
+                {
+                    "question": "Wer räumt nach einem Verkehrsunfall auf?",
+                    "False": [
+                        {"antwort": ["Sie selbst", true]},
+                        {"antowrt": ["Die Stadtwerke", false]},
+                        {"antwort": ["Abschleppdienst", false]},
+                        {"antwort": ["Polizei", false]}                        
+                    ]
+                }
+            ]
+        }
+    ]
+}
