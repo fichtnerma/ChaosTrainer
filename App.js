@@ -28,7 +28,7 @@ const CurrentTab = React.createRef();
 function App() {
     return (
         <NavigationContainer onStateChange={() => changeFocus()}>
-            <Tab.Navigator style={{backgroundColor: 'red'}} tabBar={(props) => <Tabbar {...props} ref={CurrentTab} />}>
+            <Tab.Navigator tabBar={(props) => <Tabbar {...props} ref={CurrentTab} />}>
                 <Tab.Screen name="Home" component={HomeStack} />
                 <Tab.Screen name="Sos" component={SosStack} />
                 <Tab.Screen name="Info" component={InfoStack} />

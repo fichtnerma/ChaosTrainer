@@ -1,5 +1,6 @@
 {
-    "verkehrsunfall": {
+    "inhalt": {
+        "name": "Verkehrsunfall",
         "infoText": "Notruf 112 tätigen und Erste Hilfe leisten",
         "categories": [
         {

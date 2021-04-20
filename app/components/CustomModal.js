@@ -13,7 +13,7 @@ export default class CustomModal extends Component {
         super(props);
 
         this.state = {
-            modalVisible: true,
+            modalVisible: false,
         };
     }
     setModalVisible() {
