@@ -1,25 +1,25 @@
 //Librarys
-import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import * as React from "react";
+import {NavigationContainer} from "@react-navigation/native";
+import {createStackNavigator} from "@react-navigation/stack";
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 
 //Components
-import Logo from './app/components/Header/Logo';
+import Logo from "./app/components/Header/Logo";
 
 //Components
-import HomeScreen from './app/screens/HomeScreen';
-import InfoScreen from './app/screens/InfoScreen';
-import SosScreen from './app/screens/SosScreen';
-import SearchScreen from './app/screens/SearchScreen';
-import PlayScreen from './app/screens/PlayScreen';
-import QuizScreen from './app/screens/PlayUnterseiten/QuizScreen';
-import ErsteFrageScreen from './app/screens/PlayUnterseiten/ErsteFrageScreen';
-import RettungswagenScreen from './app/screens/SosUnterseiten/RettungswagenScreen';
-import ErsteHilfeScreen from './app/screens/InfoUnterseiten/ErsteHilfeScreen';
-import AkuteErkrankungenScreen from './app/screens/InfoUnterseiten/ErsteHilfeAkuteErkrankungenScreen';
-import AsthmaScreen from './app/screens/InfoUnterseiten/AsthmaScreen';
-import Tabbar from './app/components/TabBar/tabbar';
+import HomeScreen from "./app/screens/HomeScreen";
+import InfoScreen from "./app/screens/InfoScreen";
+import SosScreen from "./app/screens/SosScreen";
+import SearchScreen from "./app/screens/SearchScreen";
+import PlayScreen from "./app/screens/PlayScreen";
+import QuizScreen from "./app/screens/PlayUnterseiten/QuizScreen";
+import ErsteFrageScreen from "./app/screens/PlayUnterseiten/ErsteFrageScreen";
+import RettungswagenScreen from "./app/screens/SosUnterseiten/RettungswagenScreen";
+import ErsteHilfeScreen from "./app/screens/InfoUnterseiten/ErsteHilfeScreen";
+import AkuteErkrankungenScreen from "./app/screens/InfoUnterseiten/ErsteHilfeAkuteErkrankungenScreen";
+import AsthmaScreen from "./app/screens/InfoUnterseiten/AsthmaScreen";
+import Tabbar from "./app/components/TabBar/tabbar";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -28,7 +28,11 @@ const CurrentTab = React.createRef();
 function App() {
     return (
         <NavigationContainer onStateChange={() => changeFocus()}>
-            <Tab.Navigator style={{backgroundColor: 'red'}} tabBar={(props) => <Tabbar {...props} ref={CurrentTab} />}>
+            <Tab.Navigator
+                style={{backgroundColor: "red"}}
+                tabBar={(props) => <Tabbar {...props} ref={CurrentTab} />}
+            >
+                {/* <Tab.Screen initialRouteName="SplashScreen" headerMode="none" /> */}
                 <Tab.Screen name="Home" component={HomeStack} />
                 <Tab.Screen name="Sos" component={SosStack} />
                 <Tab.Screen name="Info" component={InfoStack} />
@@ -37,6 +41,13 @@ function App() {
             </Tab.Navigator>
         </NavigationContainer>
     );
+}
+
+function SplashScreenVideo({Navigation}) {
+    setTimeout(() => {
+        Navigation.replace("Home");
+    }, 4000);
+    return <Video source={require("./app/assets/SplashVideo/Logo_final.gif")} />;
 }
 
 function changeFocus() {
@@ -91,17 +102,17 @@ function SearchStack() {
 
 const headerStyle = {
     headerStyle: {
-        backgroundColor: '#f79A42',
+        backgroundColor: "#f79A42",
         elevation: 0,
     },
-    headerTintColor: '#fff',
-    headerTitleAlign: 'center',
+    headerTintColor: "#fff",
+    headerTitleAlign: "center",
     headerTitle: (props) => <Logo {...props} />,
     headerTitleStyle: {
-        fontWeight: 'bold',
+        fontWeight: "bold",
     },
     cardStyle: {
-        backgroundColor: '#f79A42',
+        backgroundColor: "#f79A42",
     },
 };
 
