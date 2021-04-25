@@ -1,0 +1,231 @@
+{
+    "inhalt": {
+        "name": "COVID-19",
+        "infoText": "Coronaviren wurden erstmalig Mitte der 1960er Jahre identifiziert. Der Name Coronavirus bezieht sich auf das Aussehen der Coronaviren unter dem Mikroskop, das an eine Krone oder einen Kranz erinnert. Das neuartige Coronavirus wird als neuartig bezeichnet, da es sich um ein neues Virus der Virusfamilie der Coronaviren handelt, das erstmals im Dezember 2019 in China identifiziert wurde.",
+        "categories": [
+        {
+            "name": "Ansteckung, Symtome und Telefonnummern",
+            "subtext": [
+                {
+                    "headline": "Ansteckung und Übertragung",
+                    "text": "Das Coronavirus wird im normalen gesellschaftlichen Umgang in der Bevölkerung hauptsächlich über virushaltige Partikel übertragen, die von infizierten Personen freigesetzt werden.",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Freisetzung der Partikel durch:",
+                            "list": [
+                                "Atmen",
+                                "Sprechen",
+                                "Singen",
+                                "Husten",
+                                "Niesen"
+                            ]
+                        },
+                        {
+                            "title": "Ansteckung",
+                            "list": [
+                                "Grundsätzlich ist im Umkreis von ein bis zwei Metern um eine infizierte Person die Wahrscheinlichkeit erhöht, mit virushaltigen Partikeln in Kontakt zu kommen",
+                                "Bei längerem Aufenthalt in kleinen, schlecht oder nicht belüfteten Räumen kann sich die Wahrscheinlichkeit einer Übertragung durch Aerosole jedoch auch über eine größere Distanz als zwei Meter erhöhen",  
+                                "Eine Ansteckung kann erfolgen, wenn solche virushaltigen Flüssigkeitspartikel an die Schleimhäute der Nase, des Mundes und ggf. der Augen einer anderen Person gelangen. Auch eine Übertragung durch Schmierinfektion über die Hände, die mit der Mund- oder Nasenschleimhaut sowie mit der Augenbindehaut in Kontakt gebracht werden, ist prinzipiell nicht ausgeschlossen", 
+                                "Eine Übertragung über Oberflächen ist insbesondere in der unmittelbaren Umgebung von infizierten Personen ebenfalls nicht auszuschließen"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Symtome",
+                    "text": "Es ist wichtig zu wissen bei welchen Symtomen man sich auf das Coronavirus testen sollte.",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Welche Syntome treten auf?",
+                            "list": [
+                                "Husten",
+                                "Schnupfen", 
+                                "Halskratzen",
+                                "Fieber", 
+                                "Durchfall",
+                                "Störung des Geruchs- und/oder Geschmackssinns", 
+                                "Halsschmerzen", 
+                                "Atemnot",
+                                "Kopfschmerzen",
+                                "Gliederschmerzen"
+                            ]
+                        },
+                        {
+                            "title": "Wie ist der Krankheitverlauf?",
+                            "list": [
+                                "Bei einem Teil der infizierten Personen führt das Virus zu schwerwiegenden Atemproblemen und Lungenentzündungen",
+                                "Die Behandlung verläuft ähnlich wie bei anderen Atemwegserkrankungen, wobei nur die Symptome, nicht der Erreger selbst, behandelt werden können",  
+                                "Die Inkubationszeit, das heißt die Dauer von der Ansteckung bis zum Beginn der Erkrankung, beträgt beim Coronavirus SARS-CoV-2 im Mittel fünf bis sechs Tage",
+                                "In verschiedenen Studien wurde berechnet, dass bei 95 Prozent der Infizierten, die Krankheitszeichen entwickelten, diese spätestens nach 10 bis 14 Tagen aufgetreten waren" 
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Telefonnummern",
+                    "text": "",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Deutschlandweite Info-Hotline für das Coronavirus:",
+                            "list": [
+                                "0800 011 77 22 (von der Unabhängigen Patientenberatung Deutschland)"
+                            ]
+                        },
+                        {
+                            "title": "Hotline der Kassenärztlichen Vereinigung:",
+                            "list": [
+                                "116 / 117 rund um die Uhr erreichbar" 
+                            ]
+                        },
+                        {
+                            "title": "Bundesministerium für Gesundheit (Bürgertelefon):",
+                            "list": [
+                                "030 346 465 100 " 
+                            ]
+                        },
+                        {
+                            "title": "Allgemeine Erstinformation und Kontaktvermittlung: ",
+                            "list": [
+                                "Behördennummer 115 (www.115.de)" 
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Schutz",
+            "subtext": [
+                {
+                    "headline": "Persönliche Schutzmaßnahmen",
+                    "text": "Jeder kann gewisse Maßnahmen ergreifen, um sich vor einer Coronavirus Infektion zu schützen.",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "AHA-Formel",
+                            "list": [
+                                "Abstand halten (anderthalb bis zwei Meter): Belebte Orte und Veranstaltungen meiden, Kontakte beschränken", 
+                                "Hygiene beachten: Regelmäßiges und sorgfältiges Händewaschen (mindestens 20 Sekunden mit Seife bis zum Handgelenk), Händeschütteln und Umarmungen vermeiden, Gesicht und Schleimhäute nicht oder nur mit gewaschenen Händen berühren, in die Armbeuge niesen und husten,  Fahrstuhlknöpfen mit Knöcheln drücken statt mit den Fingerspitzen",
+                                "Alltag mit Maske: Mund-Nasen-Schutz tragen, wenn der Mindestabstand nicht eingehalten werden kann und dort wo eine Maskenpflicht besteht"
+                            ]
+                        },
+                        {
+                            "title": "Lüften",
+                            "list": [
+                                "Regelmäßiges Lüften, wenn sich vermehrt Menschen in Innenräumen aufhalten"
+                            ]
+                        },
+                        {
+                            "title": "Coronawarn App aktivieren",
+                            "list": [
+                                "Die Corona-Warn-App informiert Nutzerinnen und Nutzer, wenn sie Kontakt zu einer infizierten Person hatten",
+                                "Tragen sie bei einem positiven Test dies in die App ein, um ihre Mitmenschen zuschützen"
+                            ]
+                        },
+                        {
+                            "title": "Auf die Drei G achten - drei Situationen mit erhöhtem Corona-Risiko  ",
+                            "list": [
+                                "Geschlossene Räume", 
+                                "Gruppen und Gedränge", 
+                                "Gespräche" 
+                            ]
+                        }
+                    ]
+                }
+            ]  
+        },
+        {
+            "name": "Quarantäne",
+            "subtext": [
+                {
+                    "headline": "Quarantäne bei einer Coronavirus Infektion",
+                    "text": "Bei einer Quarantäne handelt es sich um eine befristete Isolation einer Person zum Schutz vor Ansteckungen.",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Tipps zum Verhalten während der Quarantäne",
+                            "list": [
+                                "Sorgen Sie zu Hause für einen geregelten Alltag und geben Sie ihm Struktur",
+                                "Falls Sie im Homeoffice arbeiten, trennen Sie Ihren Arbeitsplatz vom Privatleben – wenn möglich auch räumlich", 
+                                "Legen Sie feste Zeiten für Arbeit (Erwachsene) und schulisches Lernen (Kinder) fest",
+                                "Bestimmen Sie fixe Zeitpunkte, an denen die Familie (sofern alle gesund sind) sich zur gemeinsam Mahlzeit trifft",
+                                "Sorgen Sie für Privatsphäre für jedes Familienmitglied",
+                                "Organisieren Sie Erholungsmomente für alle, die mit Entspannungsübungen, Spiele spielen, lesen, fernsehen etc. gefüllt sind",
+                                "Versuchen Sie sich – auch in den eigenen Räumen – sportlich zu betätigen, z. B. mit Gymnastik- oder Kraftübungen",
+                                "Minimieren Sie Ihre sozialen Kontakte nach draußen und verabreden Sie sich stattdessen zum Telefonieren, Mailen oder Skypen", 
+                                "Nutzen Sie auch die digitalen Geräte, falls Sie psychologische Unterstützung benötigen", 
+                                "Achten Sie aufeinander und kontaktieren Sie ärztliche Hilfe per Telefon oder Notruf (112 im Notfall oder ärztlicher Bereitschaftsdienst 116 117), wenn es bei einem Familienmitglied zu gesundheitlichen Problemen kommt", 
+                                "Lassen Sie sich von Nachbarn mit Einkäufen versorgen oder bieten Sie umgekehrt Hilfe an, falls die Personen von nebenan Unterstützung benötigen. Die Einkäufe sollten am besten in Kartons o.Ä. vor die Haustüre gestellt werden und nach einmaliger Nutzung entsorgt werden", 
+                                "Sorgen Sie für regelmäßige Belüftung der Räume und reinigen Sie Ihr Zuhause gründlich nach Ablauf der Quarantäne!", 
+                                "Bleiben Sie trotz des Ausnahmezustandes positiv und gelassen. Diese Krise wird vorbeigehen!"
+                            ]
+                        }
+                    ]
+                }
+            ]  
+        },
+        {
+            "name": "Psychische Gesundheit und Stress",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Für uns alle ist es eine besonders herausfordernde Zeit, die mit zusätzlichem Stress auf verschiedenen Ebenen verbunden ist. Gerade Kinder kann die derzeitige Situation stark verunsichern und ihnen Angst einjagen. Hier sind einige Tipps, um diesem Stress wirkungsvoll zu begegnen:",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Strukturieren Sie Ihren Tag:",
+                            "list": [
+                                "Damit vermeiden Sie Unsicherheit, Hilflosigkeit und Stresssituationen",
+                                "Planen Sie also Ihre Aktivitäten für die nächsten Tage und erstellen Sie sich eine Liste an Dingen, die Sie tun möchten",
+                                "Ebenso ist es ermutigend, sich mithilfe einer „Erledigt“-Liste vor Augen zu halten, was Sie alles schon gemacht haben"
+                            ]
+                        },
+                        {
+                            "title": "Tun Sie Dinge, die Ihnen guttun: ",
+                            "list": [
+                                "Planen Sie Aktivitäten und Gewohnheiten in Ihren Tagesablauf ein, die Sie gerne machen und die Sie bewusst genießen können",
+                                "Vielleicht schauen Sie gerne einen guten Film oder haben Spaß am Lesen oder Malen",
+                                "Bereiten Sie besondere Speisen zu und genießen Sie das Essen",
+                                "Sorgen Sie auch für ausreichend Schlaf und regelmäßige Bewegung",
+                                "Gehen Sie raus an die frische Luft. Beachten Sie dabei jedoch immer Verhaltensregeln und -empfehlungen",
+                                "Dies alles wirkt positiv auf das körperliche und seelische Gleichgewicht"
+                            ]
+                        },
+                        {
+                            "title": "Pflegen Sie Ihre Kontakte:",
+                            "list": [
+                                "Auch wenn persönliche Treffen mit Nachbarn, Bekannten oder Freunden nicht stattfinden können, besteht immer die Möglichkeit, über Telefon, Videochats oder soziale Medien in Kontakt zu bleiben",
+                                "Tauschen Sie sich miteinander aus und motivieren Sie sich gegenseitig, mit der derzeitigen Phase gut umzugehen",
+                                "Es tut zudem gut, immer wieder einmal auch andere Gesprächsthemen als „Corona“ zu besprechen"
+                            ]
+                        },
+                        {
+                            "title": "Informieren Sie sich bewusst: ",
+                            "list": [
+                                "Informieren Sie sich über seriöse und vertrauenswürdige Quellen und setzen Sie sich und insbesondere ihre Kinder in begrenztem Maße der Medienberichterstattung aus",
+                                "Gehen Sie bei der Suche nach Informationen zudem bewusst und gezielt vor",
+                                "Legen Sie zum Beispiel für sich fest, in welchen Zeitabständen oder zu welchen Uhrzeiten Sie sich auf den aktuellen Stand bringen wollen",
+                                "Dauernd Nachrichten zu hören oder ständig online-Informationen zu lesen, kann Stress auslösen"
+                            ]
+                        },
+                        {
+                            "title": "Versuchen Sie runter zu kommen: ",
+                            "list": [
+                                "Seien Sie geduldig mit sich selbst und anderen angesichts der insgesamt angespannten Situation",
+                                "Ermutigen Sie Kinder, ihre Gefühle und Gedanken zu äußern. Gehen Sie auf sie ein und beruhigen Sie sie. Versuchen Sie, Ihren Kindern wieder ein Gefühl von Sicherheit zu vermitteln", 
+                                "Schaffen Sie immer wieder kleinere und größere Entspannungsmomente für Körper und Geist. Probieren Sie aus, was dabei für Sie funktioniert: tiefes Ein- und Ausatmen, Dehnungen, Meditation, Aktivitäten, die Ihnen Spaß machen",
+                                "Pausieren Sie immer wieder zwischen stressigen Momenten und belohnen Sie sich nach einer anstrengenden Aufgabe mit etwas, das Ihnen Freude bereitet"
+                            ]
+                        }
+                    ]
+                }
+            ]  
+        }
+        ]
+    }
+}  
