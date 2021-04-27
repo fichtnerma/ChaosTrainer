@@ -79,6 +79,100 @@
                     ]
                 }
             ]
+        },
+        {
+            "Erste Hilfe": [
+                {
+                    "question": "Um gut vorbereitet zu sein, ist es hilfreich, die wichtigsten Notfallkontakte auswendig zu wissen. Wie lauten die wichtigsten Notrufnummern?",
+                    "False": [
+                        {"antwort": ["Euronotruf: 112, Rettung: 144", true]},
+                        {"antowrt": ["Euronotruff: 211, Rettung: 133 ", false]},
+                        {"antwort": ["Euronotruf 122, Rettung 114 ", false]},
+                        {"antwort": ["Euronotruf: 991, Rettung: 113", false]}                        
+                    ]
+                },
+                {
+                    "question": "Wann sollte man bei einen Verletzten die stabile Seitenlage anwenden? ",
+                    "False": [
+                        {"antwort": ["Immer", false]},
+                        {"antowrt": ["Wenn der Verletzte bewusstlos ist, aber ausreichend atmet", true]},
+                        {"antwort": ["Bei einem Kreislaufzusammenbruch", false]},
+                        {"antwort": ["Bei Platzwunden", false]}                        
+                    ]
+                },
+                {
+                    "question": "Wie lauten die fünf W's? ",
+                    "False": [
+                        {"antwort": ["Wer erstattet Meldung? Wann ist der Unfall genau passiert? Wo ist der Unfall geschehen oder ein Notfall eingetreten? Wer hatte Schuld? Was hat sich ereignet?", false]},
+                        {"antowrt": ["Was hat sich ereignet? Wie genau ereignete sich der Unfall? Wie viele Verletzte/Erkankte sind zu transportieren? Welche besonderen Zustände erfodern ärtzliche Hilfe? Wo sind die Verletzten versichert? ", false]},
+                        {"antwort": ["Wo ist es passiert? Was ist geschehen? Wie viele Verletzte? Welche Art von Verletzungen? Warten auf Rückfrage ", true]},
+                        {"antwort": ["Wer ist der Verletzte? Wie ist der Zustand des Verletzten? Was ist der Name des Verletzten? Wo ist es passiert? Wer ruft an?", false]}                        
+                    ]
+                },
+                {
+                    "question": "Ein Kind hat in einem unbeobachteten Moment ein Reinigungsmittel in die Hände bekommen und daraus getrunken. Ihm/Ihr ist übel und es hustet. Was machen Sie? ",
+                    "False": [
+                        {"antwort": ["Ich lasse ihm den Mund ausspülen und rufe die Vergiftungsinformationszentrale an", true]},
+                        {"antowrt": ["Ich versuche, beim Kind Erbrechen auszulössen", false]},
+                        {"antwort": ["Ich schimpfe es und warte, ob sich die Situation verschlechtert", false]},
+                        {"antwort": ["Ich gebe ihm Wasser und Essen", false]}                        
+                    ]
+                },
+                {
+                    "question": "Was sind die wichtigsten Erste-Hilfe-Maßnahmen?",
+                    "False": [
+                        {"antwort": ["Eigenschutz, lebensrettende Sofortmaßnahmen, Notruf absetzen", true]},
+                        {"antowrt": ["Ich rufe die Rettung und mache sonst nichts weiter", false]},
+                        {"antwort": ["Ich eile in das nächste öffentliche Gebäude und organisiere einen Defibrillator", false]},
+                        {"antwort": ["Ich suche eine andere Person die sich darum kümmert", false]}                        
+                    ]
+                },
+                {
+                    "question": "Kann es einem Menschen schaden, wenn er defibrilliert wird?",
+                    "False": [
+                        {"antwort": ["Ja, wenn es nicht erfoderlich ist, bleibt das Herz des Verletzten stehen", false]},
+                        {"antowrt": ["Nein, der Defibrillator erkennt vollautomatisch, ob ein Schock notwendig ist", true]},
+                        {"antwort": ["Ja, der Verletzte kann innere Verbrennungen bekommen", false]},
+                        {"antwort": ["Ja, der Verletzte könnte danach Schäden davon tragen", false]}                        
+                    ]
+                },
+                {
+                    "question": "In welchem Rhythmus müssen Herzdruckmassage und Beatmung durchgeführt werden? ",
+                    "False": [
+                        {"antwort": ["Immer abwechselnd: Eine Herzdruckmassage, eine Beatmung", false]},
+                        {"antowrt": ["Bevor mit der Herzdurckmassage begonnen wird, muss der Betroffene zur eigenen Atmung wiedergefunden haben", false]},
+                        {"antwort": ["Auf 30 Mal Beatmung folgt zwei Mail Druck der Herzdruckmassage ", false]},
+                        {"antwort": ["Auf 30 Mal Druck der Herzdruckmassage folgen zwei Beatmungsmaßnahmen ", true]}                        
+                    ]
+                },
+                {
+                    "question": "Wie sollten stark blutende Wunden versorgt werden?",
+                    "False": [
+                        {"antwort": ["Sie sollten sofort abgebunden werden", false]},
+                        {"antowrt": ["Sie sollten mit kaltem Wasser oder Desinfektionsspray ausgespült werden", false]},
+                        {"antwort": ["Die Wunde sollte keimfrei bedeckt und beispielsweise mit einem Druckverband verbunden werden", true]},
+                        {"antwort": ["Das Blut abwaschen und ein Tuch darauf drücken", false]}                        
+                    ]
+                },
+                {
+                    "question": "Wie versorgen Sie Betroffene, die sich im Schockzustand befinden?",
+                    "False": [
+                        {"antwort": ["Flach lagern und die Beine leicht anheben", true]},
+                        {"antowrt": ["Den Betroffenen zum langsamen, ruhigen Gehen mit Stütze ermuntern", false]},
+                        {"antwort": ["Den Bettroffenen versuchen, durch direkte Ansprache wieder zu beruhigen", false]},
+                        {"antwort": ["Ihm Wasser geben und gut zureden", false]}                        
+                    ]
+                },
+                {
+                    "question": "Worauf kommt es beim Erste-Hilfe-Kasten an?",
+                    "False": [
+                        {"antwort": ["Dass er handlich ist und in das Handschuhfach des Autos passt", false]},
+                        {"antowrt": ["Dass er mindestens ein Paar Gummihandschuhe enthält", false]},
+                        {"antwort": ["Dass er Pflaster, Verband und Schere enthält", false]},
+                        {"antwort": ["Dass er der DIN-Norm entspricht und regelmäßig erneuert wird", true]}                        
+                    ]
+                }
+            ]
         }
     ]
 }
