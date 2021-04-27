@@ -8,7 +8,7 @@
                         {"antwort": ["Kreis", false]},
                         {"antwort": ["Kopf", false]},
                         {"antwort": ["Frei erfunden", false]},
-                        {"antowrt": ["Krone", true]}
+                        {"antwort": ["Krone", true]}
                     ]
                 },
                 {
@@ -17,7 +17,7 @@
                         {"antwort": ["Abstand, Hygiene, Alltagsmaske", true]},
                         {"antwort": ["Aufpassen, Homeoffice, Alltagsspaziergang", false]},
                         {"antwort": ["Abstand, Hochinformiert, App", false]},
-                        {"antowrt": ["Achtung, Händewaschen, Atmen", false]}
+                        {"antwort": ["Achtung, Händewaschen, Atmen", false]}
                     ]
                 },
                 {
@@ -26,7 +26,7 @@
                         {"antwort": ["Korea", false]},
                         {"antwort": ["Italien", false]},
                         {"antwort": ["China", true]},
-                        {"antowrt": ["Deutschland", false]}
+                        {"antwort": ["Deutschland", false]}
                     ]
                 }
             ]

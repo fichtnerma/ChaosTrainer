@@ -1,17 +1,15 @@
 //Librarys
-import React from "react";
+import React, {Component} from "react";
 import {
-  Text,
-  StyleSheet,
-  View,
-  Image,
-  TouchableHighlight,
-  Dimensions,
+    Text,
+    StyleSheet,
+    View,
+    Image,
+    TouchableHighlight,
+    Dimensions,
+    Settings,
 } from "react-native";
-import {
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-} from "react-native-gesture-handler";
+import {TouchableOpacity, TouchableWithoutFeedback} from "react-native-gesture-handler";
 
 //Styles
 import mainStyle from "../../components/Styles/mainStyleSheet.js";
@@ -23,186 +21,256 @@ const windowHeight = Dimensions.get("window").height;
 let aPressed = false;
 let fertig = false;
 
-export default function ErsteFrageHomeScreen({ navigation, route }) {
-  const { Settings } = route.params;
-  console.log(Settings);
-  return (
-    <View style={mainStyle.container}>
-      <Text style={quizStyle.ShadowText}>Quiz</Text>
-      <View style={styles.layout}>
-        <View style={[mainStyle.box, styles.boxSize]}>
-          <View style={{ flex: 4 }}>
-            <Text style={[mainStyle.h1, { marginTop: 5 }]}>
-              Markiere die richtige Antwort
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <View>
-                <Text style={styles.titel}>
-                  Wie kann man einen Brand nicht löschen?
-                </Text>
-              </View>
-              <Image
-                source={require("../../assets/QuizScreen/Feuer.png")}
-                style={styles.feuerImage}
-              />
-            </View>
-          </View>
-          <TouchableHighlight
-            activeOpacity={1}
-            //underlayColor="#4694af"
-            onPress={() => {
-              aPressed = true;
-              navigation.push("ErsteFrage");
-            }}
-            style={getStyle()}
-          >
-            <Text style={styles.antwortText}>A: Luftpumpe</Text>
-          </TouchableHighlight>
-          <TouchableWithoutFeedback style={getRedButton()}>
-            <Text style={styles.antwortText}>B: Wasser</Text>
-          </TouchableWithoutFeedback>
-          <TouchableWithoutFeedback style={getRedButton()}>
-            <Text style={styles.antwortText}>C: Decke</Text>
-          </TouchableWithoutFeedback>
-          <TouchableWithoutFeedback style={getRedButton()}>
-            <Text style={styles.antwortText}>D: Sand</Text>
-          </TouchableWithoutFeedback>
-        </View>
+export default class ErsteFrageHomeScreen extends Component {
+    constructor(props) {
+        super(props);
 
-        <View style={{ alignItems: "center" }}>
-          <TouchableOpacity
-            style={[mainStyle.box, styles.button]}
-            onPress={() => {
-              fertig = true;
-              getStyle();
-              navigation.push("ErsteFrage");
-            }}
-          >
-            <Text style={styles.startText}>Fertig</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    </View>
-  );
-}
-function getRedButton() {
-  if (fertig) {
-    return {
-      width: windowWidth * 0.8,
-      height: windowHeight * 0.07,
-      backgroundColor: "#ff6042",
-      borderRadius: 15,
-      marginLeft: 15,
-      marginBottom: 15,
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center",
-    };
-  } else {
-    return {
-      width: windowWidth * 0.8,
-      height: windowHeight * 0.07,
-      backgroundColor: "#ffc185",
-      borderRadius: 15,
-      marginLeft: 15,
-      marginBottom: 15,
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center",
-    };
-  }
-}
-function getStyle() {
-  if (fertig) {
-    return {
-      width: windowWidth * 0.8, //310
-      height: windowHeight * 0.07, //60
-      backgroundColor: "#abc94c",
-      borderRadius: 15,
-      marginLeft: 15,
-      marginBottom: 15,
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center",
-    };
-  } else if (aPressed) {
-    return {
-      width: windowWidth * 0.8,
-      height: windowHeight * 0.07,
-      backgroundColor: "#4694af",
-      borderRadius: 15,
-      marginLeft: 15,
-      marginBottom: 15,
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center",
-    };
-  } else {
-    return {
-      width: windowWidth * 0.8,
-      height: windowHeight * 0.07,
-      backgroundColor: "#ffc185",
-      borderRadius: 15,
-      marginLeft: 15,
-      marginBottom: 15,
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center",
-    };
-  }
+        this.state = {
+            counter: 0,
+            clicked: null,
+            buttonText: "Fertig",
+            buttonClicked: false,
+        };
+    }
+
+    getQuestions() {
+        const {Settings} = this.props.route.params;
+        const data = require("../../assets/Content/QuizFragen.json");
+        let question = [];
+        if (Settings.virus == true) {
+            for (var i = 0; i < data.quizFragen[0].Virus.length; i++) {
+                question.push(data.quizFragen[0].Virus[i]);
+            }
+        }
+        return question;
+    }
+
+    getStyle(index) {
+        const questionData = this.getQuestions();
+        if (index == this.state.clicked) {
+            if (this.state.buttonClicked == true) {
+                if (questionData[this.state.counter].Antworten[index].antwort[1] == true) {
+                    return {
+                        width: windowWidth * 0.8, //310
+                        height: windowHeight * 0.07, //60
+                        backgroundColor: "#abc94c",
+                        borderRadius: 15,
+                        marginLeft: 15,
+                        marginBottom: 15,
+                        justifyContent: "center",
+                        alignContent: "center",
+                        alignItems: "center",
+                    };
+                } else {
+                    return {
+                        width: windowWidth * 0.8,
+                        height: windowHeight * 0.07,
+                        backgroundColor: "#ff6042",
+                        borderRadius: 15,
+                        marginLeft: 15,
+                        marginBottom: 15,
+                        justifyContent: "center",
+                        alignContent: "center",
+                        alignItems: "center",
+                    };
+                }
+            }
+            return {
+                width: windowWidth * 0.8,
+                height: windowHeight * 0.07,
+                backgroundColor: "#4694af",
+                borderRadius: 15,
+                marginLeft: 15,
+                marginBottom: 15,
+                justifyContent: "center",
+                alignContent: "center",
+                alignItems: "center",
+            };
+        } else {
+            if (this.state.buttonClicked == true) {
+                if (questionData[this.state.counter].Antworten[index].antwort[1] == true) {
+                    return {
+                        width: windowWidth * 0.8, //310
+                        height: windowHeight * 0.07, //60
+                        backgroundColor: "#abc94c",
+                        borderRadius: 15,
+                        marginLeft: 15,
+                        marginBottom: 15,
+                        justifyContent: "center",
+                        alignContent: "center",
+                        alignItems: "center",
+                    };
+                }
+            }
+            return {
+                width: windowWidth * 0.8,
+                height: windowHeight * 0.07,
+                backgroundColor: "#ffc185",
+                borderRadius: 15,
+                marginLeft: 15,
+                marginBottom: 15,
+                justifyContent: "center",
+                alignContent: "center",
+                alignItems: "center",
+            };
+        }
+    }
+
+    getNextQuestion() {
+        this.setState({buttonClicked: true});
+        if (this.state.buttonText == "Weiter") {
+            this.setState({counter: this.state.counter + 1});
+            this.setState({buttonText: "Fertig"});
+            this.setState({clicked: null});
+            this.setState({buttonClicked: false});
+        } else {
+            this.setState({buttonText: "Weiter"});
+        }
+    }
+
+    render() {
+        const questionData = this.getQuestions();
+        return (
+            <View style={mainStyle.container}>
+                <Text style={quizStyle.ShadowText}>Quiz</Text>
+                <View style={styles.layout}>
+                    <View style={[mainStyle.box, styles.boxSize]}>
+                        <View style={{flex: 1}}>
+                            <Text style={[mainStyle.h1, {marginTop: 5, flex: 0}]}>
+                                Markiere die richtige Antwort
+                            </Text>
+                            <Text style={styles.titel}>
+                                {questionData[this.state.counter].question}
+                            </Text>
+                        </View>
+                        <TouchableWithoutFeedback
+                            activeOpacity={1}
+                            onPress={() => {
+                                this.setState({clicked: 0});
+                            }}
+                            style={this.getStyle(0)}
+                        >
+                            <Text style={styles.antwortText}>
+                                A: {questionData[this.state.counter].Antworten[0].antwort}
+                            </Text>
+                        </TouchableWithoutFeedback>
+                        <TouchableWithoutFeedback
+                            activeOpacity={1}
+                            onPress={() => {
+                                this.setState({clicked: 1});
+                            }}
+                            style={this.getStyle(1)}
+                        >
+                            <Text style={styles.antwortText}>
+                                B: {questionData[this.state.counter].Antworten[1].antwort}
+                            </Text>
+                        </TouchableWithoutFeedback>
+                        <TouchableWithoutFeedback
+                            activeOpacity={1}
+                            onPress={() => {
+                                this.setState({clicked: 2});
+                            }}
+                            style={this.getStyle(2)}
+                        >
+                            <Text style={styles.antwortText}>
+                                C: {questionData[this.state.counter].Antworten[2].antwort}
+                            </Text>
+                        </TouchableWithoutFeedback>
+                        <TouchableWithoutFeedback
+                            activeOpacity={1}
+                            onPress={() => {
+                                this.setState({clicked: 3});
+                            }}
+                            style={this.getStyle(3)}
+                        >
+                            <Text style={styles.antwortText}>
+                                D: {questionData[this.state.counter].Antworten[3].antwort}
+                            </Text>
+                        </TouchableWithoutFeedback>
+                    </View>
+
+                    <View style={{alignItems: "center"}}>
+                        <TouchableWithoutFeedback
+                            style={[mainStyle.box, styles.button]}
+                            onPress={() => {
+                                this.getNextQuestion();
+                            }}
+                        >
+                            <Text style={styles.startText}>{this.state.buttonText}</Text>
+                        </TouchableWithoutFeedback>
+                    </View>
+                </View>
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  boxSize: {
-    width: windowWidth * 0.88, //340
-    height: windowHeight * 0.55, //420
-  },
+    boxSize: {
+        width: windowWidth * 0.88, //340
+        height: windowHeight * 0.55, //420
+    },
 
-  layout: {
-    height: windowHeight * 0.65, //"80%"
-    flexDirection: "column",
-    margin: 10,
-  },
+    layout: {
+        height: windowHeight * 0.65, //"80%"
+        flexDirection: "column",
+        margin: 10,
+    },
 
-  button: {
-    backgroundColor: "#4694af",
-    width: windowWidth * 0.45, //180
-    height: windowHeight * 0.07, //55
-    marginTop: 10,
-    overflow: "visible",
-    alignItems: "center",
-  },
+    button: {
+        backgroundColor: "#4694af",
+        width: windowWidth * 0.45, //180
+        height: windowHeight * 0.07, //55
+        marginTop: 10,
+        overflow: "visible",
+        alignItems: "center",
+    },
 
-  //Text
-  titel: {
-    color: "#000",
-    fontSize: 25,
-    marginTop: 5,
-    marginLeft: 15,
-    marginRight: 80,
-  },
+    antwort: {
+        width: windowWidth * 0.8,
+        height: windowHeight * 0.07,
+        backgroundColor: "#ffc185",
+        borderRadius: 15,
+        marginLeft: 15,
+        marginBottom: 15,
+        justifyContent: "center",
+        alignContent: "center",
+        alignItems: "center",
+    },
 
-  startText: {
-    color: "#fff",
-    fontSize: 25,
-    textAlignVertical: "center",
-    textAlign: "center",
-  },
+    antwortClicked: {
+        width: windowWidth * 0.8,
+        height: windowHeight * 0.07,
+        backgroundColor: "#4694af",
+        borderRadius: 15,
+        marginLeft: 15,
+        marginBottom: 15,
+        justifyContent: "center",
+        alignContent: "center",
+        alignItems: "center",
+    },
 
-  antwortText: {
-    justifyContent: "flex-start",
-    color: "#fff",
-    fontSize: 20,
-    alignSelf: "flex-start",
-    marginLeft: 20,
-  },
+    //Text
+    titel: {
+        color: "#000",
+        fontSize: 25,
+        marginTop: 5,
+        marginLeft: 15,
+        marginRight: 80,
+    },
 
-  //Images
-  feuerImage: {
-    width: 40,
-    height: 55,
-    alignSelf: "center",
-    marginBottom: 70,
-    marginLeft: -65,
-  },
+    startText: {
+        color: "#fff",
+        fontSize: 25,
+        textAlignVertical: "center",
+        textAlign: "center",
+    },
+
+    antwortText: {
+        justifyContent: "flex-start",
+        color: "#fff",
+        fontSize: 20,
+        alignSelf: "flex-start",
+        marginLeft: 20,
+    },
 });
