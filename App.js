@@ -29,20 +29,17 @@ const Stack = createStackNavigator();
 const CurrentTab = React.createRef();
 
 function App() {
-  return (
-    <NavigationContainer onStateChange={() => changeFocus()}>
-      <Tab.Navigator
-        style={{ backgroundColor: "red" }}
-        tabBar={(props) => <Tabbar {...props} ref={CurrentTab} />}
-      >
-        <Tab.Screen name="Home" component={HomeStack} />
-        <Tab.Screen name="Sos" component={SosStack} />
-        <Tab.Screen name="Info" component={InfoStack} />
-        <Tab.Screen name="Search" component={SearchStack} />
-        <Tab.Screen name="Play" component={PlayStack} />
-      </Tab.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer onStateChange={() => changeFocus()}>
+            <Tab.Navigator tabBar={(props) => <Tabbar {...props} ref={CurrentTab} />}>
+                <Tab.Screen name="Home" component={HomeStack} />
+                <Tab.Screen name="Sos" component={SosStack} />
+                <Tab.Screen name="Info" component={InfoStack} />
+                <Tab.Screen name="Search" component={SearchStack} />
+                <Tab.Screen name="Play" component={PlayStack} />
+            </Tab.Navigator>
+        </NavigationContainer>
+    );
 }
 
 function changeFocus() {

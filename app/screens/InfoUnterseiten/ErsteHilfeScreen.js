@@ -1,41 +1,68 @@
-import React from "react";
+import React, {useState} from "react";
 import {Text, StyleSheet, View, Image} from "react-native";
 import {ScrollView, TouchableOpacity} from "react-native-gesture-handler";
+import CustomModal from "../../components/CustomModal";
 
-export default function ErsteHilfeScreen({navigation}) {
+const ersteHilfe = require("../../assets/Content/InfoSeiten/ErsteHilfe.json");
+const brand = require("../../assets/Content/InfoSeiten/Brand.json");
+const terror = require("../../assets/Content/InfoSeiten/Terror.json");
+const ueberschwemmung = require("../../assets/Content/InfoSeiten/Uberschwemmung.json");
+const unfall = require("../../assets/Content/InfoSeiten/Unfall.json");
+const virus = require("../../assets/Content/InfoSeiten/Virus.json");
+const modal = React.createRef();
+
+function setPage(page) {
+    switch (page) {
+        case "ersteHilfe":
+            return ersteHilfe.inhalt;
+        case "brand":
+            return brand.inhalt;
+        case "terror":
+            return terror.inhalt;
+        case "ueberschwemmung":
+            return ueberschwemmung.inhalt;
+        case "unfall":
+            return unfall.inhalt;
+        case "virus":
+            return virus.inhalt;
+        default:
+            return ersteHilfe.inhalt;
+    }
+}
+
+export default function ErsteHilfeScreen({route, navigation}) {
+    const {page} = route.params;
+    const currentData = setPage(page);
+    const [modalContent, setModalContent] = useState(currentData.categories[0].subtext);
+    const listItems = currentData.categories.map((topic, index) => (
+        <TouchableOpacity
+            key={index}
+            style={styles.box}
+            onPress={() => {
+                modal.current.setModalVisible();
+                setModalContent(topic.subtext);
+            }}
+        >
+            <Text style={kacheln.h2} key={index}>
+                {topic.name}
+            </Text>
+        </TouchableOpacity>
+    ));
     return (
         <View style={styles.container}>
             <View>
-                <Text style={kacheln.titel}>Erste Hilfe</Text>
+                <Text style={kacheln.titel}>{currentData.name}</Text>
             </View>
-            <View style={kacheln.infoBox}>
-                <Text style={kacheln.infoText}>Rufe die 112 oder 110 an</Text>
-                <Image source={require("../../assets/InfoScreen/Ausrufezeichen.png")} style={kacheln.ausrufezeichen} />
-            </View>
+            <TouchableOpacity style={kacheln.infoBox}>
+                <Text style={kacheln.infoText}>{currentData.infoText}</Text>
+                <Image
+                    source={require("../../assets/InfoScreen/Ausrufezeichen.png")}
+                    style={kacheln.ausrufezeichen}
+                />
+            </TouchableOpacity>
 
-            <ScrollView>
-                <TouchableOpacity style={styles.box} onPress={() => navigation.navigate("AkuteErkrankungen")}>
-                    <Text style={kacheln.h2}>Akute Erkrankungen</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2}>Lebensmittel</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2}>Verletzungen</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2}>Atembeschwerden</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2}>Vergiftungen</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2}>Insektenstiche</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.box}>
-                    <Text style={kacheln.h2}>Chemieunfälle</Text>
-                </TouchableOpacity>
-            </ScrollView>
+            <ScrollView>{listItems}</ScrollView>
+            <CustomModal ref={modal} content={modalContent} />
         </View>
     );
 }
@@ -83,7 +110,7 @@ const styles = StyleSheet.create({
 const kacheln = StyleSheet.create({
     infoBox: {
         width: 330,
-        height: 140,
+        height: 180,
         backgroundColor: "#fff",
         borderRadius: 15,
         margin: 10,
@@ -110,6 +137,7 @@ const kacheln = StyleSheet.create({
         justifyContent: "flex-start",
         color: "#000",
         fontSize: 16,
+        marginLeft: 80,
     },
     h2: {
         justifyContent: "flex-start",
