@@ -267,6 +267,64 @@
                     ]
                 }
             ]
+        },
+        {
+            "Terrorismus": [
+                {
+                    "question": "Was sollten Sie bei einem Amoklauf nicht machen?",
+                    "Antworten": [
+                        {"antwort": ["Fliehen", false]},
+                        {"antwort": ["Verstecken", false]},
+                        {"antwort": ["Notruf alamieren", false]},
+                        {"antwort": ["Laut schreien", true]}
+                    ]
+                },
+                {
+                    "question": "Auf was sollten Sie achten, wenn die bei einem Amoklauf fliehen?",
+                    "Antworten": [
+                        {"antwort": ["Die Gefahrenzone verlassen und dabei unauffällig und geduckt bleiben", true]},
+                        {"antwort": ["Wenn ich beim Verlassen der Gefahrenzone den Amokläufer antreffe, greife ich ihn an", false]},
+                        {"antwort": ["Ich mache soviele Geräusche wie möglich, um auf mich aufmerksam zu machen", false]},
+                        {"antwort": ["Ich fliehe so schnell wie möglich und verschwende keine Zeit anderen zu helfen", false]}
+                    ]
+                },
+                {
+                    "question": "Was sollten Sie nicht machen, wenn Sie sich bei einem Amoklauf verstecken?",
+                    "Antworten": [
+                        {"antwort": ["Türen verriegeln", false]},
+                        {"antwort": ["Licht ausschalten", false]},
+                        {"antwort": ["Hinter Fenstern und Türen verstecken", true]},
+                        {"antwort": ["Das Telefon stumm schalten", false]}
+                    ]
+                },
+                {
+                    "question": "Was sollen Sie tun wenn die Polizei bei einem Amoklauf eingetroffen ist?",
+                    "Antworten": [
+                        {"antwort": ["Die Hände in den Hosentaschen verstecken", false]},
+                        {"antwort": ["Auf die Polizisten zu rennen", false]},
+                        {"antwort": ["Hektische Bewegungen vermeiden und die Hände hoch heben", true]},
+                        {"antwort": ["Mich vor der Polizei verstecken", false]}
+                    ]
+                },
+                {
+                    "question": "Was machen Sie bei einer Explosion in einem Gebäude?",
+                    "Antworten": [
+                        {"antwort": ["Den Aufzug benutzen, um so schnell wie möglich aus höheren Stockwerken zu fliehen", false]},
+                        {"antwort": ["Dort bleiben wo man ist", true]},
+                        {"antwort": ["Licht mit einem Feuerzeug machen", false]},
+                        {"antwort": ["Anderen helfen auch wenn man sich dabei selbst in Gefahr bringt", false]}
+                    ]
+                },
+                {
+                    "question": "Was sollen Sie nicht tun wenn eine Person unter Trümmern verschüttet ist?",
+                    "Antworten": [
+                        {"antwort": ["Ich ziehe den Verschütteten aus den Trümmern hervor", true]},
+                        {"antwort": ["Ich rufe Hilfe herbei", false]},
+                        {"antwort": ["Ich folge den Anweisungen der Einsatzkräfte", false]},
+                        {"antwort": ["Ich helfe dem Verschütteten zu gut ich kann", false]}
+                    ]
+                }
+            ]
         }
     ]
 }

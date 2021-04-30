@@ -49,6 +49,11 @@ export default class ErsteFrageHomeScreen extends Component {
       for (var i = 0; i < data.quizFragen[3].Naturkatastrophen.length; i++) {
         question.push(data.quizFragen[3].Naturkatastrophen[i]);
       }
+    }
+    if (Settings.terrorismus == true) {
+      for (var i = 0; i < data.quizFragen[3].Terrorismus.length; i++) {
+        question.push(data.quizFragen[3].Terrorismus[i]);
+      }
     }*/
     return question;
   }
