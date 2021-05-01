@@ -8,12 +8,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint."
+                    "text": "Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/patient-liegt-waehrend-der-intensivtherapie-im-bett_74855-7774.jpg"
                 },
                 {
                     "headline": "Asthma Bronchiale",
                     "text": "Ursache sind allergische Reaktionen, psychische Einflüsse und wiederkehrende Infektionen der Luftwege. Dabei entsteht die Atemnot durch eine Verkrampfung oder Verschleimung der tieferliegenden feinen Bronchialäste in der Lunge.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -36,7 +36,7 @@
                 {
                     "headline": "Diabetes Mellitus",
                     "text": "Jeder Mensch hat eine bestimmte Menge Zucker im Blut, die für die Erhaltung der Leistungsfähigkeit des Körpers unerlässlich ist. Dieser Zucker kommt aus der Nahrung. Normalerweise reguliert der Körper diese Zuckermenge so, dass nie zu viel und nie zu wenig Zucker im Blut ist. Bei Diabetikern ist diese Regelung des Zuckerstoffwechsels gestört.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/arzt-mit-lupe-und-blutzuckermessgeraet-diabetes-mellitus-typ-2-diabetes-und-insulinproduktionskonzept-auf-weissem-hintergrund-isolierte-illustration-des-rosa-korallenblauvektors_335657-1530.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -57,7 +57,6 @@
                 {
                     "headline": "Schlaganfall",
                     "text": "Ein Schlaganfall ist eine akut eintretende Durchblutungsstörung im Gehirn. In Folge kann es zu Atem- und Kreislaufstörungen kommen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -84,7 +83,6 @@
                 {
                     "headline": "Krampfanfälle",
                     "text": "Ursachen und Entstehung eines Krampfanfalls können angeborene Veranlagung, Erkrankungen, Tumoren, Verletzungen, Vergiftungen, Drogenmissbrauch oder Über- oder Unterdosierung von Medikamenten sein.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -119,12 +117,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Durch Zufuhr von Lebensmittel kann es oftmals zu Beschwerden kommen - selbst harmlose Lebensmittel wie Nüsse können eine Allergie bei den Betroffenen hervorrufen."
+                    "text": "Durch Zufuhr von Lebensmittel kann es oftmals zu Beschwerden kommen - selbst harmlose Lebensmittel wie Nüsse können eine Allergie bei den Betroffenen hervorrufen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/burger-mit-gebratenem-huhn-pommes-frites-und-soda-cartoon-vector-icon-illustration-fast-food-ikone_138676-1972.jpg"
                 },
                 {
                     "headline": "Lebensmittelvergiftung",
                     "text": "Eine Lebensmittelvergiftung entsteht durch den Verzehr von Nahrungsmitteln, die durch Gifte oder Krankheitserreger (wie Bakterien) verdorben sind.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -145,7 +143,7 @@
                 {
                     "headline": "Lebensmittelallergie",
                     "text": "Bei einer solchen Allergie reagiert das Immunsystem des Körpers auf Bestandteile der Nahrung, die eigentlich harmlos sind. Betroffene mit einer schweren Lebensmittelallergie müssen betreffende Nahrungsmittel meist lebenslang meiden.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/mann-mit-nahrungsmittelallergiesymptomen-zu-produkten-wie-fisch-milch-und-eiern-lebensmittelallergie-lebensmittelalgenbestandteil-allergierisikofaktorkonzept-helle-lebendige-violette-isolierte-illustration_335657-525.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -175,7 +173,7 @@
                 {
                     "headline": "Gelenkverletzungen",
                     "text": "Durch mechanische und enorme Einwirkung von Kräften kann es bei einem Unfallgeschehen zu Verletzungen von Gelenken und Weichteilen kommen. Einmal umgeknickt und schon ist es passiert: verstaucht, verrenkt, dick angeschwollen oder gar etwas gebrochen.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/sportler-laufen-und-winzige-aerzte-behandeln-verletzungen-sportmedizin-sportmedizinische-dienstleistungen-konzept-des-sportarztes-isolierte-illustration-des-rosa-korallenblauvektorvektors_335657-1593.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -200,7 +198,6 @@
                 {
                     "headline": "Knochenbruch",
                     "text": "Knochenbrüche und Gelenkverletzungen sind Verletzungszustände, die fast immer mit Schmerzen verbunden sind. Daher vermeidet die verletzte Person Bewegungen der betroffenen Gliedmaßen. Sie als Ersthelfer sollten grundsätzlich keine Bewegungsversuche unternehmen!",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -229,7 +226,7 @@
                 {
                     "headline": "Wundversorgung",
                     "text": "Bei einer Wunde ist durch äußere Einwirkung die Schutzfunktion der Haut aufgehoben. So besteht die Gefahr von Blutverlust, Infektion und Schmerzen. Grundsätzlich sollte jede Wunde keimfrei behandelt werden.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/verschiedene-flache-icon-sets-fuer-medizinische-pflaster_74855-7897.jpg",
                     "subtitle": [
                         {
                             "title": "Gefahren durch Wunden",
@@ -260,7 +257,6 @@
                 {
                     "headline": "Fremdkörper in Wunden",
                     "text": "Es kann vorkommen, dass bei einer Verletzung Fremdkörper in Wunden gelangen. Dazu gibt es entsprechende Maßnahmen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -274,7 +270,6 @@
                 {
                     "headline": "Gewalteinwirkung auf den Kopf",
                     "text": "Es kann zu mehr oder weniger schweren Schädel-Hirn-Verletzungen kommen, beispielsweise durch Sturz oder Aufprall.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
