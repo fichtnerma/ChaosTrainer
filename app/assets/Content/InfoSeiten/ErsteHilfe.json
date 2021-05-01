@@ -306,7 +306,7 @@
                 {
                     "headline": "Atemrhythmus und Sauerstoffmangel",
                     "text": "Atemvolumen und Atemfrequenz werden durch den Sauerstoffbedarf bestimmt. Bei Körperbelastung wird die Atmung beschleunigt. Besonders empfindlich reagiert das Gehirn auf Sauerstoffmangel. Bereits nach wenigen Minuten ohne Sauerstoff treten bleibende Schäden der Hirnzellen an.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/benutzer-der-achtsamkeitsmeditation-in-lotushaltung-uebt-achtsames-meditieren-mentale-ruhe-und-selbstbewusstsein-fokussieren-und-loesen-des-stresskonzepts-vektor-isolierte-illustration_335657-2250.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -329,7 +329,7 @@
                 {
                     "headline": "Mund-zu-Mund-Beatmung",
                     "text": "Ist die Nase verletzt oder beim Einblasen nicht durchlässig, können Sie als Ersthelfer auf die Beatmung Mund-zu-Mund übergehen.",
-                    "image": "",
+                    "image": "https://image.freepik.com/fotos-kostenlos/kuenstliche-beatmung-erste-hilfe-hilfe-konzept_1401-30.jpg",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -347,7 +347,6 @@
                 {
                     "headline": "Beatmung von Säuglingen und Kleinkindern",
                     "text": "Säuglinge und Kinder legen Sie zur Kontrolle der Atmung sowie zur Beatmung in Rückenlage auf eine harte Unterlage, sodass Sie den Kopf des Kindes mit Ihrer Hand in der jeweils erforderlichen Position halten können.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -368,7 +367,6 @@
                 {
                     "headline": "Fremdkörper in Luft- und Speiseröhre",
                     "text": "Ist die Luftröhre verstopft kann es schnell zu lebensbedrohlich werden, da Erstickungsgefahr droht. Als Ersthelfer gehen Sie am Besten wie hier beschrieben vor:",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -385,7 +383,6 @@
                 {
                     "headline": "Pseudokrupp (bei Säuglingen)",
                     "text": "Beim Pseudokrupp ist die Einatmung durch eine Verengung im Bereich des Kehlkopfs erschwert. Am häufigsten tritt der akute Pseudokrupp-Anfall bei Säuglingen und Kleinkindern im Alter von 6 Monaten bis zu 3 Jahren auf.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -413,7 +410,6 @@
                 {
                     "headline": "Epiglottitis (Kinder von 2-7Jahren häufig)",
                     "text": "Die Epiglottitis stellt sich ähnlich wie der Pseudokrupp dar, es handelt sich um eine entzündliche Anschwellung des Kehldeckels und er kann im Alter von zwei bis sieben Jahren auftreten.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -445,12 +441,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Gifte können auf vier unterschiedliche Aufnahmewege in den Körper gelangen: Über die Atemwege, Verdauungswege, direkt über den Blutkreislauf und über die Haut."
+                    "text": "Gifte können auf vier unterschiedliche Aufnahmewege in den Körper gelangen: Über die Atemwege, Verdauungswege, direkt über den Blutkreislauf und über die Haut.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/realistische-giftflaschenzusammensetzung-mit-glasroehrchen-und-gefaessen-die-mit-bunten-fluessigkeiten-gefuellt-sind_1284-30209.jpg"
                 },
                 {
                     "headline": "Vergiftungen über die Atemwege",
                     "text": "Eigene Sicherheit beachten und Betroffenen so schnell wie möglich aus dem Gefahrenbereich bringen",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Hilfe beim Erbrechen",
@@ -463,7 +459,7 @@
                 },
                 {
                     "headline": "Vergiftung durch Kohlendioxid",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/buerger-tragen-gesichtsmasken-zum-schutz-vor-smog-und-staubiger-luft-menschen-die-in-der-naehe-von-pflanzenrohren-und-industrieemissionen-gehen-fuer-umweltprobleme-oekologie-coronavirus_74855-8287.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -490,12 +486,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Bienen, Wespen, Hornissen und weitere Insekte sind besonders im Sommer ein Problem - vor allem wenn Personen auf einen Insektenstich stärker reagieren. Insbesondere die Zecke ist fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0°Celsius liegt."
+                    "text": "Bienen, Wespen, Hornissen und weitere Insekte sind besonders im Sommer ein Problem - vor allem wenn Personen auf einen Insektenstich stärker reagieren. Insbesondere die Zecke ist fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0°Celsius liegt.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/bunte-verschiedene-insekten-wuermer-und-kaefer-flach-gesetzt_74855-15369.jpg"
                 },
                 {
                     "headline": "Zecken",
                     "text": "Zecken sind fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0° Celsius liegt. Dabei können Sie Zeckenborreliose oder Früh-Sommer-Meningo-Encephalitis (FSME) übertragen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -508,7 +504,7 @@
                 {
                     "headline": "Insektenstiche",
                     "text": "Ein Bienen-, Wespen- oder Hornissenstich ist zwar beunruhigend und häufig auch schmerzhaft aber in der Regel ungefährlich. Reagieren Personen auf Insektenstiche allergisch, können unerwartet auf der Einstichstelle eine allergische Reaktion entwickeln.",
-                    "image": "",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/moskito-der-eine-person-mit-flachem-design-beisst_23-2147942799.jpg?size=338&ext=jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -536,12 +532,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Mit chemischen Produkten ist nicht zu spaßen. Bei der Verwendunger solcher Produkte ist stests Vorsicht geboten, dennoch kann es zu sogenannten Chemieunfällen kommen. Hierbei gilt: Ruhe bewahren und der Anleitung folgen."
+                    "text": "Mit chemischen Produkten ist nicht zu spaßen. Bei der Verwendunger solcher Produkte ist stests Vorsicht geboten, dennoch kann es zu sogenannten Chemieunfällen kommen. Hierbei gilt: Ruhe bewahren und der Anleitung folgen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/illustration-des-wissenschaftsforschungslabors_1150-41705.jpg"
                 },
                 {
                     "headline": "Augenverletzung",
                     "text": "Mechanische Augenverletzung: Trotz Schutzbrille kann es vorkommen, dass Chemikalien ins Auge gelangen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -558,7 +554,6 @@
                 {
                     "headline": "Brennende Person löschen",
                     "text": "Das beste Löschmittel ist das, was Sie als erstes erreichen können! Wenn Sie aber zwischen mehreren Optionen wählen können, so ist der Feuerlöscher die erste Wahl!",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -571,7 +566,7 @@
                 },
                 {
                     "headline": "Hautkontakt mit Chemikalien",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/illustration-der-chemischen-flasche_53876-5926.jpg",
                     "subtitle": [
                         {
                             "title": "Verätzung",
@@ -605,7 +600,6 @@
                 {
                     "headline": "Inhalation von Chemikalien",
                     "text": "Eine Inhalation von Chemikalien kann zu Lungenverletzungen führen, die Sie schlecht beurteilen können, weil Sie in die Lunge nicht hineinsehen können.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -628,7 +622,6 @@
                 {
                     "headline": "Verbrennung, Verbrühung",
                     "text": "Verbrennungen werden in verschiedene Grade eingeteilt: 1. Verbrennung ersten Grades: Hautrötung, die in der Regel schmerzhaft sind 2. Verbrennung zweiten Grades: Brandblasen - je nachdem wie tief die Hitzeschäden in die Haut eingedrungen sind, heilt die Verletzung entweder vollständig ab (Grad 2a) oder es kommt zur Narbenbildung (Grad 2b) 3. Alle Verbrennungen noch höheren Grades führen zu bleibenden Schäden",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",

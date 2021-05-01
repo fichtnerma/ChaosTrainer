@@ -9,7 +9,7 @@
                 {
                     "headline": "Ansteckung und Übertragung",
                     "text": "Das Coronavirus wird im normalen gesellschaftlichen Umgang in der Bevölkerung hauptsächlich über virushaltige Partikel übertragen, die von infizierten Personen freigesetzt werden.",
-                    "image": "",
+                    "image": "https://phil.cdc.gov//PHIL_Images/23312/23312_lores.jpg",
                     "subtitle": [
                         {
                             "title": "Freisetzung der Partikel durch:",
@@ -35,7 +35,6 @@
                 {
                     "headline": "Symtome",
                     "text": "Es ist wichtig zu wissen bei welchen Symtomen man sich auf das Coronavirus testen sollte.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Welche Syntome treten auf?",
@@ -65,8 +64,6 @@
                 },
                 {
                     "headline": "Telefonnummern",
-                    "text": "",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Deutschlandweite Info-Hotline für das Coronavirus:",
@@ -104,7 +101,7 @@
                 {
                     "headline": "Persönliche Schutzmaßnahmen",
                     "text": "Jeder kann gewisse Maßnahmen ergreifen, um sich vor einer Coronavirus Infektion zu schützen.",
-                    "image": "",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/infografik-zur-vorbeugung-von-verboten-und-verboten_23-2148515103.jpg?size=338&ext=jpg",
                     "subtitle": [
                         {
                             "title": "AHA-Formel",
@@ -145,7 +142,7 @@
                 {
                     "headline": "Quarantäne bei einer Coronavirus Infektion",
                     "text": "Bei einer Quarantäne handelt es sich um eine befristete Isolation einer Person zum Schutz vor Ansteckungen.",
-                    "image": "",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/maedchen-und-katze-die-auf-sofa-entspannen_74855-6481.jpg?size=338&ext=jpg",
                     "subtitle": [
                         {
                             "title": "Tipps zum Verhalten während der Quarantäne",
@@ -175,7 +172,7 @@
                 {
                     "headline": "Allgemein",
                     "text": "Für uns alle ist es eine besonders herausfordernde Zeit, die mit zusätzlichem Stress auf verschiedenen Ebenen verbunden ist. Gerade Kinder kann die derzeitige Situation stark verunsichern und ihnen Angst einjagen. Hier sind einige Tipps, um diesem Stress wirkungsvoll zu begegnen:",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/neurowissenschaftler-mit-einem-riesigen-diagramm-des-menschlichen-gehirns_53876-43080.jpg",
                     "subtitle": [
                         {
                             "title": "Strukturieren Sie Ihren Tag:",
