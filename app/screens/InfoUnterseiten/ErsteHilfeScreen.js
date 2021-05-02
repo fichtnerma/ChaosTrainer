@@ -34,7 +34,7 @@ export default function ErsteHilfeScreen({route, navigation}) {
     const {page} = route.params;
     const currentData = setPage(page);
     const [modalContent, setModalContent] = useState(currentData.categories[0].subtext);
-    const [currentFont, setCurrentFont] = useState(24);
+    const [currentFont, setCurrentFont] = useState(26);
     const listItems = currentData.categories.map((topic, index) => (
         <TouchableOpacity
             key={index}
