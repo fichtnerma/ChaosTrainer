@@ -37,7 +37,7 @@
                     "question": "Wann wird die Polizei bei einem Verkehrsunfall nicht gerufen?",
                     "Antworten": [
                         {"antwort": ["Wenn jemand verletzt wurde", false]},
-                        {"antowrt": ["Bei Lackschäden", true]},
+                        {"antwort": ["Bei Lackschäden", true]},
                         {"antwort": ["Bei Miet- und Firmenwagen", false]},
                         {"antwort": ["Bei einem Streit mit dem Gegner", false]}                        
                     ]
@@ -46,7 +46,7 @@
                     "question": "In welcher Entfernung muss das Warndreieck bei schnellem Verkehr aufgestellt werden?",
                     "Antworten": [
                         {"antwort": ["25 m", false]},
-                        {"antowrt": ["50 m", false]},
+                        {"antwort": ["50 m", false]},
                         {"antwort": ["100 m", true]},
                         {"antwort": ["200 m", false]}                        
                     ]
@@ -55,7 +55,7 @@
                     "question": "Wie heißt der Bericht, der gemeinsam mit dem Crashgegner ausgefüllt werden muss?",
                     "Antworten": [
                         {"antwort": ["Schadenbericht", false]},
-                        {"antowrt": ["Zeugenbericht", false]},
+                        {"antwort": ["Zeugenbericht", false]},
                         {"antwort": ["KFZ-Bericht", false]},
                         {"antwort": ["Unfallbericht", true]}                        
                     ]
@@ -64,7 +64,7 @@
                     "question": "Wie viele Warnwesten müssen in Deutschland im Auto mindestens mitgeführt werden?",
                     "Antworten": [
                         {"antwort": ["pro Person eine", false]},
-                        {"antowrt": ["eine", true]},
+                        {"antwort": ["eine", true]},
                         {"antwort": ["zwei", false]},
                         {"antwort": ["vier", false]}                        
                     ]
@@ -73,7 +73,7 @@
                     "question": "Wer räumt nach einem Verkehrsunfall auf?",
                     "Antworten": [
                         {"antwort": ["Sie selbst", true]},
-                        {"antowrt": ["Die Stadtwerke", false]},
+                        {"antwort": ["Die Stadtwerke", false]},
                         {"antwort": ["Abschleppdienst", false]},
                         {"antwort": ["Polizei", false]}                        
                     ]
@@ -86,7 +86,7 @@
                     "question": "Um gut vorbereitet zu sein, ist es hilfreich, die wichtigsten Notfallkontakte auswendig zu wissen. Wie lauten die wichtigsten Notrufnummern?",
                     "Antworten": [
                         {"antwort": ["Euronotruf: 112, Rettung: 144", true]},
-                        {"antowrt": ["Euronotruff: 211, Rettung: 133 ", false]},
+                        {"antwort": ["Euronotruff: 211, Rettung: 133 ", false]},
                         {"antwort": ["Euronotruf 122, Rettung 114 ", false]},
                         {"antwort": ["Euronotruf: 991, Rettung: 113", false]}                        
                     ]
@@ -95,7 +95,7 @@
                     "question": "Wann sollte man bei einen Verletzten die stabile Seitenlage anwenden? ",
                     "Antworten": [
                         {"antwort": ["Immer", false]},
-                        {"antowrt": ["Wenn der Verletzte bewusstlos ist, aber ausreichend atmet", true]},
+                        {"antwort": ["Wenn der Verletzte bewusstlos ist, aber ausreichend atmet", true]},
                         {"antwort": ["Bei einem Kreislaufzusammenbruch", false]},
                         {"antwort": ["Bei Platzwunden", false]}                        
                     ]
@@ -104,7 +104,7 @@
                     "question": "Wie lauten die fünf W's? ",
                     "Antworten": [
                         {"antwort": ["Wer erstattet Meldung? Wann ist der Unfall genau passiert? Wo ist der Unfall geschehen oder ein Notfall eingetreten? Wer hatte Schuld? Was hat sich ereignet?", false]},
-                        {"antowrt": ["Was hat sich ereignet? Wie genau ereignete sich der Unfall? Wie viele Verletzte/Erkankte sind zu transportieren? Welche besonderen Zustände erfodern ärtzliche Hilfe? Wo sind die Verletzten versichert? ", false]},
+                        {"antwort": ["Was hat sich ereignet? Wie genau ereignete sich der Unfall? Wie viele Verletzte/Erkankte sind zu transportieren? Welche besonderen Zustände erfodern ärtzliche Hilfe? Wo sind die Verletzten versichert? ", false]},
                         {"antwort": ["Wo ist es passiert? Was ist geschehen? Wie viele Verletzte? Welche Art von Verletzungen? Warten auf Rückfrage ", true]},
                         {"antwort": ["Wer ist der Verletzte? Wie ist der Zustand des Verletzten? Was ist der Name des Verletzten? Wo ist es passiert? Wer ruft an?", false]}                        
                     ]
@@ -113,7 +113,7 @@
                     "question": "Ein Kind hat in einem unbeobachteten Moment ein Reinigungsmittel in die Hände bekommen und daraus getrunken. Ihm/Ihr ist übel und es hustet. Was machen Sie? ",
                     "Antworten": [
                         {"antwort": ["Ich lasse ihm den Mund ausspülen und rufe die Vergiftungsinformationszentrale an", true]},
-                        {"antowrt": ["Ich versuche, beim Kind Erbrechen auszulössen", false]},
+                        {"antwort": ["Ich versuche, beim Kind Erbrechen auszulössen", false]},
                         {"antwort": ["Ich schimpfe es und warte, ob sich die Situation verschlechtert", false]},
                         {"antwort": ["Ich gebe ihm Wasser und Essen", false]}                        
                     ]
@@ -122,7 +122,7 @@
                     "question": "Was sind die wichtigsten Erste-Hilfe-Maßnahmen?",
                     "Antworten": [
                         {"antwort": ["Eigenschutz, lebensrettende Sofortmaßnahmen, Notruf absetzen", true]},
-                        {"antowrt": ["Ich rufe die Rettung und mache sonst nichts weiter", false]},
+                        {"antwort": ["Ich rufe die Rettung und mache sonst nichts weiter", false]},
                         {"antwort": ["Ich eile in das nächste öffentliche Gebäude und organisiere einen Defibrillator", false]},
                         {"antwort": ["Ich suche eine andere Person die sich darum kümmert", false]}                        
                     ]
@@ -131,7 +131,7 @@
                     "question": "Kann es einem Menschen schaden, wenn er defibrilliert wird?",
                     "Antworten": [
                         {"antwort": ["Ja, wenn es nicht erfoderlich ist, bleibt das Herz des Verletzten stehen", false]},
-                        {"antowrt": ["Nein, der Defibrillator erkennt vollautomatisch, ob ein Schock notwendig ist", true]},
+                        {"antwort": ["Nein, der Defibrillator erkennt vollautomatisch, ob ein Schock notwendig ist", true]},
                         {"antwort": ["Ja, der Verletzte kann innere Verbrennungen bekommen", false]},
                         {"antwort": ["Ja, der Verletzte könnte danach Schäden davon tragen", false]}                        
                     ]
@@ -140,7 +140,7 @@
                     "question": "In welchem Rhythmus müssen Herzdruckmassage und Beatmung durchgeführt werden? ",
                     "Antworten": [
                         {"antwort": ["Immer abwechselnd: Eine Herzdruckmassage, eine Beatmung", false]},
-                        {"antowrt": ["Bevor mit der Herzdurckmassage begonnen wird, muss der Betroffene zur eigenen Atmung wiedergefunden haben", false]},
+                        {"antwort": ["Bevor mit der Herzdurckmassage begonnen wird, muss der Betroffene zur eigenen Atmung wiedergefunden haben", false]},
                         {"antwort": ["Auf 30 Mal Beatmung folgt zwei Mail Druck der Herzdruckmassage ", false]},
                         {"antwort": ["Auf 30 Mal Druck der Herzdruckmassage folgen zwei Beatmungsmaßnahmen ", true]}                        
                     ]
@@ -149,7 +149,7 @@
                     "question": "Wie sollten stark blutende Wunden versorgt werden?",
                     "Antworten": [
                         {"antwort": ["Sie sollten sofort abgebunden werden", false]},
-                        {"antowrt": ["Sie sollten mit kaltem Wasser oder Desinfektionsspray ausgespült werden", false]},
+                        {"antwort": ["Sie sollten mit kaltem Wasser oder Desinfektionsspray ausgespült werden", false]},
                         {"antwort": ["Die Wunde sollte keimfrei bedeckt und beispielsweise mit einem Druckverband verbunden werden", true]},
                         {"antwort": ["Das Blut abwaschen und ein Tuch darauf drücken", false]}                        
                     ]
@@ -158,7 +158,7 @@
                     "question": "Wie versorgen Sie Betroffene, die sich im Schockzustand befinden?",
                     "Antworten": [
                         {"antwort": ["Flach lagern und die Beine leicht anheben", true]},
-                        {"antowrt": ["Den Betroffenen zum langsamen, ruhigen Gehen mit Stütze ermuntern", false]},
+                        {"antwort": ["Den Betroffenen zum langsamen, ruhigen Gehen mit Stütze ermuntern", false]},
                         {"antwort": ["Den Bettroffenen versuchen, durch direkte Ansprache wieder zu beruhigen", false]},
                         {"antwort": ["Ihm Wasser geben und gut zureden", false]}                        
                     ]
@@ -167,7 +167,7 @@
                     "question": "Worauf kommt es beim Erste-Hilfe-Kasten an?",
                     "Antworten": [
                         {"antwort": ["Dass er handlich ist und in das Handschuhfach des Autos passt", false]},
-                        {"antowrt": ["Dass er mindestens ein Paar Gummihandschuhe enthält", false]},
+                        {"antwort": ["Dass er mindestens ein Paar Gummihandschuhe enthält", false]},
                         {"antwort": ["Dass er Pflaster, Verband und Schere enthält", false]},
                         {"antwort": ["Dass er der DIN-Norm entspricht und regelmäßig erneuert wird", true]}                        
                     ]
@@ -180,7 +180,7 @@
                     "question": "Was ist die häufigste Naturkatastrophe?",
                     "Antworten": [
                         {"antwort": ["Überschwemmung", true]},
-                        {"antowrt": ["Waldbrände", false]},
+                        {"antwort": ["Waldbrände", false]},
                         {"antwort": ["Dürre", false]},
                         {"antwort": ["Erdrutsch", false]}                        
                     ]
@@ -189,7 +189,7 @@
                     "question": "Was sollte man bei der Vorbereitung auf einen Sturm NICHT machen?",
                     "Antworten": [
                         {"antwort": ["Außenstehende Mülltonnen und Gartenmöbel sichern", false]},
-                        {"antowrt": ["Bewegliche Gegenstände auf Terrassen und Balkon in Sicherheit bringen ", false]},
+                        {"antwort": ["Bewegliche Gegenstände auf Terrassen und Balkon in Sicherheit bringen ", false]},
                         {"antwort": ["Auto unter Bäumen parken", true]},
                         {"antwort": ["Unwetterwarnungen verfolgen ", false]}                        
                     ]
@@ -198,7 +198,7 @@
                     "question": "Was soll man machen wenn man während eines Sturms im Freien überrascht wird?",
                     "Antworten": [
                         {"antwort": ["Sich keine Sorgen machen und einfach weiter machen ", false]},
-                        {"antowrt": ["Legen Sie sich mit dem Gesicht erdwärts und schützen Sie Kopf und Nacken mit den Händen", true]},
+                        {"antwort": ["Legen Sie sich mit dem Gesicht erdwärts und schützen Sie Kopf und Nacken mit den Händen", true]},
                         {"antwort": ["Schutz in der Nähe von Gebäuden suchen", false]},
                         {"antwort": ["Im Wald Schutz finden", false]}                        
                     ]
@@ -207,7 +207,7 @@
                     "question": "In welchem Ort in einem Gebäude sollte man während eines Sturms keinen Schutz suchen?",
                     "Antworten": [
                         {"antwort": ["Im Keller", false]},
-                        {"antowrt": ["In großen Hallen ", true]},
+                        {"antwort": ["In großen Hallen ", true]},
                         {"antwort": ["In einem innenliegenden Raum eines Hauses", false]},
                         {"antwort": ["In einem Bürogebäude", false]}                        
                     ]
@@ -216,7 +216,7 @@
                     "question": "Welchen Mindestabstand sollte man während eines Gewitters zu Überlandleitungen einhalten?",
                     "Antworten": [
                         {"antwort": ["Keinen, Überlandleitungen sind nicht gefährlich während eines Gewitters", false]},
-                        {"antowrt": ["Ca. 10 Meter reichen aus", false]},
+                        {"antwort": ["Ca. 10 Meter reichen aus", false]},
                         {"antwort": ["Mindestens 50 Meter", true]},
                         {"antwort": ["Weit mehr als 100 Meter", false]}                        
                     ]
@@ -225,7 +225,7 @@
                     "question": "Sie werden im Freien von einem Gewitter überrascht. Was tun Sie?",
                     "Antworten": [
                         {"antwort": ["Ich mache mich so groß wie möglich", false]},
-                        {"antowrt": ["Ich mache mich so klein wie möglich und gehe in die Hocke auf die Zehenspitzen mit möglichst eng aneinander stehenden Füßen", true]},
+                        {"antwort": ["Ich mache mich so klein wie möglich und gehe in die Hocke auf die Zehenspitzen mit möglichst eng aneinander stehenden Füßen", true]},
                         {"antwort": ["Ich suche mir einen möglichst hohen Punkt (Masten, Antennen) und suche dort Schutz ", false]},
                         {"antwort": ["Ich suche auf keinen Fall nach Schutz in einem Gebäude ", false]}                        
                     ]
@@ -234,7 +234,7 @@
                     "question": "IWas sollte man besorgen wenn Überschwemmungen vorhergesagt werde?",
                     "Antworten": [
                         {"antwort": ["Sandsäcke", true]},
-                        {"antowrt": ["Luftmatratzen ", false]},
+                        {"antwort": ["Luftmatratzen ", false]},
                         {"antwort": ["Taucherbrille", false]},
                         {"antwort": ["Wasserdichte Kamera", false]}                        
                     ]
@@ -243,7 +243,7 @@
                     "question": "Was sollten Sie bei der Vorbereitung für Überschwemmungen NICHT tun?",
                     "Antworten": [
                         {"antwort": ["Wichtige Gegenstände in die unteren Räumen des Hauses bringen", true]},
-                        {"antowrt": ["Darauf achten, dass gefährliche Stoffe und Chemikalien nicht vom Wasser erreicht werden", false]},
+                        {"antwort": ["Darauf achten, dass gefährliche Stoffe und Chemikalien nicht vom Wasser erreicht werden", false]},
                         {"antwort": ["Den Heizöltank gegen den Auftrieb durch das Wasser sichern", false]},
                         {"antwort": ["Kranke, Hilfsbedürftige und Haustiere evakuieren", false]}                        
                     ]
@@ -252,7 +252,7 @@
                     "question": "Wie sollten sie NICHT handeln wenn Hochwasser ins Haus dringt?",
                     "Antworten": [
                         {"antwort": ["Fenster und Türen abdichten", false]},
-                        {"antowrt": ["Kellerräume ausräumen", false]},
+                        {"antwort": ["Kellerräume ausräumen", false]},
                         {"antwort": ["Elektrische Geräte einschalten", true]},
                         {"antwort": ["Ruhe bewahren", false]}                        
                     ]
@@ -261,7 +261,7 @@
                     "question": "Was sollte man bei Überschwemmungen NICHT tun?",
                     "Antworten": [
                         {"antwort": ["Überflutete oder teilüberflutete Straßen dürfen nicht befahren werden", false]},
-                        {"antowrt": ["Betreten Sie keine Uferbereiche wegen der Gefahr von Unterspülungen oder Abbrüchen", false]},
+                        {"antwort": ["Betreten Sie keine Uferbereiche wegen der Gefahr von Unterspülungen oder Abbrüchen", false]},
                         {"antwort": ["Mit dem Boot spazieren fahren, um die Lage auszukundschaften", true]},
                         {"antwort": ["Beachten Sie die Anweisungen und Absperrungen der Einsatzkräfte", false]}                        
                     ]
