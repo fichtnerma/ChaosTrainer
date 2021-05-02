@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Text, StyleSheet, View, Image, Dimensions} from "react-native";
-import {ScrollView, TouchableNativeFeedback} from "react-native-gesture-handler";
+import {ScrollView} from "react-native-gesture-handler";
 import Modal from "react-native-modalbox";
 import Colors from "../constants/colors.js";
 import {MaterialIcons} from "@expo/vector-icons";
@@ -19,8 +19,8 @@ export default class CustomModal extends Component {
     getStyle(img) {
         if (img != null) {
             return {
-                width: windowWidth * 0.75,
-                height: windowHeight * 0.25,
+                width: windowWidth * 0.8,
+                height: windowHeight * 0.3,
                 justifyContent: "flex-start",
                 marginLeft: 30,
                 marginRight: 30,
@@ -75,6 +75,7 @@ export default class CustomModal extends Component {
                         ))}
                     </View>
                 ) : null}
+                <View style={{height: 20}}></View>
             </View>
         ));
         return (

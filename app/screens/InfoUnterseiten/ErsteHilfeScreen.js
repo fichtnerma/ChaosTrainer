@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Text, StyleSheet, View, Image} from "react-native";
+import {Text, StyleSheet, View, Image, numberOfLines} from "react-native";
 import {ScrollView, TouchableOpacity} from "react-native-gesture-handler";
 import CustomModal from "../../components/CustomModal";
 
@@ -34,6 +34,7 @@ export default function ErsteHilfeScreen({route, navigation}) {
     const {page} = route.params;
     const currentData = setPage(page);
     const [modalContent, setModalContent] = useState(currentData.categories[0].subtext);
+    const [currentFont, setCurrentFont] = useState(24);
     const listItems = currentData.categories.map((topic, index) => (
         <TouchableOpacity
             key={index}
@@ -43,7 +44,18 @@ export default function ErsteHilfeScreen({route, navigation}) {
                 setModalContent(topic.subtext);
             }}
         >
-            <Text style={kacheln.h2} key={index}>
+            <Text
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                style={[kacheln.h2, {fontSize: currentFont}]}
+                onTextLayout={(e) => {
+                    const {lines} = e.nativeEvent;
+                    if (lines.length > numberOfLines) {
+                        setCurrentFont(currentFont - 1);
+                    }
+                }}
+                key={index}
+            >
                 {topic.name}
             </Text>
         </TouchableOpacity>
@@ -54,7 +66,19 @@ export default function ErsteHilfeScreen({route, navigation}) {
                 <Text style={kacheln.titel}>{currentData.name}</Text>
             </View>
             <TouchableOpacity style={kacheln.infoBox}>
-                <Text style={kacheln.infoText}>{currentData.infoText}</Text>
+                <Text
+                    numberOfLines={12}
+                    adjustsFontSizeToFit
+                    style={[kacheln.infoText, {fontSize: currentFont}]}
+                    onTextLayout={(e) => {
+                        const {lines} = e.nativeEvent;
+                        if (lines.length > numberOfLines) {
+                            setCurrentFont(currentFont - 1);
+                        }
+                    }}
+                >
+                    {currentData.infoText}
+                </Text>
                 <Image
                     source={require("../../assets/InfoScreen/Ausrufezeichen.png")}
                     style={kacheln.ausrufezeichen}
@@ -127,7 +151,6 @@ const kacheln = StyleSheet.create({
     },
     titel: {
         margin: 10,
-        marginLeft: -163,
         marginTop: 20,
         justifyContent: "flex-start",
         color: "#f79A42",
@@ -136,7 +159,6 @@ const kacheln = StyleSheet.create({
     infoText: {
         justifyContent: "flex-start",
         color: "#000",
-        fontSize: 16,
         marginLeft: 80,
     },
     h2: {
@@ -146,9 +168,9 @@ const kacheln = StyleSheet.create({
     },
     ausrufezeichen: {
         width: 80,
-        height: 190,
+        height: 200,
         position: "absolute",
-        top: 0,
+        top: 15,
         left: 0,
     },
 });
