@@ -60,8 +60,8 @@ export default class QuizHomeScreen extends Component {
                             </View>
                         </View>
                         <View style={mainStyle.orangeBottomInBox}>
-                            <Text style={quizStyle.hiScoreText}>Dein erreicheter Hi-Score:</Text>
-                            <Text style={quizStyle.hiScore}>2100 Punkte</Text>
+                            <Text style={quizStyle.hiScoreText}>Erreiche einen neunen</Text>
+                            <Text style={quizStyle.hiScore}> Hi-Score</Text>
                         </View>
                         <View style={{elevation: 20, zIndex: 40}}>
                             <Image
