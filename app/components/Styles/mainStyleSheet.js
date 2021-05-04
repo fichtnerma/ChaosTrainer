@@ -73,7 +73,7 @@ export default StyleSheet.create({
     marginLeft: 15,
     position: "absolute",
     textAlignVertical: "bottom",
-    height: windowHeight*0.105,
+    height: windowHeight * 0.105,
   },
 
   h1: {
@@ -85,7 +85,7 @@ export default StyleSheet.create({
 
   orangeBottomInBox: {
     width: "100%",
-    height: windowHeight*0.105,
+    height: windowHeight * 0.105,
     backgroundColor: Colors.lightOrange,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
