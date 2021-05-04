@@ -280,7 +280,7 @@
                     ]
                 },
                 {
-                    "question": "Auf was sollten Sie achten, wenn die bei einem Amoklauf fliehen?",
+                    "question": "Auf was sollten Sie achten, wenn Sie bei einem Amoklauf fliehen?",
                     "Antworten": [
                         {"antwort": ["Die Gefahrenzone verlassen und dabei unauffällig und geduckt bleiben", true]},
                         {"antwort": ["Wenn ich beim Verlassen der Gefahrenzone den Amokläufer antreffe, greife ich ihn an", false]},
