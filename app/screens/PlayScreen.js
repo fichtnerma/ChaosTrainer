@@ -23,13 +23,12 @@ export default function PlayScreen({navigation}) {
                     <Text style={[mainStyle.h1, {marginBottom: 32}]}>
                         Erste Hilfe virtuell üben
                     </Text>
-                    <Text style={[mainStyle.orangeSchrift, {bottom: 56}]}>
-                        AR
-                    </Text>
+                    <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>AR</Text>
+
                     <View style={mainStyle.orangeBottomInBox}>
-                        <Text style={mainStyle.hiScore}>
+                        {/* <Text style={mainStyle.hiScore}>
                             Hi-Score: 2100 Punkte
-                        </Text>
+                        </Text> */}
                     </View>
                 </TouchableOpacity>
             </View>
@@ -46,13 +45,10 @@ export default function PlayScreen({navigation}) {
                     <Text style={[mainStyle.h1, {marginBottom: 32}]}>
                         Teste dein Wissen über Notfälle
                     </Text>
-                    <Text style={[mainStyle.orangeSchrift, {bottom: 56}]}>
-                        Quiz
-                    </Text>
+                    <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>Quiz</Text>
+
                     <View style={mainStyle.orangeBottomInBox}>
-                        <Text style={mainStyle.hiScore}>
-                            Hi-Score: 713 Punkte
-                        </Text>
+                        {/* <Text style={mainStyle.hiScore}>Hi-Score: 713 Punkte</Text> */}
                     </View>
                 </TouchableOpacity>
             </View>
