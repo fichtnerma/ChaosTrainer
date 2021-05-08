@@ -1,8 +1,7 @@
 //Librarys
 import React, {useState} from 'react';
 import {Dimensions, StyleSheet, View, Text} from 'react-native';
-import {ScrollView, TextInput, TouchableNativeFeedback, TouchableOpacity} from 'react-native-gesture-handler';
-import {NavigationActions} from '@react-navigation/native';
+import {ScrollView, TextInput, TouchableOpacity} from 'react-native-gesture-handler';
 
 //Styles
 const windowWidth = Dimensions.get('window').width;
@@ -10,12 +9,71 @@ const windowHeight = Dimensions.get('window').height;
 
 const searchContainer = [
     {
-        terms: ['Gas', 'Feuer', 'Brand'],
+        terms: ['Gas', 'Feuer', 'Brand', 'Ölbrand', 'Wohnungsbrand', 'Autobrand', 'Waldbrand'],
         resultname: 'Info Seite Brand',
         nav: {
             parent: 'Info',
             screen: 'ErsteHilfe',
             params: {page: 'brand'},
+        },
+    },
+    {
+        terms: [
+            'Verletzung',
+            'Erste Hilfe',
+            'Asthma',
+            'Diabetes',
+            'Schlaganfall',
+            'Krampf',
+            'Lebensmittelvergiftung',
+            'Bruch',
+            'Wunde',
+            'Beatmung',
+            'Vergiftung',
+            'Insektenstiche',
+            'Verbrennung',
+        ],
+        resultname: 'Erste Hilfe',
+        nav: {
+            parent: 'Info',
+            screen: 'ErsteHilfe',
+            params: {page: 'ersteHilfe'},
+        },
+    },
+    {
+        terms: ['Überschwemmung', 'Erdbeben', 'Naturkatastrophen', 'Sturm', 'Gewitter', 'Wetter', 'Unwetter'],
+        resultname: 'Naturkatastrophen',
+        nav: {
+            parent: 'Info',
+            screen: 'ErsteHilfe',
+            params: {page: 'ueberschwemmung'},
+        },
+    },
+    {
+        terms: ['Amoklauf', 'Explosionen', 'Gewalt'],
+        resultname: 'Terrorismus',
+        nav: {
+            parent: 'Info',
+            screen: 'ErsteHilfe',
+            params: {page: 'terror'},
+        },
+    },
+    {
+        terms: ['Unfall', 'Verkehr', 'Auto', 'Fahrzeug', 'Motorrad'],
+        resultname: 'Verkehrsunfall',
+        nav: {
+            parent: 'Info',
+            screen: 'ErsteHilfe',
+            params: {page: 'unfall'},
+        },
+    },
+    {
+        terms: ['Virus', 'Corona', 'Covid', 'Quarantäne', 'Infektion'],
+        resultname: 'Virus',
+        nav: {
+            parent: 'Info',
+            screen: 'ErsteHilfe',
+            params: {page: 'virus'},
         },
     },
 ];
