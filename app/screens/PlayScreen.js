@@ -24,6 +24,7 @@ export default function PlayScreen({navigation}) {
                         Erste Hilfe virtuell üben
                     </Text>
                     <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>AR</Text>
+
                     <View style={mainStyle.orangeBottomInBox}>
                         {/* <Text style={mainStyle.hiScore}>
                             Hi-Score: 2100 Punkte
@@ -45,6 +46,7 @@ export default function PlayScreen({navigation}) {
                         Teste dein Wissen über Notfälle
                     </Text>
                     <Text style={[mainStyle.orangeSchrift, {bottom: 60}]}>Quiz</Text>
+
                     <View style={mainStyle.orangeBottomInBox}>
                         {/* <Text style={mainStyle.hiScore}>Hi-Score: 713 Punkte</Text> */}
                     </View>

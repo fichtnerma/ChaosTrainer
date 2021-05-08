@@ -18,7 +18,7 @@ export default function TagesTip({navigation}){
         style={[homeStyle.tippDesTagesBox, homeStyle.boxSize]}
         onPress={() => navigation.navigate("Asthma")}
         >
-            <Text style={homeStyle.tippDesTagesTitel}>Tipp des Tages</Text>
+            <Text style={homeStyle.tippDesTagesTitel}>Wissenswert</Text>
             <Text style={homeStyle.tippDesTagesText}>
                 {data.TagesTip[random].Text} 
             </Text>

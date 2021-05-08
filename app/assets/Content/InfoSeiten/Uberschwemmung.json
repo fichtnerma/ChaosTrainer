@@ -1,0 +1,104 @@
+{
+    "inhalt": {
+        "name": "Naturkatastrophen",
+        "infoText": "Naturkatastrophen sind sehr heftige und ungewöhnliche Naturereignisse, die zu vielen Todesopfern, Verletzten und Obdachlosen führen. Häufig richten sie große Schäden in der Natur und an Gebäuden, Straßen, Schienen und anderen Bauwerken an. Oft können sich die Menschen nach einer solchen Katastrophe in den betroffenen Gebieten nicht mehr selbst helfen. Sie sind dann auf internationale Hilfe angewiesen. In Deutschland sind die häufigsten Naturkatastrophen Überschwemmungen und Stürme.",
+        "categories": [
+        {
+            "name": "Stürme und Unwetter",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Bei Unwetterwarnungen für schwere Gewitter, Sturmböen oder auch Wirbelstürme, sollten sie schnell reagieren um die Gefahren zu reduzieren und Schäden zu vermeiden. Verfolgen die die Wetterberichte und befolgen sie Unwetterwarnungen. Beachten Sie stets die aktuellen Wetterwarnungen des DWD.",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Vorbereitung",
+                            "list": [
+                                "Sichern Sie außenstehende Mülltonnen und Gartenmöbel",
+                                "Bringen Sie Blumentöpfe und andere bewegliche Gegenstände auf Balkonen und Dachterrassen in Sicherheit",
+                                "Parken Sie Ihren Wagen in der Garage oder mit großem Abstand von Häusern sowie Bäumen"
+                            ]
+                        },
+                        {
+                            "title": "Verhalten bei einem Sturm",
+                            "list": [
+                                "Halten Sie sich nicht draußen auf, sondern in festen Gebäuden",
+                                "Werden Sie im Freien überrascht und können kein Gebäude mehr aufsuchen, so suchen sie möglichst eine Mulde oder einen Graben auf, legen Sie sich mit dem Gesicht erdwärts und schützen Sie Kopf und Nacken mit den Händen",
+                                "Versuchen Sie auf Ihrem Weg in ein Gebäude einen Bogen um Wälder und Freileitungen zu machen. Achten Sie auf herunterfallende Dachziegel",
+                                "Meiden Sie die Nähe von Baugerüsten und baufälligen Häusern, von denen sich Gerüst- und Fassadenteile lösen könnten",
+                                "Schließen Sie alle Fenster und Türen sowie Rollläden oder Fensterläden",
+                                "Halten Sie sich von Öffnungen fern, wie z. B. Dachluken",
+                                "Suchen Sie möglichst einen tief liegenden Raum, z. B. Keller oder einen innen liegenden Raum Ihres Wohnbereiches auf. Kraftfahrzeuge, Wohnwagen und leichte Gebäude wie Holzbauten bieten möglicherweise keinen ausreichenden Schutz",
+                                "Meiden Sie Räume mit großer Deckenspannweite wie z. B. Hallen"
+                            ]
+                        },
+                        {
+                            "title": "Verhalten bei Gewitter",
+                            "list": [
+                                "Blitzentladungen suchen sich einen hohen Punkt, z. B. aufragende Bäume, Masten, Antennen und dergleichen. Halten Sie sich von solchen Objekten fern",
+                                "Werden Sie im Freien (z. B. auf einer Wiese) überrascht, machen Sie sich so klein wie möglich. Gehen Sie in die Hocke auf die Zehenspitzen mit möglichst eng aneinander stehenden Füßen oder suchen Sie Schutz in einem Gebäude",
+                                "Verlassen Sie ihr Kraftfahrzeug nicht und berühren Sie im Inneren keine blanken Metallteile",
+                                "Halten Sie zu Überlandleitungen einen Mindestabstand von 50 Metern"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Überschwemmungen",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Starker, wochenlanger Regen kann ganze Landstriche in Katastrophengebiete verwandeln. In solchen Fällen können auch aus kleinen Bächen reißende Ströme werden, die eine Gefahr für Leben, Haus und Eigentum bilden. Nutzen Sie die Vorhersagen des Wetterdienst und bereiten Sie sich auf Überschwemmungen vor.",
+                    "image": "",
+                    "subtitle": [
+                        {
+                            "title": "Vorbereitung",
+                            "list": [
+                                "Besorgen Sie zum Schutz Sandsäcke, Schalbretter, wasserfeste Sperrholzplatten und Silikon",
+                                "Schauen Sie, dass gefährliche Stoffe oder Chemikalien nicht vom Wasser erreicht werden können",
+                                "Bringen Sie wertvolle Möbel oder Geräte wie Computer etc. in die oberen, hochwassergeschützten Räume",
+                                "Sichern Sie den Heizöltank gegen den Auftrieb durch das Wasser, indem Sie ihn z. B. an der Wand verankern oder mit Ballast beschweren",
+                                "Evakuieren Sie rechtzeitig Kranke, Hilfebedürftige und Haustiere",
+                                "Sprechen Sie sich mit Ihren Nachbarn ab, falls Telefon und Mobilfunk ausfallen",
+                                "Verteilen Sie Rollen. Wer wird macht was?"
+                            ]
+                        },
+                        {
+                            "title": "Wichtig: ",
+                            "list": [
+                                "Halten Sie sich auf dem Laufenden! Verfolgen Sie die aktuellen Wettermeldungen und Hochwasserwarnungen"
+                            ]
+                        },
+                        {
+                            "title": "Richtig Handeln bei Hochwasser im Haus",
+                            "list": [
+                                "Behalten Sie die Ruhe und Besonnenheit. Prüfen Sie, ob Ihre Vorsorgemaßnahmen ausreichen",
+                                "Räumen Sie die Kellerräume, in die Grundwasser eindringen kann oder die volllaufen können, aus",
+                                "Dichten Sie Fenster und Türen sowie Abflussöffnungen ab",
+                                "Schalten Sie elektrische Geräte und Heizungen ab. Denken Sie an die Stromschlaggefahr. Schalten Sie den Strom gegebenenfalls komplett aus (Sicherung raus)",
+                                "Überprüfen Sie Rückstauklappen im Keller"
+                            ]
+                        },
+                        {
+                            "title": "Helfen Sie anderen",
+                            "list": [
+                                "Helfen Sie anderen, aber bringen Sie sich nicht selbst in Gefahr",
+                                "Bringen Sie Kinder vor Eintritt der Gefahr aus dem Überschwemmungsgebiet in Sicherheit",
+                                "Fahren Sie wegen der Wellenbildung und der Gefahr von Unterwasserhindernissen in überflutenden Gebieten nicht mit Booten oder anderen Fahrzeugen unnötigerweise „spazieren“",
+                                "Betreten Sie keine Uferbereiche wegen der Gefahr von Unterspülungen oder Abbrüchen. Überflutete oder teilüberflutete Straßen dürfen nicht befahren werden",
+                                "Beachten Sie die Anweisungen und Absperrungen der Einsatzkräfte"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        }
+        ]
+    }
+}  
