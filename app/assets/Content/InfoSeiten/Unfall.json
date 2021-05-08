@@ -9,7 +9,7 @@
                 {
                     "headline": "Absichern der Unfallstelle",
                     "text": "Sollten mehrere Personen mit im Fahrzeug sitzen, sollte einer der Insassen die Aufgabenteilung übernehmen",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/unfallstelle-mit-autounfall_1308-38817.jpg",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -41,7 +41,6 @@
                 {
                     "headline": "Rettung aus dem Kraftfahrzeug",
                     "text": "Es kann passieren, dass Sie Personen aus einem verunglückten Fahrzeug befreien müssen. Dabei darf allerdings Ihre eigene Sicherheit nicht gefährdet werden. Gegebenenfalls kann nur Fachpersonal die betroffene Person retten.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -80,7 +79,6 @@
                 {
                     "headline": "Allgemein",
                     "text": "Da es verschiedene Helmtypen gibt, müssen die nachfolgenden Maßnahmen evtl. entsprechend dem Helmtyp abgewandelt werden. Dieses Verfahren des Helmabnehmens soll u. a. verhindern, dass bei Vorliegen einer Halswirbelverletzung versehentlich eine Verschlimmerung der Unfallfolgen eintritt. Die Helmabnahme sollten Sie, wenn möglich, zu zweit vornehmen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Helmabnahme durch zwei Helfer",

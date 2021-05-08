@@ -8,12 +8,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint."
+                    "text": "Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/patient-liegt-waehrend-der-intensivtherapie-im-bett_74855-7774.jpg"
                 },
                 {
                     "headline": "Asthma Bronchiale",
                     "text": "Ursache sind allergische Reaktionen, psychische Einflüsse und wiederkehrende Infektionen der Luftwege. Dabei entsteht die Atemnot durch eine Verkrampfung oder Verschleimung der tieferliegenden feinen Bronchialäste in der Lunge.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -36,7 +36,7 @@
                 {
                     "headline": "Diabetes Mellitus",
                     "text": "Jeder Mensch hat eine bestimmte Menge Zucker im Blut, die für die Erhaltung der Leistungsfähigkeit des Körpers unerlässlich ist. Dieser Zucker kommt aus der Nahrung. Normalerweise reguliert der Körper diese Zuckermenge so, dass nie zu viel und nie zu wenig Zucker im Blut ist. Bei Diabetikern ist diese Regelung des Zuckerstoffwechsels gestört.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/arzt-mit-lupe-und-blutzuckermessgeraet-diabetes-mellitus-typ-2-diabetes-und-insulinproduktionskonzept-auf-weissem-hintergrund-isolierte-illustration-des-rosa-korallenblauvektors_335657-1530.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -57,7 +57,7 @@
                 {
                     "headline": "Schlaganfall",
                     "text": "Ein Schlaganfall ist eine akut eintretende Durchblutungsstörung im Gehirn. In Folge kann es zu Atem- und Kreislaufstörungen kommen.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/aerzte-die-medizinische-forschung-am-menschlichen-gehirn-durchfuehren-und-blutproben-testen_74855-10610.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -84,7 +84,6 @@
                 {
                     "headline": "Krampfanfälle",
                     "text": "Ursachen und Entstehung eines Krampfanfalls können angeborene Veranlagung, Erkrankungen, Tumoren, Verletzungen, Vergiftungen, Drogenmissbrauch oder Über- oder Unterdosierung von Medikamenten sein.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -119,12 +118,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Durch Zufuhr von Lebensmittel kann es oftmals zu Beschwerden kommen - selbst harmlose Lebensmittel wie Nüsse können eine Allergie bei den Betroffenen hervorrufen."
+                    "text": "Durch Zufuhr von Lebensmittel kann es oftmals zu Beschwerden kommen - selbst harmlose Lebensmittel wie Nüsse können eine Allergie bei den Betroffenen hervorrufen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/einkaufstueten-gesetzt-plastik-und-papierverpackungen-supermarktkorb-mit-lebensmittelverpackungen-dosen-brot-milchprodukten-flache-vektorillustrationen-fuer-einkaufen-lebensmittellieferung-wohltaetigkeitskonzept_74855-10074.jpg"
                 },
                 {
                     "headline": "Lebensmittelvergiftung",
                     "text": "Eine Lebensmittelvergiftung entsteht durch den Verzehr von Nahrungsmitteln, die durch Gifte oder Krankheitserreger (wie Bakterien) verdorben sind.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -145,7 +144,7 @@
                 {
                     "headline": "Lebensmittelallergie",
                     "text": "Bei einer solchen Allergie reagiert das Immunsystem des Körpers auf Bestandteile der Nahrung, die eigentlich harmlos sind. Betroffene mit einer schweren Lebensmittelallergie müssen betreffende Nahrungsmittel meist lebenslang meiden.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/mann-mit-nahrungsmittelallergiesymptomen-zu-produkten-wie-fisch-milch-und-eiern-lebensmittelallergie-lebensmittelalgenbestandteil-allergierisikofaktorkonzept-helle-lebendige-violette-isolierte-illustration_335657-525.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -175,7 +174,7 @@
                 {
                     "headline": "Gelenkverletzungen",
                     "text": "Durch mechanische und enorme Einwirkung von Kräften kann es bei einem Unfallgeschehen zu Verletzungen von Gelenken und Weichteilen kommen. Einmal umgeknickt und schon ist es passiert: verstaucht, verrenkt, dick angeschwollen oder gar etwas gebrochen.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/sportler-laufen-und-winzige-aerzte-behandeln-verletzungen-sportmedizin-sportmedizinische-dienstleistungen-konzept-des-sportarztes-isolierte-illustration-des-rosa-korallenblauvektorvektors_335657-1593.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -200,7 +199,6 @@
                 {
                     "headline": "Knochenbruch",
                     "text": "Knochenbrüche und Gelenkverletzungen sind Verletzungszustände, die fast immer mit Schmerzen verbunden sind. Daher vermeidet die verletzte Person Bewegungen der betroffenen Gliedmaßen. Sie als Ersthelfer sollten grundsätzlich keine Bewegungsversuche unternehmen!",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -229,7 +227,7 @@
                 {
                     "headline": "Wundversorgung",
                     "text": "Bei einer Wunde ist durch äußere Einwirkung die Schutzfunktion der Haut aufgehoben. So besteht die Gefahr von Blutverlust, Infektion und Schmerzen. Grundsätzlich sollte jede Wunde keimfrei behandelt werden.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/verschiedene-flache-icon-sets-fuer-medizinische-pflaster_74855-7897.jpg",
                     "subtitle": [
                         {
                             "title": "Gefahren durch Wunden",
@@ -260,7 +258,6 @@
                 {
                     "headline": "Fremdkörper in Wunden",
                     "text": "Es kann vorkommen, dass bei einer Verletzung Fremdkörper in Wunden gelangen. Dazu gibt es entsprechende Maßnahmen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -274,7 +271,6 @@
                 {
                     "headline": "Gewalteinwirkung auf den Kopf",
                     "text": "Es kann zu mehr oder weniger schweren Schädel-Hirn-Verletzungen kommen, beispielsweise durch Sturz oder Aufprall.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -311,7 +307,7 @@
                 {
                     "headline": "Atemrhythmus und Sauerstoffmangel",
                     "text": "Atemvolumen und Atemfrequenz werden durch den Sauerstoffbedarf bestimmt. Bei Körperbelastung wird die Atmung beschleunigt. Besonders empfindlich reagiert das Gehirn auf Sauerstoffmangel. Bereits nach wenigen Minuten ohne Sauerstoff treten bleibende Schäden der Hirnzellen an.",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/benutzer-der-achtsamkeitsmeditation-in-lotushaltung-uebt-achtsames-meditieren-mentale-ruhe-und-selbstbewusstsein-fokussieren-und-loesen-des-stresskonzepts-vektor-isolierte-illustration_335657-2250.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -334,7 +330,7 @@
                 {
                     "headline": "Mund-zu-Mund-Beatmung",
                     "text": "Ist die Nase verletzt oder beim Einblasen nicht durchlässig, können Sie als Ersthelfer auf die Beatmung Mund-zu-Mund übergehen.",
-                    "image": "",
+                    "image": "https://image.freepik.com/fotos-kostenlos/kuenstliche-beatmung-erste-hilfe-hilfe-konzept_1401-30.jpg",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -352,7 +348,6 @@
                 {
                     "headline": "Beatmung von Säuglingen und Kleinkindern",
                     "text": "Säuglinge und Kinder legen Sie zur Kontrolle der Atmung sowie zur Beatmung in Rückenlage auf eine harte Unterlage, sodass Sie den Kopf des Kindes mit Ihrer Hand in der jeweils erforderlichen Position halten können.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -373,7 +368,6 @@
                 {
                     "headline": "Fremdkörper in Luft- und Speiseröhre",
                     "text": "Ist die Luftröhre verstopft kann es schnell zu lebensbedrohlich werden, da Erstickungsgefahr droht. Als Ersthelfer gehen Sie am Besten wie hier beschrieben vor:",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -390,7 +384,6 @@
                 {
                     "headline": "Pseudokrupp (bei Säuglingen)",
                     "text": "Beim Pseudokrupp ist die Einatmung durch eine Verengung im Bereich des Kehlkopfs erschwert. Am häufigsten tritt der akute Pseudokrupp-Anfall bei Säuglingen und Kleinkindern im Alter von 6 Monaten bis zu 3 Jahren auf.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -418,7 +411,6 @@
                 {
                     "headline": "Epiglottitis (Kinder von 2-7Jahren häufig)",
                     "text": "Die Epiglottitis stellt sich ähnlich wie der Pseudokrupp dar, es handelt sich um eine entzündliche Anschwellung des Kehldeckels und er kann im Alter von zwei bis sieben Jahren auftreten.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -450,12 +442,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Gifte können auf vier unterschiedliche Aufnahmewege in den Körper gelangen: Über die Atemwege, Verdauungswege, direkt über den Blutkreislauf und über die Haut."
+                    "text": "Gifte können auf vier unterschiedliche Aufnahmewege in den Körper gelangen: Über die Atemwege, Verdauungswege, direkt über den Blutkreislauf und über die Haut.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/realistische-giftflaschenzusammensetzung-mit-glasroehrchen-und-gefaessen-die-mit-bunten-fluessigkeiten-gefuellt-sind_1284-30209.jpg"
                 },
                 {
                     "headline": "Vergiftungen über die Atemwege",
                     "text": "Eigene Sicherheit beachten und Betroffenen so schnell wie möglich aus dem Gefahrenbereich bringen",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Hilfe beim Erbrechen",
@@ -468,7 +460,7 @@
                 },
                 {
                     "headline": "Vergiftung durch Kohlendioxid",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/buerger-tragen-gesichtsmasken-zum-schutz-vor-smog-und-staubiger-luft-menschen-die-in-der-naehe-von-pflanzenrohren-und-industrieemissionen-gehen-fuer-umweltprobleme-oekologie-coronavirus_74855-8287.jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -495,12 +487,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Bienen, Wespen, Hornissen und weitere Insekte sind besonders im Sommer ein Problem - vor allem wenn Personen auf einen Insektenstich stärker reagieren. Insbesondere die Zecke ist fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0°Celsius liegt."
+                    "text": "Bienen, Wespen, Hornissen und weitere Insekte sind besonders im Sommer ein Problem - vor allem wenn Personen auf einen Insektenstich stärker reagieren. Insbesondere die Zecke ist fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0°Celsius liegt.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/bunte-verschiedene-insekten-wuermer-und-kaefer-flach-gesetzt_74855-15369.jpg"
                 },
                 {
                     "headline": "Zecken",
                     "text": "Zecken sind fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0° Celsius liegt. Dabei können Sie Zeckenborreliose oder Früh-Sommer-Meningo-Encephalitis (FSME) übertragen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -513,7 +505,7 @@
                 {
                     "headline": "Insektenstiche",
                     "text": "Ein Bienen-, Wespen- oder Hornissenstich ist zwar beunruhigend und häufig auch schmerzhaft aber in der Regel ungefährlich. Reagieren Personen auf Insektenstiche allergisch, können unerwartet auf der Einstichstelle eine allergische Reaktion entwickeln.",
-                    "image": "",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/moskito-der-eine-person-mit-flachem-design-beisst_23-2147942799.jpg?size=338&ext=jpg",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -541,12 +533,12 @@
             "subtext": [
                 {
                     "headline": "Allgemein",
-                    "text": "Mit chemischen Produkten ist nicht zu spaßen. Bei der Verwendunger solcher Produkte ist stests Vorsicht geboten, dennoch kann es zu sogenannten Chemieunfällen kommen. Hierbei gilt: Ruhe bewahren und der Anleitung folgen."
+                    "text": "Mit chemischen Produkten ist nicht zu spaßen. Bei der Verwendunger solcher Produkte ist stests Vorsicht geboten, dennoch kann es zu sogenannten Chemieunfällen kommen. Hierbei gilt: Ruhe bewahren und der Anleitung folgen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/illustration-des-wissenschaftsforschungslabors_1150-41705.jpg"
                 },
                 {
                     "headline": "Augenverletzung",
                     "text": "Mechanische Augenverletzung: Trotz Schutzbrille kann es vorkommen, dass Chemikalien ins Auge gelangen.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -563,7 +555,6 @@
                 {
                     "headline": "Brennende Person löschen",
                     "text": "Das beste Löschmittel ist das, was Sie als erstes erreichen können! Wenn Sie aber zwischen mehreren Optionen wählen können, so ist der Feuerlöscher die erste Wahl!",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
@@ -576,7 +567,7 @@
                 },
                 {
                     "headline": "Hautkontakt mit Chemikalien",
-                    "image": "",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/illustration-der-chemischen-flasche_53876-5926.jpg",
                     "subtitle": [
                         {
                             "title": "Verätzung",
@@ -610,7 +601,6 @@
                 {
                     "headline": "Inhalation von Chemikalien",
                     "text": "Eine Inhalation von Chemikalien kann zu Lungenverletzungen führen, die Sie schlecht beurteilen können, weil Sie in die Lunge nicht hineinsehen können.",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Erkennen",
@@ -633,7 +623,6 @@
                 {
                     "headline": "Verbrennung, Verbrühung",
                     "text": "Verbrennungen werden in verschiedene Grade eingeteilt: 1. Verbrennung ersten Grades: Hautrötung, die in der Regel schmerzhaft sind 2. Verbrennung zweiten Grades: Brandblasen - je nachdem wie tief die Hitzeschäden in die Haut eingedrungen sind, heilt die Verletzung entweder vollständig ab (Grad 2a) oder es kommt zur Narbenbildung (Grad 2b) 3. Alle Verbrennungen noch höheren Grades führen zu bleibenden Schäden",
-                    "image": "",
                     "subtitle": [
                         {
                             "title": "Maßnahmen",
