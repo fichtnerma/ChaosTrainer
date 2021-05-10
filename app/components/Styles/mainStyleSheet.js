@@ -45,11 +45,12 @@ export default StyleSheet.create({
     alignItems: "center",
   },
 
+  //Text
   titel: {
     color: Colors.black,
     flex: 1,
-    fontSize: 30,
-    marginTop: 10,
+    fontSize: 25,
+    marginTop: 5,
     marginLeft: 15,
   },
 
@@ -68,7 +69,7 @@ export default StyleSheet.create({
 
   orangeSchrift: {
     color: Colors.lightOrange,
-    fontSize: 70,
+    fontSize: 55,
     fontWeight: "bold",
     marginLeft: 15,
     position: "absolute",

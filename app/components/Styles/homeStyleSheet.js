@@ -7,12 +7,13 @@ const windowHeight = Dimensions.get("window").height;
 
 export default StyleSheet.create({
   boxSize: {
-    width: windowWidth*0.9,
-    height: windowHeight*0.245,
+    width: windowWidth * 0.9,
+    height: windowHeight * 0.245,
+    marginTop: 20,
   },
 
   tippDesTagesBox: {
-    width: windowWidth*0.9,
+    width: windowWidth * 0.9,
     height: 140,
     backgroundColor: Colors.white,
     borderRadius: 15,
@@ -29,7 +30,7 @@ export default StyleSheet.create({
   //Text
   tippDesTagesTitel: {
     color: Colors.orange,
-    fontSize: 30,
+    fontSize: 25,
     marginLeft: 15,
     marginBottom: 5,
     top: 8,
@@ -50,7 +51,7 @@ export default StyleSheet.create({
     width: 100,
     height: 90,
     position: "absolute",
-    top: 90,
-    left: 230,
+    top: 85,
+    left: 220,
   },
 });
