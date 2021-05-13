@@ -90,7 +90,6 @@ export default class Tabbar extends Component {
                         <StaticTabbar ref={CurrentTab} value={translateX} navigation={this.props.navigation} route={this.props.route} {...{tabs}} />
                     </View>
                 </View>
-                <View style={StyleSheet.safeArea}></View>
             </View>
         );
     }
