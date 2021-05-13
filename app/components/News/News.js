@@ -11,33 +11,33 @@ export default function News() {
     const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState([]);
     const renderItem = ({item, index}) => (
-        <View style={[mainStyle.box, homeStyle.boxSize, {marginTop: 10}]} key={index}>
-            <Text style={[homeStyle.tippDesTagesTitel, styles.newsTitel]} key={"land" + index}>
+        <View key={index.id} style={[mainStyle.box, homeStyle.boxSize, {marginTop: 10}]}>
+            <Text key={"land" + index.id} style={[homeStyle.tippDesTagesTitel, styles.newsTitel]}>
                 {item.attributes.LAN_ew_GEN}
             </Text>
-            <View style={{flexDirection: "row"}} key={index}>
+            <View key={index.id} style={{flexDirection: "row"}}>
                 <Image
+                    key={"image1" + index.id}
                     source={require("../../assets/InfoScreen/Virus.png")}
                     style={styles.virusIcon}
-                    key={"image" + index}
                 ></Image>
-                <View style={styles.newsBlock} key={index}>
-                    <Text style={styles.newsText} key={"7" + index}>
+                <View key={index.id} style={styles.newsBlock}>
+                    <Text key={"d" + index.id} style={styles.newsText}>
                         7-Tagesinzidenz:{" "}
-                        <Text style={styles.zahlenText} key={"inz" + index}>
+                        <Text key={"inz" + index.id} style={styles.zahlenText}>
                             {item.attributes.cases7_bl_per_100k_txt}
                         </Text>
                     </Text>
-                    <Text style={styles.newsText} key={"fallz" + index}>
+                    <Text key={"fallz" + index.id} style={styles.newsText}>
                         Fallzahlen:{" "}
-                        <Text style={styles.zahlenText} key={"fall" + index}>
-                            {item.attributes.Fallzahl}
+                        <Text key={"fall" + index.id} style={styles.zahlenText}>
+                            {formateNumber(item.attributes.Fallzahl)}
                         </Text>
                     </Text>
-                    <Text style={styles.newsText} key={"todes" + index}>
+                    <Text key={"todes" + index.id} style={styles.newsText}>
                         Todeszahlen:{" "}
-                        <Text style={styles.zahlenText} key={"todeszahl" + index}>
-                            {item.attributes.Death}
+                        <Text key={"todeszahl" + index.id} style={styles.zahlenText}>
+                            {formateNumber(item.attributes.Death)}
                         </Text>
                     </Text>
                 </View>
@@ -54,10 +54,18 @@ export default function News() {
             .finally(() => setLoading(false));
     }, []);
 
-    // function filterData(apiData) {
-    //     return apiData.filter((api) => api.attributes.LAN_ew_GEN == "Bayern");
-    // }
-
+    function formateNumber(number) {
+        let str = number.toString();
+        if (str.length > 3) {
+            str =
+                str.substring(0, str.length - 3) + "." + str.substring(str.length - 3, str.length);
+        }
+        if (str.length > 7) {
+            str =
+                str.substring(0, str.length - 7) + "." + str.substring(str.length - 7, str.length);
+        }
+        return str;
+    }
     return (
         <View style={{paddingTop: 10, height: 215, marginBottom: 0}}>
             {isLoading ? (
@@ -67,8 +75,11 @@ export default function News() {
                     showsHorizontalScrollIndicator={false}
                     horizontal={true}
                     data={data}
-                    keyExtractor={({id}) => id}
+                    keyExtractor={({index}) => {
+                        return index;
+                    }}
                     renderItem={renderItem}
+                    // key={"test"}
                 />
             )}
         </View>
