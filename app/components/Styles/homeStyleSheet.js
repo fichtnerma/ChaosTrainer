@@ -1,9 +1,9 @@
 //Librarys
-import {StyleSheet, Dimensions} from "react-native";
-import Colors from "../../constants/colors.js";
+import {StyleSheet, Dimensions} from 'react-native';
+import Colors from '../../constants/colors.js';
 
-const windowWidth = Dimensions.get("window").width;
-const windowHeight = Dimensions.get("window").height;
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default StyleSheet.create({
     boxSize: {
@@ -19,12 +19,13 @@ export default StyleSheet.create({
         borderRadius: 15,
         margin: 10,
         shadowOffset: {width: 0, height: 0},
-        shadowColor: "black",
-        shadowOpacity: 0.5,
-        justifyContent: "center",
-        alignContent: "center",
+
+        shadowColor: 'black',
+        shadowOpacity: 0.2,
+        justifyContent: 'center',
+        alignContent: 'center',
         shadowRadius: 5,
-        elevation: 10,
+        elevation: 5,
     },
 
     //Text
@@ -34,7 +35,7 @@ export default StyleSheet.create({
         marginLeft: 15,
         marginBottom: 5,
         top: 8,
-        position: "absolute",
+        position: 'absolute',
         //fontWeight: "bold",
     },
 
@@ -53,5 +54,6 @@ export default StyleSheet.create({
         position: "absolute",
         top: 85,
         left: 220,
+
     },
 });
