@@ -1,0 +1,157 @@
+{
+    "inhalt": {
+        "name": "Brand",
+        "infoText": "Versuchen Sie wenn möglich kleine Feuer selbst zu löschen ohne sich selbst in Gefahr zu bringen",
+        "categories": [
+        {
+            "name": "Ölbrand",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Ölbrand niemals mit Wasser löschen!",
+                    "image": "https://img.freepik.com/fotos-kostenlos/feuerflammen-auf-schwarzem-hintergrund_158595-4100.jpg?size=338&ext=jpg",
+                    "subtitle": [
+                        {
+                            "title": "Vorsicht",
+                            "list": [
+                                "Beim Versuch brennendes Öl mit Wasser zu löschen, verdampft das Wasser explosionsartig",
+                                "So wird aus 1l Wasser etwa 1700l Wasserdampf",
+                                "Häufig greifen Personen instinktiv zum Löschen mit Wasser, was Verherrend sein kann"
+                            ]
+                        },   
+                        {
+                            "title": "Verhalten",
+                            "list": [
+                                "Falls möglich brennendes Fett mit Deckel ersticken und Topf von der Hitzequelle nehmen",
+                                "Feuerlöschdecken sind nur bedingt geeignet, weil sie anfangen können bei hohen Temperaturen zu brennen",
+                                "Bei Ölbränden sind nur Feuerlöscher der Brandklasse F geeignet"                              
+                            ]
+                        }                    
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Wohnungsbrand",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Kleine Brände sollten sie versuchen selbst mit Wasser oder einem Feurlöscher zu löschen, jedoch nur wenn dies möglich ist ohne sich selbst in Gefahr zu bringen",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/professioneller-feuerwehrmann-der-feuer-im-haus-loescht_74855-16220.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Beachten",
+                            "list": [
+                                "Nicht den Aufzug verwenden",
+                                "Nicht durch verrauchte Gänge fliehen"
+                            ]
+                        },
+                        {
+                            "title": "Verhalten",
+                            "list": [
+                                "Bringen Sie sich und andere in Sicherheit",
+                                "Benachrichtigen Sie die Feuerwehr"
+                            ]
+                        },
+                        {
+                            "title": "Versperrter Fluchtweg",
+                            "list": [
+                                "Im Raum bleiben und Fenster verschließen",
+                                "Öffnungen an Fenstern und Türen mit nassen Tüchern abdecken",
+                                "Machen Sie sich selbst am Fenster bemerkbar!"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Waldbrand",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Mit Hilfe des Waldbrandgefahrenindex(WBI) können sie sich über die Gefahr eines Brandes informieren. Ab Stufe 3 ist besondere Vorsicht geboten",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/unfallszene-mit-waldbrand_1308-35157.jpg?size=338&ext=jpg",
+                    "subtitle": [
+                        {
+                            "title": "Verhalten im Freien",
+                            "list": [
+                                "Flüchte seitlich zur Windrichtung",
+                                "Schütze dich mit Hilfe z.B. einer Kopfbedeckung vor Funkenflug",
+                                "Halte dir gegen den Rauch ein nasses Tuch vor den Mund"
+                            ]
+                        },
+                        {
+                            "title": "Verhalten im Auto",
+                            "list": [
+                                "Fahre langsam und mit angeschaltetem Licht weiter",
+                                "Klima- und Lüftungsanlage ausschalten"
+                            ]
+                        },
+                        {
+                            "title": "Verhalten im Haus",
+                            "list": [
+                                "Bleibe im Haus und rufe die Feuerwehr",
+                                "Stelle jegliche Gaszufuhr ab",
+                                "Schalte alle möglichen Beleuchtungen an",
+                                "Fülle große Behälter mit Wasser und dichte Öffnungen mit nassen Tüchern ab",
+                                "Halte Feuerlöscher,Axt und Spaten für Notfälle bereit"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Autobrand",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Bleiben Sie ruhig!",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/unfallauto-in-brand_1308-33552.jpg?size=338&ext=jpg",
+                    "subtitle": [
+                        {
+                            "title": "Verhalten",
+                            "list": [
+                                "Warnblinkanlage anschalten",
+                                "Fahrzeug zügig verlassen",
+                                "Bauen Sie einen Abstand von mindestens 50m zum brennenden Fahrzeug auf",
+                                "Rufen Sie die Feuerwehr"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Elektrobrand",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Löschen Sie Elektrobrände nie mit Wasser, da so die Gefahr eines Stromschlags besteht",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/flammende-netzstecker-in-horizontaler-steckdose_1441-2645.jpg?size=338&ext=jpg",
+                    "subtitle": [
+                        {
+                            "title": "Verhalten",
+                            "list": [
+                                "Gerät vom Stromnetzt trennen",
+                                "Verwenden Sie einen Feuerlöscher zum Löschen des Geräts"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        }
+    ]
+    }
+}

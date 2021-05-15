@@ -1,0 +1,88 @@
+{
+    "inhalt": {
+        "name": "Terrorismus",
+        "infoText": "Terrorgruppen verfolgen zwar unterschiedliche politische und ideologische Ziele, doch sie ähneln sich in ihrer Gewaltstrategie. Und sie alle setzen auf den gleichen psychologischen Effekt: Die Verbreitung von Angst und Schrecken.",
+        "categories": [
+        {
+            "name": "Amoklauf",
+            "subtext": [
+                {
+                    "headline": "Verhaltensregeln",
+                    "text": "Wählen Sie wenn möglich sofort den Notruf 112. Versuchen Sie immer leise und bedeckt zu bleiben.",
+                    "subtitle": [
+                        {
+                            "title": "Fliehen",
+                            "list": [
+                                "Verlassen Sie auf dem schnellsten Weg die Gefahrenzone",
+                                "Helfen Sie wenn möglich anderen Perosnen bei der Flucht. Ihre eigene Sicherheit hat dabei immer Vorrang",
+                                "Exponieren Sie sich nicht während der Flucht - ducken Sie sich und verhalten Sie unauffällig", 
+                                "Warnen Sie andere Personen, um den Zutritt zur Gefahrenzone zu verhindern"
+                            ]
+                        },
+                        {
+                            "title": "Verstecken",
+                            "list": [
+                                "Verriegeln und verbarrikatieren Sie die Tür",
+                                "Löschen Sie das Licht und schalten Sie Lautsprecher und Ihr Mobiltelefon (Ton, Vibration) aus",
+                                "Entfernen Sie sich in den Gebäuden von Fenstern und Türen und legen sie sich auf den Boden", 
+                                "Oder verstecken Sie sich innerhalb on Gebäuden hinter einer sicheren Mauer (Wand, Pfeiler)"
+                            ]
+                        },
+                        {
+                            "title": "Alamieren",
+                            "list": [
+                                "Informieren Sie die Polizei",
+                                "Im Falle einer Flucht zur Polizei: Bitte rennen Sie nicht auf die Polizei zu und vermeiden Sie hektische Bewegungen",
+                                "Halten Sie beim Eintreffen der Polzei die Hände hoch und zeigen Sie ihre leeren Handflächen, um zu vermitteln, dass sie unbewaffnet sind" 
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Explosionen",
+            "subtext": [
+                {
+                    "headline": "Verhaltensregeln",
+                    "text": "Wählen Sie wenn möglich sofort den Notruf 112.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/steigende-orange-feuerball-der-kernexplosion-der-atompilzwolke-in-der-wuestenwaffe_1284-16801.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Explosion in Gebäuden",
+                            "list": [
+                                "Gefahrenzone sofort verlassen und wenn möglich Andere dabei unterstützen, ohne sich selbst dabei zu gefährden",
+                                "Bei mehrstöckigen Gebäuden die Treppen und nicht den Aufzug benutzen",
+                                "Es herrscht Einsturzgefahr, daher ausreichend Abstand zu den beschädigten Gebäuden halten. (Faustformel für eine sichere Entfernung: ungefähr die Hälfte der ursprünglichen Haushöhe)",
+                                "Auf zusätzliche Gefahren achten, wie z.B. offene elektrische Leitungen (v.a. im Zusammenhang mit geborstenen Wasserleitungen) , auf Gerüche von ausströmendem Gas oder zischen",
+                                "Keine Streichhölzer oder Feuerzeuge verwenden - Brände können durch offene Gasleitungen entstehen"
+                            ]
+                        },
+                        {
+                            "title": "Wenn Menschen verschüttet sind",
+                            "list": [
+                                "Für unter Trümmern verschüttete Menschen besteht akute Lebensgefahr, falls sie nicht frühzeitig geborgen werden. Daher können Sie, sofern sie unverletzt sind den Verschütteten helfen, gehen Sie dabei aber keine Risiken ein",
+                                "Rufen Sie Hilfe herbei",
+                                "Niemals Verschüttete zwischen Trümmern hervorziehen. Sie könnten eingeklemmt sein oder schwere Verletzungen haben",
+                                "Befolgen Sie strikt die Anweisungen der Einsatzkräfte"
+                            ]
+                        },
+                        {
+                            "title": "Wenn Sie selbst Hilfe brauchen ",
+                            "list": [
+                                "Machen Sie durch Rufe auf sich aufmerksam",
+                                "Wenn sie selbst verschüttet sind versuchen Sie möglichst laute Geräusche zu machen, da Sie meist von Außen nicht sichtbar sind und die Helfer Sie nur über Geräusche orten können",
+                                "Wenn Sie nicht um Hilfe rufen können, verwenden sich Gegenstände um Klopfgeräusche zu erzeugen"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        }
+        ]
+    }
+}  

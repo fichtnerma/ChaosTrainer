@@ -1,0 +1,641 @@
+{
+    "inhalt": {
+        "name": "Erste Hilfe",
+        "infoText": "Das wichtigste zuerst: Bewahren Sie Ruhe! Verschaffen Sie sich einen Überblick und beurteilen Sie, was Sie in der momentanen Situation machen können. Je nach Situation braucht es unterschiedliche Maßnahmen. Folgen Sie unserer Anleitung.",
+        "categories": [
+        {
+            "name": "Akute Erkrankungen",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Bei einer akuten Erkrankung liegt der Unterschied zu chronischen Krankheiten darin, dass sich sie sich plötzlich und meist in kurzer Zeitdauer entwickeln - in der Regel ist ein Zeitraum von 3-14 Tagen gemeint.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/patient-liegt-waehrend-der-intensivtherapie-im-bett_74855-7774.jpg"
+                },
+                {
+                    "headline": "Asthma Bronchiale",
+                    "text": "Ursache sind allergische Reaktionen, psychische Einflüsse und wiederkehrende Infektionen der Luftwege. Dabei entsteht die Atemnot durch eine Verkrampfung oder Verschleimung der tieferliegenden feinen Bronchialäste in der Lunge.",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Mühe beim Lufteinatmen, das Ausatmen fällt ihm schwer",
+                                "Betroffene ringt keuchend nach Luft - infolge des Sauerstoffmangels blau im Gesicht (besonders an den Lippen erkennbar)",
+                                "Betroffener hat Angst und ist sehr unruhig"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Betroffenen beruhigen und ihn auffordern, bei aufrechtem Oberkörper (stehend oder sitzend) ruhig zu atmen",
+                                "Einnahme von Medikamenten (Inhalation) unterstützen",
+                                "Für Arztbehandlung sorgen bzw. Notruf tätigen"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Diabetes Mellitus",
+                    "text": "Jeder Mensch hat eine bestimmte Menge Zucker im Blut, die für die Erhaltung der Leistungsfähigkeit des Körpers unerlässlich ist. Dieser Zucker kommt aus der Nahrung. Normalerweise reguliert der Körper diese Zuckermenge so, dass nie zu viel und nie zu wenig Zucker im Blut ist. Bei Diabetikern ist diese Regelung des Zuckerstoffwechsels gestört.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/arzt-mit-lupe-und-blutzuckermessgeraet-diabetes-mellitus-typ-2-diabetes-und-insulinproduktionskonzept-auf-weissem-hintergrund-isolierte-illustration-des-rosa-korallenblauvektors_335657-1530.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Starker Durst, häufiges Wasserlassen, Juckreiz, trockene Haut, Schwäche, Müdigkeit, Abwehrschwäche"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Betroffenen beruhigen",
+                                "Betroffene haben für Diabetes in der Regel ein Set mit sich, diese mit Unterstützung des Betroffenen einnehmen",
+                                "Arzt aufsuchen"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Schlaganfall",
+                    "text": "Ein Schlaganfall ist eine akut eintretende Durchblutungsstörung im Gehirn. In Folge kann es zu Atem- und Kreislaufstörungen kommen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/aerzte-die-medizinische-forschung-am-menschlichen-gehirn-durchfuehren-und-blutproben-testen_74855-10610.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Eine Körperseite des Betroffenen ist gelähmt, beispielsweise hängen ein Augenlid und ein Mundwinkel herab, Arm und/oder Bein sind gelähmt oder bewegungseingeschränkt",
+                                "Der Betroffene ist nicht mehr richtig ansprechbar",
+                                "Sprach- und Schluckstörungen",
+                                "Erbrechen",
+                                "Atemstörungen"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Betroffenen bei erhaltenem Bewusstsein mit erhöhtem Oberkörper lagern, um das Gehirn zu entlasten",
+                                "Beengte Kleidung öffnen",
+                                "Mit dem Betroffenen reden und ihn beruhigen",
+                                "Notruf tätigen",
+                                "Bei keiner Ansprechbarkeit des Betroffenen, soll die Person in der Seitenlage gelagert werden - ist keine Atmung mehr vorhanden -> Herz-Lungen-Wiederbelebung"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Krampfanfälle",
+                    "text": "Ursachen und Entstehung eines Krampfanfalls können angeborene Veranlagung, Erkrankungen, Tumoren, Verletzungen, Vergiftungen, Drogenmissbrauch oder Über- oder Unterdosierung von Medikamenten sein.",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Der Betroffene fällt plötzlich um",
+                                "Der Betroffene ist nicht mehr ansprechbar",
+                                "Zuckenden Bewegungen und Verkrampfungen des ganzen Körpers oder einzelner Körperteile",
+                                "Es kann zu unkontrolliertem Speichelfluss oder Abgang vom Stuhl und Urin kommen",
+                                "Nach Abklingen der Krämpfe besteht weiterhin eine Bewusstlosigkeit bei regelrechter Atmung",
+                                "Nach dem Krampfanfall kann sich der Betroffene nicht an das Ereignis erinnern"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Situation für den Betroffenen und Personen im Umfeld absichern",
+                                "Gegenstände entfernen, an denen sich der Betroffene verletzen könnte",
+                                "Krampfende Körperteile auf keinen Fall durchführen",
+                                "Notruf",
+                                "Ist keine Atmung mehr vorhanden, beginnen Sie mit der Herz-Lungen-Wiederbelebung"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+
+        {
+            "name": "Lebensmittel",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Durch Zufuhr von Lebensmittel kann es oftmals zu Beschwerden kommen - selbst harmlose Lebensmittel wie Nüsse können eine Allergie bei den Betroffenen hervorrufen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/einkaufstueten-gesetzt-plastik-und-papierverpackungen-supermarktkorb-mit-lebensmittelverpackungen-dosen-brot-milchprodukten-flache-vektorillustrationen-fuer-einkaufen-lebensmittellieferung-wohltaetigkeitskonzept_74855-10074.jpg"
+                },
+                {
+                    "headline": "Lebensmittelvergiftung",
+                    "text": "Eine Lebensmittelvergiftung entsteht durch den Verzehr von Nahrungsmitteln, die durch Gifte oder Krankheitserreger (wie Bakterien) verdorben sind.",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Betroffene hat Übelkeit, Erbrechen, Durchfall oder Bauchkrämpfe"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Bei leichten Beschwerden hilft viel Wasser trinken",
+                                "Bei stärkerem Durchfall empfiehlt sich eine Salz-Zucker-Lösung",
+                                "Falls die Symptome wie Durchfall und Erbrechen nicht innerhalb weniger Tage von alleine verschwinden, sollte ein Arztbesuch folgen!"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Lebensmittelallergie",
+                    "text": "Bei einer solchen Allergie reagiert das Immunsystem des Körpers auf Bestandteile der Nahrung, die eigentlich harmlos sind. Betroffene mit einer schweren Lebensmittelallergie müssen betreffende Nahrungsmittel meist lebenslang meiden.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/mann-mit-nahrungsmittelallergiesymptomen-zu-produkten-wie-fisch-milch-und-eiern-lebensmittelallergie-lebensmittelalgenbestandteil-allergierisikofaktorkonzept-helle-lebendige-violette-isolierte-illustration_335657-525.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Grad 0: Rötungen, Schwellung oder Juckreiz an den Schleimhäuten",
+                                "Grad 1: Ganzkörperreaktion: Hautausschlag, Rötung, Quaddeln und Juckreiz, Kopfschmerzen, Heiserkeit und Unruhe kommen",
+                                "Grad 2: Neben den Beschwerden des ersten Grades treten Luftnot, Schwindel, Urin- und Stuhldrang auf. Der Puls ist schnell und der Blutdruck ist niedrig",
+                                "Grad 3: Neben den Beschwerden der ersten beide Grade liegt hier bereits eine bedrohliche Luftnot vor.  Es kommt zu unwillkürlichem Stuhl- und Urinabgang. Oft erbrechen sich die Betroffenen. Ihr Bewusstsein ist eingetrübt und sie sind nur noch bedingt ansprechbar",
+                                "Grad 4: Bei diesem medizinischen Notfall verliert der Patient das Bewusstsein, erleidet einen Atem- und Kreislaufstillstand. Es besteht akute Lebensgefahr. Eine solche allergische Reaktion erfordert sofortiges notärztliches Eingreifen, um den Patienten noch retten zu können"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Betroffenen beruhigen",
+                                "Betroffene haben für schwere Lebensmittelallergien ein Notfall-Set mit sich, diese unverzüglich anwenden, falls nicht, muss der Notruf getätigt werden"
+                            ]
+                        }
+                    ]
+                }
+            ]   
+        },
+
+        {
+            "name": "Verletzung/Wunde",
+            "subtext": [
+                {
+                    "headline": "Gelenkverletzungen",
+                    "text": "Durch mechanische und enorme Einwirkung von Kräften kann es bei einem Unfallgeschehen zu Verletzungen von Gelenken und Weichteilen kommen. Einmal umgeknickt und schon ist es passiert: verstaucht, verrenkt, dick angeschwollen oder gar etwas gebrochen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/sportler-laufen-und-winzige-aerzte-behandeln-verletzungen-sportmedizin-sportmedizinische-dienstleistungen-konzept-des-sportarztes-isolierte-illustration-des-rosa-korallenblauvektorvektors_335657-1593.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Unmittelbar eintretende, oft starke Schmerzen",
+                                "Kraftlosigkeit der betroffenen Region",
+                                "Bewegungseinschränkung und/oder Bewegungsunfähigkeit",
+                                "Schwellung mit Druckempfindlichkeit"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Verletztes Gelenk ruhig stellen und nicht mehr belasten",
+                                "Betroffene Körperregion kühlen",
+                                "Kompressionsverband anlegen",
+                                "Bei Blutung, betroffenen Bereich hochlagern"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Knochenbruch",
+                    "text": "Knochenbrüche und Gelenkverletzungen sind Verletzungszustände, die fast immer mit Schmerzen verbunden sind. Daher vermeidet die verletzte Person Bewegungen der betroffenen Gliedmaßen. Sie als Ersthelfer sollten grundsätzlich keine Bewegungsversuche unternehmen!",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Schonhaltung des Betroffenen",
+                                "Unnatürliche Lage betroffener Gliedmaßen",
+                                "Bewegungseinschränkung oder Bewegungsunfähigkeit",
+                                "Schmerz im Bereich des Bruches",
+                                "Wunde, ggf. sichtbarer Knochen"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Bruchstelle nicht bewegen",
+                                "Kein Einrenkungs- oder Bewegungsversuche unternehmen",
+                                "Offenen Bruch mit Wundauflage bedecken",
+                                "Bei geschlossenem Knochenbruch kühlen mit nassen Tüchern oder Wasser",
+                                "Notruf tätigen",
+                                "Umpolstern der verletzten Gliedmaßen mit geeignetem Material, z. B. festgerollten Kleidungsstücken, Decken, Kissen, Sandsäcken oder Ähnlichem",
+                                "Wünsche des Betroffenen nach Möglichkeit berücksichtigen"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Wundversorgung",
+                    "text": "Bei einer Wunde ist durch äußere Einwirkung die Schutzfunktion der Haut aufgehoben. So besteht die Gefahr von Blutverlust, Infektion und Schmerzen. Grundsätzlich sollte jede Wunde keimfrei behandelt werden.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/verschiedene-flache-icon-sets-fuer-medizinische-pflaster_74855-7897.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Gefahren durch Wunden",
+                            "list": [
+                                "Je nach Art der Wunden können auch größere Blutgefäße sowie Nerven, Muskeln, Knochen und Organe mitverletzt werden",
+                                "Bei Wunden, die durch Holzsplitter oder Dornen oder Verschmutzung entstanden sind, besteht die Gefahr einer Infektion mit Tetanuserreger"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Betroffene Person soll je nach Zustand sitzen oder liegen",
+                                "Jede Wunde wird wegen zusätzlicher Infektionsgefahr keimfrei bedeckt",
+                                "Wenn möglich Einmal-Handschuhe dabei tragen!"
+                            ]
+                        },
+                        {
+                            "title": "Arten von Verbänden",
+                            "list": [
+                                "Fingerkuppen Verband",
+                                "Ellenbogenverband",
+                                "Handverband",
+                                "Anlegen eines Druckverbandes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Fremdkörper in Wunden",
+                    "text": "Es kann vorkommen, dass bei einer Verletzung Fremdkörper in Wunden gelangen. Dazu gibt es entsprechende Maßnahmen.",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "WICHTIG: Alle Fremdkörper in Wunden werden ausschließlich vom Arzt entfernt!",
+                                "Wunde so bedecken, dass der Fremdkörper in die Wundbedeckung mit einbezogen ist und die Wundbedeckung um ihn herum gelegt wird. Der Fremdkörper wird mit weichem Material so umgeben, dass der Verband ihn nicht tiefer in die Wunde drücken kann und er sich nicht von selbst bewegt"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Gewalteinwirkung auf den Kopf",
+                    "text": "Es kann zu mehr oder weniger schweren Schädel-Hirn-Verletzungen kommen, beispielsweise durch Sturz oder Aufprall.",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Kurzzeitiger Bewusstseinsschwund bis hin zur Bewusstlosigkeit",
+                                "Erinnerungslücke nach Wiederkehr des Bewusstseins",
+                                "Kopfschmerz",
+                                "Schwindel",
+                                "Übelkeit bis hin zum Erbrechen"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Bei Bewusstlosigkeit legen Sie die Person in die Seitenlage",
+                                "Betroffenen bei erhaltenem Bewusstsein mit erhöhtem Oberkörper lagern",
+                                "Offenen Wunde im Schädelbereich müssen mit einer keimfreien Wundbedeckung versorgt werden",
+                                "Mit dem Betroffenen reden und ihn beruhigen",
+                                "Notruf tätigen"
+                            ]
+                        }
+                    ]
+                }
+            ]   
+        },
+
+        {
+            "name": "Atembeschwerden",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Durch die Atmung werden alle Zellen Ihres Körpers mit lebensnotwendigen Sauerstoff versorgt. In vielen Fällen kann aber zu Atembeschwerden kommen, die für den Betroffenen im Ernstfall zu Tod führen kann. Hierbei gilt: Ruhe bewahren und der Anleitung folgen."
+                },
+                {
+                    "headline": "Atemrhythmus und Sauerstoffmangel",
+                    "text": "Atemvolumen und Atemfrequenz werden durch den Sauerstoffbedarf bestimmt. Bei Körperbelastung wird die Atmung beschleunigt. Besonders empfindlich reagiert das Gehirn auf Sauerstoffmangel. Bereits nach wenigen Minuten ohne Sauerstoff treten bleibende Schäden der Hirnzellen an.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/benutzer-der-achtsamkeitsmeditation-in-lotushaltung-uebt-achtsames-meditieren-mentale-ruhe-und-selbstbewusstsein-fokussieren-und-loesen-des-stresskonzepts-vektor-isolierte-illustration_335657-2250.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Der Betroffene zeigt keine Atembewegungen",
+                                "Keine Atemgeräusche hörbar",
+                                "Sichtbare Verlegung der Atemwege"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Notruf tätigen",
+                                "Sichtbare Fremdkörper aus dem Mund entfernen",
+                                "Mund-zu-Mund Beatmung"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Mund-zu-Mund-Beatmung",
+                    "text": "Ist die Nase verletzt oder beim Einblasen nicht durchlässig, können Sie als Ersthelfer auf die Beatmung Mund-zu-Mund übergehen.",
+                    "image": "https://image.freepik.com/fotos-kostenlos/kuenstliche-beatmung-erste-hilfe-hilfe-konzept_1401-30.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Überstrecken des Halses beibehalten",
+                                "Daumen und Zeigefinger der auf der Stirn liegenden Hand verschießen die Nase",
+                                "Mund des Betroffenen ein wenig öffnen. Den eigenen Mund weit öffnen und einatmen",
+                                "Nach eigenem Rhythmus vorsichtig beatmen",
+                                "Kopf anheben und zur Seite drehen, dabei müssen Sie das Zurücksinken des Brustkorbes oder Oberbauches beobachten, evtl. gleichzeitig auf entweichende Luft horchen und die Beachtung fortsetzen",
+                                "Wiederholt Atmung, Bewusstsein und Puls kontrollieren"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Beatmung von Säuglingen und Kleinkindern",
+                    "text": "Säuglinge und Kinder legen Sie zur Kontrolle der Atmung sowie zur Beatmung in Rückenlage auf eine harte Unterlage, sodass Sie den Kopf des Kindes mit Ihrer Hand in der jeweils erforderlichen Position halten können.",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Säugling/Kleinkind in Rückenlage auf eine harte Unterlage legen",
+                                "Besonderheiten beim Säugling: Kopf des Säuglings durch Anfassen an Stirn und Kinn in waagerechte (Neutral-) Position bringen, mit zwei Fingern Kinn leicht anheben, um die Atemwege frei zu machen. Diese Position wird während der gesamten Maßnahme beibehalten",
+                                "Besonderheiten beim Kleinkind: Kopf des Kindes durch Anfassen an Stirn und Kinn vorsichtig nach hinten neigen, Kinn leicht anheben und vorziehen, um die Atemwege frei zu machen. Diese Position wird während der gesamten Maßnahme beibehalten.",
+                                "Eigenen Mund über Mund und Nase des Säuglings / Kleinkindes aufsetzen, Blick auf dessen Brustkorb richten",
+                                "Behutsam und gleichmäßig über eine Sekunde lang Luft einblasen, bis sich der Brustkorb sichtbar hebt und senkt",
+                                "Insgesamt 5-mal beatmen. Dabei ist auf Lebenszeichen (z. B. (Atem-) Bewegungen, Husten, Schlucken) zu achten",
+                                "Erneute Atemkontrolle",
+                                "Bei wieder vorhandener Atmung erfolgt die stabile Seitenlage",
+                                "Bei weiterhin nicht vorhandener Atmung erfolgt die Herz-Lungen-Wiederbelebung bei Säuglingen und Kleinkindern"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Fremdkörper in Luft- und Speiseröhre",
+                    "text": "Ist die Luftröhre verstopft kann es schnell zu lebensbedrohlich werden, da Erstickungsgefahr droht. Als Ersthelfer gehen Sie am Besten wie hier beschrieben vor:",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Der Betroffene steht",
+                                "Den Oberkörper des Betroffenen so weit wie möglich vornüber beugen",
+                                "Der Helfer schlägt mit der flachen Hand dem Betroffene kräftig zwischen Die Schulterblätter",
+                                "Notruf",
+                                "Bei Atemstillstand: Beatmung"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Pseudokrupp (bei Säuglingen)",
+                    "text": "Beim Pseudokrupp ist die Einatmung durch eine Verengung im Bereich des Kehlkopfs erschwert. Am häufigsten tritt der akute Pseudokrupp-Anfall bei Säuglingen und Kleinkindern im Alter von 6 Monaten bis zu 3 Jahren auf.",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Blauverfärbung",
+                                "Bewusstlosigkeit",
+                                "Schnappende Atmung",
+                                "Kein Atemgeräusch mehr hörbar"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Kind mit erhöhtem Oberkörper lagern",
+                                "Für kühle, feuchte Luft sorgen",
+                                "Badewanne mit heißem Wasser füllen, dessen Dampf das Kind einatmet",
+                                "Notruf tätigen",
+                                "Atmung und Bewusstsein regelmäßig überprüfen",
+                                "Bei erhaltener Eigenatmung: Säugling in Bauchlage oder Kind in Seitenlage legen",
+                                "Bei fehlender Atmung: Herz-Lungen-Wiederbelebung durchführen"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Epiglottitis (Kinder von 2-7Jahren häufig)",
+                    "text": "Die Epiglottitis stellt sich ähnlich wie der Pseudokrupp dar, es handelt sich um eine entzündliche Anschwellung des Kehldeckels und er kann im Alter von zwei bis sieben Jahren auftreten.",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Starke Schluckbeschwerden",
+                                "Vermehrter Speichelfluss",
+                                "Hohes Fieber"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Das Kind beruhigen",
+                                "Mit erhöhtem Oberkörper lagern",
+                                "Für kühle Frischluftzufuhr sorgen: Beispielsweise mit dem Kind auf dem Arm ans offene Fenster stellen",
+                                "Heißen Wasserdampf erzeugen, dessen Dampf das Kind einatmet",
+                                "Notruf tätigen",
+                                "Ist der Säugling/ das Kind nicht mehr ansprechbar und atmet noch: Säugling in Bauchlage oder Kind in Seitenlage legen",
+                                "Bei fehlender Atmung: Herz-Lungen-Wiederbelebung durchführen"
+                            ]
+                        }
+                    ]
+                }
+            ]   
+        },
+
+        {
+            "name": "Vergiftungen",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Gifte können auf vier unterschiedliche Aufnahmewege in den Körper gelangen: Über die Atemwege, Verdauungswege, direkt über den Blutkreislauf und über die Haut.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/realistische-giftflaschenzusammensetzung-mit-glasroehrchen-und-gefaessen-die-mit-bunten-fluessigkeiten-gefuellt-sind_1284-30209.jpg"
+                },
+                {
+                    "headline": "Vergiftungen über die Atemwege",
+                    "text": "Eigene Sicherheit beachten und Betroffenen so schnell wie möglich aus dem Gefahrenbereich bringen",
+                    "subtitle": [
+                        {
+                            "title": "Hilfe beim Erbrechen",
+                            "list": [
+                                "Beim Liegenden: Den Kopf des Erbrechenden zur Seite wenden. Mit der freien Hand eine Schale unter den Mund halten",
+                                "Beim Sitzenden: Kopf nach vorne beugen und dabei die Stirn mit einer Hand halten. Mit der freien Hand eine Schale dicht unter den Mund halten"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Vergiftung durch Kohlendioxid",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/buerger-tragen-gesichtsmasken-zum-schutz-vor-smog-und-staubiger-luft-menschen-die-in-der-naehe-von-pflanzenrohren-und-industrieemissionen-gehen-fuer-umweltprobleme-oekologie-coronavirus_74855-8287.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Vorfinden des Betroffenen in entsprechender Umgebung",
+                                "Mitunter Krämpfe des Betroffenen"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Eigene Sicherheit beachten",
+                                "Keinen eigenmächtigen Rettungsversuch unternehmen",
+                                "Rettung nur durch Fachpersonal, das mit Atemschutzgeräten ausgerüstet ist"
+                            ]
+                        }
+                    ]
+                }
+            ]   
+        },
+
+        {
+            "name": "Insektenstiche",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Bienen, Wespen, Hornissen und weitere Insekte sind besonders im Sommer ein Problem - vor allem wenn Personen auf einen Insektenstich stärker reagieren. Insbesondere die Zecke ist fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0°Celsius liegt.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/bunte-verschiedene-insekten-wuermer-und-kaefer-flach-gesetzt_74855-15369.jpg"
+                },
+                {
+                    "headline": "Zecken",
+                    "text": "Zecken sind fast das ganze Jahr aktiv, solange die Temperatur nicht unter 0° Celsius liegt. Dabei können Sie Zeckenborreliose oder Früh-Sommer-Meningo-Encephalitis (FSME) übertragen.",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Um das Risiko einer Infektion zu verringern, sollten die Zecke möglichst schnell entfernt werden. Hierzu sollte eine einfache Splitterpinzette oder eine Zeckenzange verwendet werden"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Insektenstiche",
+                    "text": "Ein Bienen-, Wespen- oder Hornissenstich ist zwar beunruhigend und häufig auch schmerzhaft aber in der Regel ungefährlich. Reagieren Personen auf Insektenstiche allergisch, können unerwartet auf der Einstichstelle eine allergische Reaktion entwickeln.",
+                    "image": "https://img.freepik.com/vektoren-kostenlos/moskito-der-eine-person-mit-flachem-design-beisst_23-2147942799.jpg?size=338&ext=jpg",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Stechender Schmerz",
+                                "Hautrötung",
+                                "Schwellung"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Befindet sich der Stachel noch in der Haut, sollte dieser vorsichtig entfernt werden. Dabei darauf achten, dass die Giftblase nicht zerdrückt wird",
+                                "Kühlen Sie den Bereich mit einer kalten Kompresse",
+                                "Sollte es zu einer allergischen Reaktion kommen, die mit einer Gefährdung der Vitalfunktionen einhergehen setzen Sie umgehend den Notruf ab"
+                            ]
+                        }
+                    ]
+                }
+            ]   
+        },
+
+        {
+            "name": "Chemieunfälle",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Mit chemischen Produkten ist nicht zu spaßen. Bei der Verwendunger solcher Produkte ist stests Vorsicht geboten, dennoch kann es zu sogenannten Chemieunfällen kommen. Hierbei gilt: Ruhe bewahren und der Anleitung folgen.",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/illustration-des-wissenschaftsforschungslabors_1150-41705.jpg"
+                },
+                {
+                    "headline": "Augenverletzung",
+                    "text": "Mechanische Augenverletzung: Trotz Schutzbrille kann es vorkommen, dass Chemikalien ins Auge gelangen.",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Der Verletzte liegt auf dem Boden",
+                                "Kopf zur Seite des verätzten Auges wenden",
+                                "Gießen Sie aus ca. 10 cm Höhe Wasser in den inneren Augenwinkel, sodass es über den Augapfel und äußeren Augenwinkel nach außen abfließt",
+                                "Gesundes Auge schützen",
+                                "Keimfreier Verband über beide Augen"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Brennende Person löschen",
+                    "text": "Das beste Löschmittel ist das, was Sie als erstes erreichen können! Wenn Sie aber zwischen mehreren Optionen wählen können, so ist der Feuerlöscher die erste Wahl!",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Bei Benutzung eines Feuerlöschers die Person nicht unnötig ins Gesicht sprühen - sofern das Gesicht nicht betroffen ist!",
+                                "Falls möglich: Benutzung von Notduschen, Wasserschläuche, (Lösch-)Decke"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Hautkontakt mit Chemikalien",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/illustration-der-chemischen-flasche_53876-5926.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Verätzung",
+                            "list": [
+                                "Bei einer Verätzung wird Körpergewebe durch die Chemikalie zerstört"
+                            ]
+                        },
+                        {
+                            "title": "Vergiftung",
+                            "list": [
+                                "Es gibt Chemikalien, die leicht durch die Haut in den Körper eindringen und dort gesundheitsschädigende Wirkungen haben können"
+                            ]
+                        },
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Der Betroffene hat heftige Schmerzen",
+                                "Die Haut wirkt sehr gereizt",
+                                "Bei Verätzungen siehe unten!"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Abspülen mit Wasser, bei unverletzter Haut mit Wasser und Seife",
+                                "Benutzte Kleidung muss vorher entfernt werden"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Inhalation von Chemikalien",
+                    "text": "Eine Inhalation von Chemikalien kann zu Lungenverletzungen führen, die Sie schlecht beurteilen können, weil Sie in die Lunge nicht hineinsehen können.",
+                    "subtitle": [
+                        {
+                            "title": "Erkennen",
+                            "list": [
+                                "Die betroffene Person hat Atembeschwerden",
+                                "Hat die Person Spritzer der Chemikalie abbekommen?"
+                            ]
+                        },
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Falls es im Raum passiert, den Raum verlassen -> Besser Unfallstelle sichern",
+                                "Falls die Person Spritzer der Chemikalie auf seine Kleidung abbekommen hat, dann muss die Betroffene Bekleidung gewechselt werden",
+                                "Wenn Spritzer in den Haaren stecken, müssen die Haare ausgewaschen werden",
+                                "Bei besonders schweren Intoxikationen soll sich der Betroffene so wenig wie möglich bewegen, um die Lunge zu entlasten: Hinsetzen ist gut, Hinlegen noch besser! Bei starkem Hustenreiz ist eine halbsitzende Stellung oft vorteilhafter"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Verbrennung, Verbrühung",
+                    "text": "Verbrennungen werden in verschiedene Grade eingeteilt: 1. Verbrennung ersten Grades: Hautrötung, die in der Regel schmerzhaft sind 2. Verbrennung zweiten Grades: Brandblasen - je nachdem wie tief die Hitzeschäden in die Haut eingedrungen sind, heilt die Verletzung entweder vollständig ab (Grad 2a) oder es kommt zur Narbenbildung (Grad 2b) 3. Alle Verbrennungen noch höheren Grades führen zu bleibenden Schäden",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Bei Brandwunden ersten Grades mit Fließwasser kühlen - VORSICHT: Am Körperstamm wird niemals mit fließendem Wasser gekühlt. Außerdem sollte die Temperatur für den Betroffenen als angenehm empfunden werden, da ansonsten Unterkühlungen auftreten können!",
+                                "Größere Brandwunden höheren Grades werden nur verbunden",
+                                "Sind mehr als 15% der Haut verbrannt (z.B. beide Arme, ein Bein oder eine Rumpfseite) besteht Lebensgefahr"
+                            ]
+                        }
+                    ]
+                }
+            ]   
+        }
+    ]
+    }
+}

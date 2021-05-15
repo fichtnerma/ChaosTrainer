@@ -1,6 +1,6 @@
 //Librarys
 import React, {Component} from 'react';
-import {View, StyleSheet, Dimensions, Animated} from 'react-native';
+import {View, StyleSheet, Dimensions, Animated, SafeAreaView} from 'react-native';
 import * as shape from 'd3-shape';
 import Svg, {Path} from 'react-native-svg';
 
@@ -81,13 +81,13 @@ export default class Tabbar extends Component {
     render() {
         const {value: translateX} = this.state;
         return (
-            <View style={StyleSheet.safeArea}>
+            <View style={{backgroundColor: '#ff000000'}}>
                 <View {...{width, height}}>
                     <AnimatedSvg width={width * 2.5} {...{height}} style={{transform: [{translateX}]}}>
                         <Path {...{d}} fill="#f79A42" />
                     </AnimatedSvg>
                     <View style={StyleSheet.absoluteFill}>
-                        <StaticTabbar ref={CurrentTab} value={translateX} navigation={this.props.navigation} route={this.props.route} {...{tabs}} />
+                        <StaticTabbar ref={CurrentTab} value={translateX} navigation={this.props.navigation} {...{tabs}} />
                     </View>
                 </View>
             </View>
@@ -97,6 +97,7 @@ export default class Tabbar extends Component {
 
 const styles = StyleSheet.create({
     safeArea: {
-        backgroundColor: 'white',
+        backgroundColor: '#f79A42',
+        height: 15,
     },
 });

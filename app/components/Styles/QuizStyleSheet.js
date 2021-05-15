@@ -1,16 +1,18 @@
 //Librarys
-import { StyleSheet, Dimensions } from "react-native";
+import {StyleSheet, Dimensions} from 'react-native';
+
 
 //Constants
-import Colors from "../../constants/colors.js";
+import Colors from '../../constants/colors.js';
 
-const windowWidth = Dimensions.get("window").width;
-const windowHeight = Dimensions.get("window").height;
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default StyleSheet.create({
   boxSize: {
-    width: windowWidth*0.9,
-    height: windowHeight*0.4,
+    width: windowWidth * 0.9,
+    height: windowHeight * 0.4,
+    marginTop: windowHeight * 0.035,
   },
   layout: {
     height: "80%",
@@ -53,9 +55,9 @@ export default StyleSheet.create({
 
   hiScore: {
     color: Colors.white,
-    fontSize: 40,
+    fontSize: 35,
     textAlignVertical: "center",
-    marginLeft: 80,
+    marginLeft: 70,
     fontWeight: "bold",
   },
   startText: {
@@ -68,15 +70,19 @@ export default StyleSheet.create({
   //Buttons
   startButton: {
     backgroundColor: Colors.orange,
-    width: 230,
-    height: 80,
+    width: windowWidth * 0.6,
+    height: windowHeight * 0.1,
+    //width: 230,
+    //height: 80,
     marginTop: 70,
     overflow: "visible",
   },
   settingButton: {
     backgroundColor: Colors.orange,
-    width: 80,
-    height: 80,
+    width: windowWidth * 0.2,
+    height: windowHeight * 0.1,
+    //width: 80,
+    //height: 80,
     marginTop: 70,
   },
 
@@ -100,5 +106,73 @@ export default StyleSheet.create({
     top: -69,
     left: -15,
     zIndex: 40,
+  },
+
+  textInput: {
+    justifyContent: "center",
+    color: Colors.orange,
+    fontSize: 22,
+    marginTop: 10,
+    marginLeft: 15,
+    borderBottomColor: Colors.orange,
+    borderBottomWidth: 1,
+    paddingHorizontal: 3,
+  },                                
+  modal: {
+        backgroundColor: '#fff',
+        borderTopRightRadius: 30,
+        borderTopLeftRadius: 30,
+        width: windowWidth,
+        height: windowHeight * 0.76,
+        alignItems: 'center',
+        shadowColor: Colors.black,
+        zIndex: 99,
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
+        elevation: 5,
+    },
+    save: {
+        width: windowWidth * 0.7,
+        height: 50,
+        marginTop: windowHeight * 0.08,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: Colors.blue,
+        borderRadius: 20,
+    },
+
+    saveText: {
+        color: '#fff',
+        fontSize: 22,
+    },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalView: {
+    justifyContent: "flex-start",
+    width: windowWidth * 0.92,
+    height: windowHeight * 0.65,
+  },
+  kategorienContainer: {
+    backgroundColor: Colors.lightOrange,
+    height: windowHeight * 0.36,
+  },
+  kategorieText: {
+    color: Colors.white,
+    fontSize: 25,
+    marginTop: 10,
+    marginLeft: 15,
+  },
+  kategorien: {
+    color: Colors.white,
+    fontSize: 16,
+    marginTop: 10,
+    marginLeft: 15,
   },
 });

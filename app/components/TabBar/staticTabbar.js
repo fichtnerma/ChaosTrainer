@@ -13,31 +13,34 @@ export default class StaticTabbar extends Component {
         this.values = tabs.map((tab, index) => new Animated.Value(index === 0 ? 1 : 0));
         this.navigation = this.props.navigation;
         this.state = {
-            // values: new Animated.Value(0)
+            currentTab: 0,
         };
     }
     onChangeTab = (index) => {
-        const {value, tabs} = this.props;
-        const tabWidth = width / tabs.length;
-        Animated.sequence([
-            ...this.values.map((value) =>
-                Animated.timing(value, {
-                    toValue: 0,
-                    duration: 0,
-                    useNativeDriver: true,
-                })
-            ),
-            Animated.parallel([
-                Animated.spring(this.values[index], {
-                    toValue: 1,
-                    useNativeDriver: true,
-                }),
-                Animated.spring(value, {
-                    toValue: -width + tabWidth * index,
-                    useNativeDriver: true,
-                }),
-            ]),
-        ]).start();
+        if (!(this.state.currentTab == index)) {
+            this.setState({currentTab: index});
+            const {value, tabs} = this.props;
+            const tabWidth = width / tabs.length;
+            Animated.sequence([
+                ...this.values.map((value) =>
+                    Animated.timing(value, {
+                        toValue: 0,
+                        duration: 0,
+                        useNativeDriver: true,
+                    })
+                ),
+                Animated.parallel([
+                    Animated.spring(this.values[index], {
+                        toValue: 1,
+                        useNativeDriver: true,
+                    }),
+                    Animated.spring(value, {
+                        toValue: -width + tabWidth * index,
+                        useNativeDriver: true,
+                    }),
+                ]),
+            ]).start();
+        }
     };
     render() {
         const {tabs, value, navigation} = this.props;

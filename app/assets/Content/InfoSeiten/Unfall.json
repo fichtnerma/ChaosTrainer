@@ -1,0 +1,115 @@
+{
+    "inhalt": {
+        "name": "Verkehrsunfall",
+        "infoText": "Notruf 112 tätigen und Erste Hilfe leisten",
+        "categories": [
+        {
+            "name": "Grundsätzlich",
+            "subtext": [
+                {
+                    "headline": "Absichern der Unfallstelle",
+                    "text": "Sollten mehrere Personen mit im Fahrzeug sitzen, sollte einer der Insassen die Aufgabenteilung übernehmen",
+                    "image": "https://image.freepik.com/vektoren-kostenlos/unfallstelle-mit-autounfall_1308-38817.jpg",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Warnweste anziehen. In Deutschland ist es Pflicht mindestens eine Warnweste im Auto mitzuführen. Ratsam ist es allerdings jeweils eine Warnweste pro Insasse mitzuführen",
+                                "Dem in gleicher Richtung fließenden Verkehr entgegenlaufen",
+                                "Im Verkehr mit aufgeklapptem Warndreieck möglichst hinter der Leitplanke gehen",
+                                "Warndreiecke, Warnblinkleuchte in ausreichender Entfernung vom Unfallort, bei schnellem Verkehr in etwa 100 Meter Entfernung aufstellen",
+                                "Bei Kurven und Bergkuppen: Erstes Warndreieck vor der Kurve oder der Bergkuppe aufstellen",
+                                "Nachfolgende Fahrzeuge zusätzlich zum Langsam-Fahren auffordern: Einen Arm ausstrecken; Auf- und Abwärtsbewegungen des Armes in halber Körperhöhe",
+                                "Weitere Verkehrsteilnehmer um Mithilfe bitten (Warnung - auch des Gegenverkehrs, Notruf veranlassen)",
+                                "Warnung bei Nacht zusätzlich durch Warnblinkleuchten",
+                                "Notruf 112 tätigen und Erste Hilfe leisten",
+                                "Sammeln Sie Beweise. Dazu gehören Fotos von der Unfallstelle und den Schäden an den Autos. Schauen Sie sich nach Zeugen um, nehmen Sie deren Personalien auf. Füllen Sie außerdem mit dem Crashgegner gemeinsam den Unfallbericht aus"
+                            ]
+                        },
+                        {
+                            "title": "Rufen Sie die Polizei (110), wenn",
+                            "list": [
+                                "es sich um größere Sachschäden handelt",
+                                "Miet- und Firmenwagen in den Unfall verwickelt sind",
+                                "Jemand verletzt wurde",
+                                "Sie sich mit dem Gegner streiten oder er sich aus dem Staub macht",
+                                "Die Polizei hält fest, wer gegen Verkehrsregeln verstoßen hat"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "headline": "Rettung aus dem Kraftfahrzeug",
+                    "text": "Es kann passieren, dass Sie Personen aus einem verunglückten Fahrzeug befreien müssen. Dabei darf allerdings Ihre eigene Sicherheit nicht gefährdet werden. Gegebenenfalls kann nur Fachpersonal die betroffene Person retten.",
+                    "subtitle": [
+                        {
+                            "title": "Maßnahmen",
+                            "list": [
+                                "Warnweste anziehen. In Deutschland ist es Pflicht mindestens eine Warnweste im Auto mitzuführen. Ratsam ist es allerdings jeweils eine Warnweste pro Insasse mitzuführen",
+                                "Dem in gleicher Richtung fließenden Verkehr entgegenlaufen",
+                                "Im Verkehr mit aufgeklapptem Warndreieck möglichst hinter der Leitplanke gehen",
+                                "Warndreiecke, Warnblinkleuchte in ausreichender Entfernung vom Unfallort, bei schnellem Verkehr in etwa 100 Meter Entfernung aufstellen",
+                                "Bei Kurven und Bergkuppen: Erstes Warndreieck vor der Kurve oder der Bergkuppe aufstellen",
+                                "Nachfolgende Fahrzeuge zusätzlich zum Langsam-Fahren auffordern: Einen Arm ausstrecken; Auf- und Abwärtsbewegungen des Armes in halber Körperhöhe",
+                                "Weitere Verkehrsteilnehmer um Mithilfe bitten (Warnung - auch des Gegenverkehrs, Notruf veranlassen)",
+                                "Warnung bei Nacht zusätzlich durch Warnblinkleuchten",
+                                "Notruf 112 tätigen und Erste Hilfe leisten",
+                                "Sammeln Sie Beweise. Dazu gehören Fotos von der Unfallstelle und den Schäden an den Autos. Schauen Sie sich nach Zeugen um, nehmen Sie deren Personalien auf. Füllen Sie außerdem mit dem Crashgegner gemeinsam den Unfallbericht aus"
+                            ]
+                        },
+                        {
+                            "title": "Rufen Sie die Polizei (110), wenn",
+                            "list": [
+                                "es sich um größere Sachschäden handelt",
+                                "Miet- und Firmenwagen in den Unfall verwickelt sind",
+                                "Jemand verletzt wurde",
+                                "Sie sich mit dem Gegner streiten oder er sich aus dem Staub macht",
+                                "Die Polizei hält fest, wer gegen Verkehrsregeln verstoßen hat"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        },
+        {
+            "name": "Helmabnahme",
+            "subtext": [
+                {
+                    "headline": "Allgemein",
+                    "text": "Da es verschiedene Helmtypen gibt, müssen die nachfolgenden Maßnahmen evtl. entsprechend dem Helmtyp abgewandelt werden. Dieses Verfahren des Helmabnehmens soll u. a. verhindern, dass bei Vorliegen einer Halswirbelverletzung versehentlich eine Verschlimmerung der Unfallfolgen eintritt. Die Helmabnahme sollten Sie, wenn möglich, zu zweit vornehmen.",
+                    "subtitle": [
+                        {
+                            "title": "Helmabnahme durch zwei Helfer",
+                            "list": [
+                                "Ein Helfer kniet oberhalb des Kopfes und sorgt für die Stabilisierung des Halses, indem er von oben mit beiden Händen Helm und Unterkiefer des Betroffenen umfasst. Der andere kniet seitlich am Kopf des Betroffenen und klappt das Visier des Helmes (Sichtglas) hoch",
+                                "Der zweite Helfer löst dann den Kinnriemen. Unterdessen wird die Stabilisierung an Helm und Unterkiefer vom ersten Helfer beibehalten",
+                                "Der zweite Helfer entfernt ggf. die Brille des Bewusstlosen und macht den Mundbereich (Kinnschale, Kopfhaube) frei",
+                                "Anschließend übernimmt der zweite Helfer die Stabilisierung der Halswirbelsäule. Dazu stützt er mit zwei Händen den Kopf-/Nackenbereich des Betroffenen von unten in Längsachse",
+                                "Der erste Helfer zieht den Helm nach oben, wobei er die Helmkante über die Nase des Betroffenen kippt. Während des Abziehens sorgt der zweite Helfer weiterhin für die Stabilisierung des Kopfes und der Halswirbelsäule. Unter Beibehaltung der Stabilisierung legt der zweite Helfer den Kopf des Betroffenen vorsichtig auf dem Boden ab",
+                                "Nach Abnahme des Helmes umfasst der erste Helfer wieder den Kopf des Betroffenen; seine Hände liegen seitlich am Kopf des Betroffenen. Der zweite Helfer öffnet den Mund des Betroffenen und entfernt ggf. sichtbare Fremdkörper",
+                                "Der zweite Helfer beugt den Kopf des Betroffenen nackenwärts und kontrolliert die Atmung. Anschließend wird der Betroffene bei vorhandener Atmung vom zweiten Helfer vorsichtig in die stabile Seitenlage gebracht, wobei der erste Helfer weiterhin auf die Stabilisierung der Halswirbelsäule achtet und dazu den Kopf des Betroffenen in Drehrichtung vorsichtig mitführt",
+                                "Bei Atemstillstand: Atemspende durchführen. Bei Wiedereinsetzen der Atmung: stabile Seitenlage herstellen. Wiederholte Kontrolle von Bewusstsein und Atmung. Bei Kreislaufstillstand: Herz-Lungen-Wiederbelebung"
+                            ]
+                        },
+                        {
+                            "title": "Abnehmen des Helmes durch einen Helfer",
+                            "list": [
+                                "Der Helfer kniet seitlich am Kopf des Betroffenen und klappt das Visier hoch, entfernt ggf. die Brille und macht den Mundbereich (Kinnschale/Kopfhaube) des Betroffenen frei",
+                                "Der Helfer löst vorsichtig den Kinnriemen des Helmes",
+                                "Der Helfer kniet jetzt oberhalb des Kopfes und umfasst mit beiden Händen den Helm des Betroffenen. Anschließend zieht er den Helm in Längsrichtung ab, wobei er die Helmkante über die Nase des Betroffenen kippt",
+                                "Der Helfer zieht den Helm soweit ab, dass er mit einer Hand den Hinterkopf des Betroffenen von unten stützen kann. Anschließend wird der Kopf des Betroffenen vorsichtig auf dem Boden abgelegt. Der Helfer wechselt seine Position an die Seite des Betroffenen und hält dabei dessen Kopf fest",
+                                "Der Helfer kniet wieder seitlich am Kopf des Betroffenen, öffnet dessen Mund und entfernt ggf. sichtbare Fremdkörper",
+                                "Der Helfer beugt den Kopf des Betroffenen nackenabwärts und kontrolliert die Atmung. Bei vorhandener Atmung wird der Betroffene vorsichtig in die stabile Seitenlage gebracht"
+                            ]
+                        }
+                    ]
+                }
+            ]
+                
+            
+        }
+        ]
+    }
+}  
