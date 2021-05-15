@@ -398,6 +398,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginTop: 5,
         marginLeft: 15,
+        paddingRight: 35,
+        marginBottom: 5,
         width: windowWidth * 0.88,
     },
 

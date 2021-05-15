@@ -104,7 +104,7 @@
                     "question": "Wie lauten die fünf W's? ",
                     "Antworten": [
                         {"antwort": ["Wer erstattet Meldung? Wann ist der Unfall genau passiert? Wo ist der Unfall geschehen? Wer hatte Schuld? Was hat sich ereignet?", false]},
-                        {"antwort": ["Was hat sich ereignet? Wie genau ereignete sich der Unfall? Wie viele Verletzte? Welche besonderen Zustände erfodern ärtzliche Hilfe? Wo sind die Verletzten versichert? ", false]},
+                        {"antwort": ["Was ist passiert? Wie ist der Unfall? Wie viele Verletzte? Was erfodert ärtzliche Hilfe? Wo sind die Verletzten versichert? ", false]},
                         {"antwort": ["Wo ist es passiert? Was ist geschehen? Wie viele Verletzte? Welche Art von Verletzungen? Warten auf Rückfrage ", true]},
                         {"antwort": ["Wer ist der Verletzte? Wie ist der Zustand des Verletzten? Was ist der Name des Verletzten? Wo ist es passiert? Wer ruft an?", false]}                        
                     ]

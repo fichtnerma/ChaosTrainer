@@ -12,8 +12,8 @@ import quizStyle from '../../components/Styles/QuizStyleSheet.js';
 import Colors from '../../constants/colors';
 
 export default class QuizHomeScreen extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
         this.state = {
             erstehilfe: true,

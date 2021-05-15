@@ -9,6 +9,7 @@ export default StyleSheet.create({
     boxSize: {
         width: windowWidth * 0.9,
         height: windowHeight * 0.245,
+        marginTop: 20,
     },
 
     tippDesTagesBox: {
@@ -18,6 +19,7 @@ export default StyleSheet.create({
         borderRadius: 15,
         margin: 10,
         shadowOffset: {width: 0, height: 0},
+
         shadowColor: 'black',
         shadowOpacity: 0.2,
         justifyContent: 'center',
@@ -29,7 +31,7 @@ export default StyleSheet.create({
     //Text
     tippDesTagesTitel: {
         color: Colors.orange,
-        fontSize: 30,
+        fontSize: 25,
         marginLeft: 15,
         marginBottom: 5,
         top: 8,
@@ -49,8 +51,9 @@ export default StyleSheet.create({
     tippDesTagesImage: {
         width: 100,
         height: 90,
-        position: 'absolute',
-        top: 90,
-        left: 230,
+        position: "absolute",
+        top: 85,
+        left: 220,
+
     },
 });

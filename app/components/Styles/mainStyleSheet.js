@@ -45,13 +45,14 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
 
-    titel: {
-        color: Colors.black,
-        flex: 1,
-        fontSize: 30,
-        marginTop: 10,
-        marginLeft: 15,
-    },
+  //Text
+  titel: {
+    color: Colors.black,
+    flex: 1,
+    fontSize: 25,
+    marginTop: 5,
+    marginLeft: 15,
+  },
 
     titleIcon: {
         color: Colors.blue,
@@ -66,15 +67,15 @@ export default StyleSheet.create({
         flex: 5,
     },
 
-    orangeSchrift: {
-        color: Colors.lightOrange,
-        fontSize: 70,
-        fontWeight: 'bold',
-        marginLeft: 15,
-        position: 'absolute',
-        textAlignVertical: 'bottom',
-        height: windowHeight * 0.105,
-    },
+  orangeSchrift: {
+    color: Colors.lightOrange,
+    fontSize: 55,
+    fontWeight: "bold",
+    marginLeft: 15,
+    position: "absolute",
+    textAlignVertical: "bottom",
+    height: windowHeight * 0.105,
+  },
 
     h1: {
         color: Colors.black,

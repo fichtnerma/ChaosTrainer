@@ -5,8 +5,8 @@ const windowHeight = Dimensions.get("window").height;
 
 export default StyleSheet.create({
   boxSize: {
-    width: windowWidth*0.9,
-    height: windowHeight*0.325,
+    width: windowWidth * 0.9,
+    height: windowHeight * 0.325,
   },
 
   layout: {
@@ -20,8 +20,8 @@ export default StyleSheet.create({
     width: 150,
     height: 110,
     position: "absolute",
-    top: windowHeight*0.105,
-    left: 180,
+    top: windowHeight * 0.105,
+    left: 150,
     zIndex: 20,
   },
   QuizPersonImage: {
