@@ -1,12 +1,13 @@
 //Librarys
 import React, {useEffect, useState} from 'react';
-import {ActivityIndicator, FlatList, Image, Text, View, StyleSheet} from 'react-native';
+import {ActivityIndicator, FlatList, View, StyleSheet, Dimensions} from 'react-native';
 
 //Styles
 import mainStyle from '../Styles/mainStyleSheet.js';
 import homeStyle from '../Styles/homeStyleSheet.js';
 import colors from '../../constants/colors.js';
 import Newscard from './Newscard.js';
+const windowHeight = Dimensions.get('window').height;
 
 export default function News() {
     const [isLoading, setLoading] = useState(true);
@@ -23,7 +24,7 @@ export default function News() {
     }, []);
 
     return (
-        <View style={{paddingTop: 10, height: 215, marginBottom: 0}}>
+        <View style={{paddingTop: 15, height: windowHeight * 0.3, marginBottom: 0}}>
             {isLoading ? (
                 <ActivityIndicator />
             ) : (
