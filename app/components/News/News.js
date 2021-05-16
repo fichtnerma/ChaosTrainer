@@ -3,9 +3,6 @@ import React, {useEffect, useState} from 'react';
 import {ActivityIndicator, FlatList, View, StyleSheet, Dimensions} from 'react-native';
 
 //Styles
-import mainStyle from '../Styles/mainStyleSheet.js';
-import homeStyle from '../Styles/homeStyleSheet.js';
-import colors from '../../constants/colors.js';
 import Newscard from './Newscard.js';
 const windowHeight = Dimensions.get('window').height;
 
@@ -39,29 +36,3 @@ export default function News() {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    virusIcon: {
-        width: 120,
-        height: 120,
-    },
-
-    newsBlock: {
-        marginTop: 20,
-    },
-
-    newsText: {
-        fontSize: 16,
-    },
-
-    newsTitel: {
-        top: 5,
-        fontSize: 25,
-    },
-
-    zahlenText: {
-        fontSize: 22,
-        fontWeight: 'bold',
-        color: colors.blue,
-    },
-});

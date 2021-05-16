@@ -12,8 +12,8 @@ import quizStyle from '../../components/Styles/QuizStyleSheet.js';
 import Colors from '../../constants/colors';
 
 export default class QuizHomeScreen extends Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
         this.state = {
             erstehilfe: true,
@@ -45,12 +45,12 @@ export default class QuizHomeScreen extends Component {
                             <View style={{flex: 4, flexDirection: 'row'}}>
                                 <Image source={require('../../assets/QuizScreen/Feuer.png')} style={quizStyle.feuerImage} />
                                 <View>
-                                    <Text style={quizStyle.hindText}>Erfahere mehr über</Text>
+                                    <Text style={quizStyle.hindText}>Erfahre mehr über</Text>
                                     <Text style={quizStyle.hindText}>Brände in der Bibliothek</Text>
                                 </View>
                             </View>
                             <View style={mainStyle.orangeBottomInBox}>
-                                <Text style={quizStyle.hiScoreText}>Erreiche einen neunen</Text>
+                                <Text style={quizStyle.hiScoreText}>Erreiche einen neuen</Text>
                                 <Text style={quizStyle.hiScore}> Hi-Score</Text>
                             </View>
                             <View style={{elevation: 20, zIndex: 40}}>
@@ -84,13 +84,19 @@ export default class QuizHomeScreen extends Component {
                     <View style={quizStyle.centeredView}>
                         <View style={quizStyle.modalView}>
                             <View style={{flexDirection: 'row'}}>
-                                <Text style={mainStyle.titel}>Einstellungen</Text>
-                                <MaterialIcons name="close" color={Colors.orange} size={35} onPress={() => this.setState({modalOpen: !modalOpen})} />
+                                <Text style={[mainStyle.titel, {marginTop: 30}]}>Einstellungen</Text>
+                                <MaterialIcons
+                                    style={{marginTop: 10, marginRight: 10}}
+                                    name="close"
+                                    color={Colors.orange}
+                                    size={35}
+                                    onPress={() => this.setState({modalOpen: !modalOpen})}
+                                />
                             </View>
                             <View>
                                 <View style={quizStyle.kategorienContainer}>
                                     <Text style={quizStyle.kategorieText}>Quizkategorien</Text>
-                                    <View style={{flexDirection: 'row'}}>
+                                    <View style={{flexDirection: 'row', marginLeft: 10}}>
                                         <CheckBox
                                             value={erstehilfe}
                                             onValueChange={() => {
@@ -100,7 +106,7 @@ export default class QuizHomeScreen extends Component {
                                         />
                                         <Text style={quizStyle.kategorien}>Erste Hilfe</Text>
                                     </View>
-                                    <View style={{flexDirection: 'row'}}>
+                                    <View style={{flexDirection: 'row', marginLeft: 10}}>
                                         <CheckBox
                                             value={brand}
                                             onValueChange={() => {
@@ -110,7 +116,7 @@ export default class QuizHomeScreen extends Component {
                                         />
                                         <Text style={quizStyle.kategorien}>Brand</Text>
                                     </View>
-                                    <View style={{flexDirection: 'row'}}>
+                                    <View style={{flexDirection: 'row', marginLeft: 10}}>
                                         <CheckBox
                                             value={virus}
                                             onValueChange={() => {
@@ -120,7 +126,7 @@ export default class QuizHomeScreen extends Component {
                                         />
                                         <Text style={quizStyle.kategorien}>Virus</Text>
                                     </View>
-                                    <View style={{flexDirection: 'row'}}>
+                                    <View style={{flexDirection: 'row', marginLeft: 10}}>
                                         <CheckBox
                                             value={verkehrsunfall}
                                             onValueChange={() => {
@@ -132,7 +138,7 @@ export default class QuizHomeScreen extends Component {
                                         />
                                         <Text style={quizStyle.kategorien}>Verkehrunfall</Text>
                                     </View>
-                                    <View style={{flexDirection: 'row'}}>
+                                    <View style={{flexDirection: 'row', marginLeft: 10}}>
                                         <CheckBox
                                             value={ueberschwemmung}
                                             onValueChange={() => {
@@ -144,7 +150,7 @@ export default class QuizHomeScreen extends Component {
                                         />
                                         <Text style={quizStyle.kategorien}>Überschwemmung</Text>
                                     </View>
-                                    <View style={{flexDirection: 'row'}}>
+                                    <View style={{flexDirection: 'row', marginLeft: 10}}>
                                         <CheckBox
                                             value={terrorismus}
                                             onValueChange={() => {
@@ -159,6 +165,7 @@ export default class QuizHomeScreen extends Component {
                                     <Text style={quizStyle.fragenText}>Wie viele Fragen?</Text>
                                     <TextInput
                                         style={quizStyle.textInput}
+                                        contextMenuHidden={true}
                                         placeholder={anzahl}
                                         placeholderTextColor="#f79A42"
                                         keyboardType="numeric"
