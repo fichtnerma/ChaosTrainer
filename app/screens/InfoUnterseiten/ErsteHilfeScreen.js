@@ -7,31 +7,31 @@ import {
 } from "react-native-gesture-handler";
 import CustomModal from "../../components/CustomModal";
 
-const ersteHilfe = require("../../assets/Content/InfoSeiten/ErsteHilfe.json");
-const brand = require("../../assets/Content/InfoSeiten/Brand.json");
-const terror = require("../../assets/Content/InfoSeiten/Terror.json");
-const ueberschwemmung = require("../../assets/Content/InfoSeiten/Uberschwemmung.json");
-const unfall = require("../../assets/Content/InfoSeiten/Unfall.json");
-const virus = require("../../assets/Content/InfoSeiten/Virus.json");
+const ersteHilfe = require('../../assets/Content/InfoSeiten/ErsteHilfe.json');
+const brand = require('../../assets/Content/InfoSeiten/Brand.json');
+const terror = require('../../assets/Content/InfoSeiten/Terror.json');
+const ueberschwemmung = require('../../assets/Content/InfoSeiten/Uberschwemmung.json');
+const unfall = require('../../assets/Content/InfoSeiten/Unfall.json');
+const virus = require('../../assets/Content/InfoSeiten/Virus.json');
 const modal = React.createRef();
 
 function setPage(page) {
-  switch (page) {
-    case "ersteHilfe":
-      return ersteHilfe.inhalt;
-    case "brand":
-      return brand.inhalt;
-    case "terror":
-      return terror.inhalt;
-    case "ueberschwemmung":
-      return ueberschwemmung.inhalt;
-    case "unfall":
-      return unfall.inhalt;
-    case "virus":
-      return virus.inhalt;
-    default:
-      return ersteHilfe.inhalt;
-  }
+    switch (page) {
+        case 'ersteHilfe':
+            return ersteHilfe.inhalt;
+        case 'brand':
+            return brand.inhalt;
+        case 'terror':
+            return terror.inhalt;
+        case 'ueberschwemmung':
+            return ueberschwemmung.inhalt;
+        case 'unfall':
+            return unfall.inhalt;
+        case 'virus':
+            return virus.inhalt;
+        default:
+            return ersteHilfe.inhalt;
+    }
 }
 
 export default function ErsteHilfeScreen({ route, navigation }) {
@@ -87,9 +87,43 @@ export default function ErsteHilfeScreen({ route, navigation }) {
             }
           }}
         >
-          {currentData.infoText}
-        </Text>
-      </TouchableWithoutFeedback>
+            <Text
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                style={[kacheln.h2, {fontSize: currentFont}]}
+                onTextLayout={(e) => {
+                    const {lines} = e.nativeEvent;
+                    if (lines.length > numberOfLines) {
+                        setCurrentFont(currentFont - 1);
+                    }
+                }}
+                key={index}
+            >
+                {topic.name}
+            </Text>
+        </TouchableOpacity>
+    ));
+    return (
+        <View style={styles.container}>
+            <View>
+                <Text style={kacheln.titel}>{currentData.name}</Text>
+            </View>
+            <TouchableOpacity style={kacheln.infoBox}>
+                <Text
+                    numberOfLines={12}
+                    adjustsFontSizeToFit
+                    style={[kacheln.infoText, {fontSize: currentFont}]}
+                    onTextLayout={(e) => {
+                        const {lines} = e.nativeEvent;
+                        if (lines.length > numberOfLines) {
+                            setCurrentFont(currentFont - 1);
+                        }
+                    }}
+                >
+                    {currentData.infoText}
+                </Text>
+                <Image source={require('../../assets/InfoScreen/Ausrufezeichen.png')} style={kacheln.ausrufezeichen} />
+            </TouchableOpacity>
 
       <ScrollView>{listItems}</ScrollView>
       <CustomModal ref={modal} content={modalContent} />
