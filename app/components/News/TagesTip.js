@@ -1,7 +1,6 @@
 //Librarys
 import React from "react";
-import { Text, Image } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { Text, Image, View } from "react-native";
 
 //Styles
 import homeStyle from "../Styles/homeStyleSheet.js";
@@ -11,7 +10,7 @@ const random = Math.floor(Math.random() * 31) + 0;
 
 export default function TagesTip({ navigation }) {
   return (
-    <TouchableOpacity
+    <View
       style={[homeStyle.tippDesTagesBox, homeStyle.boxSize]}
       onPress={() => navigation.navigate("Asthma")}
     >
@@ -23,6 +22,6 @@ export default function TagesTip({ navigation }) {
         source={require("../../assets/HomeScreen/Tipp.png")}
         style={homeStyle.tippDesTagesImage}
       />
-    </TouchableOpacity>
+    </View>
   );
 }
