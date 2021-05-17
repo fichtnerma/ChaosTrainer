@@ -1,34 +1,34 @@
 //Librarys
-import {StyleSheet, Dimensions} from 'react-native';
-import Colors from '../../constants/colors.js';
+import {StyleSheet, Dimensions} from "react-native";
+import Colors from "../../constants/colors.js";
 
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 export default StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        flexDirection: 'column',
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "flex-end",
+        flexDirection: "column",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
-        marginTop: windowHeight * 0.24,
+        marginTop: windowHeight * 0.22,
     },
 
     boxSize: {
         width: windowWidth * 0.85, //160
         height: windowWidth * 0.3,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
         marginBottom: 15,
     },
 
     fragezeichen: {
         fontSize: 120,
-        fontWeight: 'bold',
+        fontWeight: "bold",
         color: Colors.orange,
         marginRight: 10,
         marginLeft: -20,
@@ -41,48 +41,48 @@ export default StyleSheet.create({
         flex: 5,
     },
     titel: {
-        justifyContent: 'center',
-        color: '#14647f',
+        justifyContent: "center",
+        color: "#14647f",
         flex: 1,
         fontSize: 16,
         marginBottom: 15,
     },
     h1: {
-        justifyContent: 'center',
-        color: '#fff',
+        justifyContent: "center",
+        color: "#fff",
         fontSize: 20,
-        marginBottom: 0,
+        marginTop: 18,
     },
     nummerText: {
-        color: '#fff',
+        color: "#fff",
         fontSize: 30,
         marginBottom: 0,
-        fontWeight: 'bold',
-        alignSelf: 'center',
+        fontWeight: "bold",
+        alignSelf: "center",
     },
     rufnummerBox: {
         transform: [{translateY: -30}],
         height: windowHeight * 0.2,
     },
     telefonButton: {
-        width: windowWidth * 0.2,
-        height: windowWidth * 0.2,
-        marginTop: 5,
-        marginBottom: 20,
-        alignSelf: 'center',
-        backgroundColor: '#fff',
+        width: windowWidth * 0.18,
+        height: windowWidth * 0.18,
+        marginTop: 4,
+        marginBottom: 0,
+        alignSelf: "center",
+        backgroundColor: "#fff",
         borderRadius: 15,
         shadowOffset: {width: 0, height: 0},
-        shadowColor: 'black',
+        shadowColor: "black",
         shadowOpacity: 0.2,
         shadowRadius: 5,
         elevation: 10,
-        justifyContent: 'center',
+        justifyContent: "center",
     },
     telefon: {
         width: windowWidth * 0.3, //100
         height: windowWidth * 0.3,
         marginTop: 0,
-        alignSelf: 'center',
+        alignSelf: "center",
     },
 });
