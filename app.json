@@ -27,6 +27,7 @@
       "favicon": "./app/assets/favicon.png"
     },
     "android": {
+      "softwareKeyboardLayoutMode": "pan",
       "package": "com.chaosTrainer.chaosTrainerApp",
       "config": {
         "googleMaps": {
