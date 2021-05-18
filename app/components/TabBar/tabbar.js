@@ -1,6 +1,6 @@
 //Librarys
 import React, {Component} from 'react';
-import {View, StyleSheet, Dimensions, Animated, SafeAreaView} from 'react-native';
+import {View, StyleSheet, Dimensions, Animated} from 'react-native';
 import * as shape from 'd3-shape';
 import Svg, {Path} from 'react-native-svg';
 

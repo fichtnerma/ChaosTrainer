@@ -1,7 +1,7 @@
 //Librarys
 import React, {useState} from 'react';
 import {Dimensions, StyleSheet, View, Text, Image} from 'react-native';
-import {ScrollView, TextInput, TouchableNativeFeedback, TouchableOpacity} from 'react-native-gesture-handler';
+import {ScrollView, TextInput, TouchableNativeFeedback} from 'react-native-gesture-handler';
 
 //Styles
 const windowWidth = Dimensions.get('window').width;

@@ -1,5 +1,5 @@
 //Librarys
-import React, {Component, useState} from 'react';
+import React, {Component} from 'react';
 import {Text, View, Image, TextInput} from 'react-native';
 import Modal from 'react-native-modalbox';
 import {TouchableOpacity} from 'react-native-gesture-handler';
