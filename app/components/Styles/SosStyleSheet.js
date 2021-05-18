@@ -5,8 +5,8 @@ const windowWidth = Dimensions.get("window").width;
 
 export default StyleSheet.create({
     boxSize: {
-        width: windowWidth*0.43,
-        height: windowWidth*0.43,
+        width: windowWidth * 0.43,
+        height: windowWidth * 0.43,
     },
     layout: {
         flexDirection: "row",

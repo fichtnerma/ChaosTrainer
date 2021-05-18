@@ -1,6 +1,6 @@
 //Librarys
 import React, {useState} from 'react';
-import {Dimensions, StyleSheet, View, Text} from 'react-native';
+import {Dimensions, StyleSheet, View, Text, Image} from 'react-native';
 import {ScrollView, TextInput, TouchableOpacity} from 'react-native-gesture-handler';
 
 //Styles
@@ -10,7 +10,10 @@ const windowHeight = Dimensions.get('window').height;
 const searchContainer = [
     {
         terms: ['Gas', 'Feuer', 'Brand', 'Ölbrand', 'Wohnungsbrand', 'Autobrand', 'Waldbrand'],
-        resultname: 'Info Seite Brand',
+        resultname: 'Brand & Feuer',
+        resultImage: () => {
+            return require('../assets/InfoScreen/Feuer.png');
+        },
         nav: {
             parent: 'Info',
             screen: 'ErsteHilfe',
@@ -34,6 +37,9 @@ const searchContainer = [
             'Verbrennung',
         ],
         resultname: 'Erste Hilfe',
+        resultImage: () => {
+            return require('../assets/InfoScreen/Erste_Hilfe.png');
+        },
         nav: {
             parent: 'Info',
             screen: 'ErsteHilfe',
@@ -43,6 +49,9 @@ const searchContainer = [
     {
         terms: ['Überschwemmung', 'Erdbeben', 'Naturkatastrophen', 'Sturm', 'Gewitter', 'Wetter', 'Unwetter'],
         resultname: 'Naturkatastrophen',
+        resultImage: () => {
+            return require('../assets/InfoScreen/Ueberschwemmung.png');
+        },
         nav: {
             parent: 'Info',
             screen: 'ErsteHilfe',
@@ -52,6 +61,9 @@ const searchContainer = [
     {
         terms: ['Amoklauf', 'Explosionen', 'Gewalt'],
         resultname: 'Terrorismus',
+        resultImage: () => {
+            return require('../assets/InfoScreen/Waffe.png');
+        },
         nav: {
             parent: 'Info',
             screen: 'ErsteHilfe',
@@ -61,6 +73,9 @@ const searchContainer = [
     {
         terms: ['Unfall', 'Verkehr', 'Auto', 'Fahrzeug', 'Motorrad'],
         resultname: 'Verkehrsunfall',
+        resultImage: () => {
+            return require('../assets/InfoScreen/Unfall.png');
+        },
         nav: {
             parent: 'Info',
             screen: 'ErsteHilfe',
@@ -70,6 +85,9 @@ const searchContainer = [
     {
         terms: ['Virus', 'Corona', 'Covid', 'Quarantäne', 'Infektion'],
         resultname: 'Virus',
+        resultImage: () => {
+            return require('../assets/InfoScreen/Virus.png');
+        },
         nav: {
             parent: 'Info',
             screen: 'ErsteHilfe',
@@ -100,22 +118,31 @@ export default function SearchScreen({navigation}) {
         const {parent, screen, params} = search.nav;
         return (
             <TouchableOpacity onPress={() => navigation.navigate(parent, {screen: screen, params: params})} key={index} style={styles.searchRes}>
-                <Text key={'text' + index}>{search.resultname}</Text>
+                <View style={styles.imageContainer}>
+                    <Image style={styles.resImages} source={search.resultImage()}></Image>
+                </View>
+                <Text style={{fontWeight: 'bold', fontSize: 16}} key={'text' + index}>
+                    {search.resultname}
+                </Text>
             </TouchableOpacity>
         );
     });
     return (
         <View style={styles.container}>
-            <Text>Suche nach Inhalten</Text>
+            <Text style={{fontSize: 22, marginTop: 15, fontWeight: 'bold', color: '#14647f', textAlign: 'left', width: windowWidth * 0.88}}>
+                Suche nach Inhalten
+            </Text>
             <View style={custom.searchContainer}>
                 <TextInput
                     style={custom.textInput}
+                    autoCapitalize="words"
                     placeholder="Suchen"
+                    contextMenuHidden={true}
                     onChangeText={(val) => getSearchResults(val)}
                     placeholderTextColor="#f79A42"
                 ></TextInput>
             </View>
-            <Text>Suchergebnisse</Text>
+            <Text style={{fontSize: 18, textAlign: 'left', width: windowWidth * 0.88, color: '#14647f', fontWeight: 'bold'}}>Suchergebnisse</Text>
             <ScrollView>{output}</ScrollView>
         </View>
     );
@@ -130,18 +157,31 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
     },
-    searchRes: {
-        width: windowWidth * 0.88,
+    imageContainer: {
         height: 80,
-        elevation: 1,
-        borderRadius: 25,
+        width: 80,
+        alignSelf: 'flex-start',
+        elevation: 3,
+        marginRight: 20,
+        borderRadius: 15,
         backgroundColor: '#fff',
-        margin: 10,
         shadowRadius: 5,
         shadowOffset: {width: 0, height: 0},
         shadowColor: 'black',
         shadowOpacity: 0.2,
-        justifyContent: 'center',
+    },
+    resImages: {
+        height: 80,
+        width: 80,
+    },
+    searchRes: {
+        width: windowWidth * 0.88,
+        height: 100,
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        borderRadius: 25,
+        backgroundColor: '#fff',
+        padding: 10,
         alignContent: 'center',
         alignItems: 'center',
     },
@@ -152,15 +192,15 @@ const custom = StyleSheet.create({
         width: windowWidth * 0.88, //340
         height: windowHeight * 0.07,
         backgroundColor: '#fff',
-        borderRadius: 25,
+        borderRadius: 15,
         margin: 20,
         shadowOffset: {width: 0, height: 0},
         shadowColor: 'black',
         shadowOpacity: 0.2,
-        justifyContent: 'center',
-        alignContent: 'center',
+        justifyContent: 'flex-start',
+        alignContent: 'flex-start',
         shadowRadius: 5,
-        elevation: 10,
+        elevation: 5,
         textAlign: 'left',
         marginBottom: 20,
         paddingLeft: 20,

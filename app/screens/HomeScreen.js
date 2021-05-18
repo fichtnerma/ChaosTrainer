@@ -1,7 +1,7 @@
 //Librarys
 import React from "react";
-import {Text, View, Dimensions} from "react-native";
-import {ScrollView, TouchableOpacity} from "react-native-gesture-handler";
+import { Text, View, Dimensions } from "react-native";
+import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 
 //Styles
 import mainStyle from "../components/Styles/mainStyleSheet.js";
@@ -13,48 +13,60 @@ import News from "../components/News/News.js";
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-export default function HomeScreen({navigation}) {
-    return (
-        <View style={mainStyle.container}>
-            <TagesTip navigation={navigation} />
-            <ScrollView>
-                <View
-                    style={{
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <News />
-                    <TouchableOpacity
-                        style={[mainStyle.box, homeStyle.boxSize]}
-                        onPress={() => navigation.navigate("Info")}
-                    >
-                        <Text style={mainStyle.titel}>Weiterlesen?</Text>
-                        <Text style={mainStyle.h1}>Wissenswertes für den nächsten Notfall</Text>
-                        <Text style={[mainStyle.orangeSchrift, {bottom: windowHeight * 0.05}]}>
-                            Info
-                        </Text>
-                        <View
-                            style={[mainStyle.orangeBottomInBox, {height: windowHeight * 0.065}]}
-                        ></View>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        style={[mainStyle.box, homeStyle.boxSize]}
-                        onPress={() => navigation.navigate("Play")}
-                    >
-                        <Text style={mainStyle.titel}>Teste dich!</Text>
-                        <Text style={[mainStyle.h1]}>
-                            Finde heraus was du weißt und lerne Neues
-                        </Text>
-                        <Text style={[mainStyle.orangeSchrift, {bottom: windowHeight * 0.05}]}>
-                            Quiz AR
-                        </Text>
-                        <View
-                            style={[mainStyle.orangeBottomInBox, {height: windowHeight * 0.065}]}
-                        ></View>
-                    </TouchableOpacity>
-                </View>
-            </ScrollView>
+export default function HomeScreen({ navigation }) {
+  return (
+    <View style={mainStyle.container}>
+      <TagesTip navigation={navigation} />
+      <ScrollView>
+        <View
+          style={{
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <News />
+          <TouchableOpacity
+            style={[mainStyle.box, homeStyle.boxSize]}
+            onPress={() => navigation.navigate("Info")}
+          >
+            <Text style={mainStyle.titel}>Weiterlesen?</Text>
+            <Text style={mainStyle.h1}>
+              Wissenswertes für den nächsten Notfall
+            </Text>
+            <Text
+              style={[mainStyle.orangeSchrift, { bottom: windowHeight * 0.05 }]}
+            >
+              Info
+            </Text>
+            <View
+              style={[
+                mainStyle.orangeBottomInBox,
+                { height: windowHeight * 0.065 },
+              ]}
+            ></View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[mainStyle.box, homeStyle.boxSize]}
+            onPress={() => navigation.navigate("Play")}
+          >
+            <Text style={mainStyle.titel}>Teste dich!</Text>
+            <Text style={[mainStyle.h1]}>
+              Finde heraus was du weißt und lerne Neues
+            </Text>
+            <Text
+              style={[mainStyle.orangeSchrift, { bottom: windowHeight * 0.05 }]}
+            >
+              Quiz AR
+            </Text>
+            <View
+              style={[
+                mainStyle.orangeBottomInBox,
+                { height: windowHeight * 0.065 },
+              ]}
+            ></View>
+          </TouchableOpacity>
         </View>
-    );
+      </ScrollView>
+    </View>
+  );
 }
