@@ -1,7 +1,7 @@
 //Librarys
 import React, {useState} from 'react';
 import {Dimensions, StyleSheet, View, Text, Image} from 'react-native';
-import {ScrollView, TextInput, TouchableOpacity} from 'react-native-gesture-handler';
+import {ScrollView, TextInput, TouchableNativeFeedback, TouchableOpacity} from 'react-native-gesture-handler';
 
 //Styles
 const windowWidth = Dimensions.get('window').width;
@@ -117,14 +117,18 @@ export default function SearchScreen({navigation}) {
     const output = searchResults.map((search, index) => {
         const {parent, screen, params} = search.nav;
         return (
-            <TouchableOpacity onPress={() => navigation.navigate(parent, {screen: screen, params: params})} key={index} style={styles.searchRes}>
+            <TouchableNativeFeedback
+                onPress={() => navigation.navigate(parent, {screen: screen, params: params})}
+                key={index}
+                style={styles.searchRes}
+            >
                 <View style={styles.imageContainer}>
                     <Image style={styles.resImages} source={search.resultImage()}></Image>
                 </View>
                 <Text style={{fontWeight: 'bold', fontSize: 16}} key={'text' + index}>
                     {search.resultname}
                 </Text>
-            </TouchableOpacity>
+            </TouchableNativeFeedback>
         );
     });
     return (
