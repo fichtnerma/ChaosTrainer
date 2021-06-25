@@ -162,7 +162,11 @@ export default class ErsteFrageHomeScreen extends Component {
             this.setState({buttonText: 'Weiter'});
         }
     }
-
+    chooseAnswer(answer) {
+        if (this.state.buttonText == 'Fertig') {
+            this.setState({clicked: answer});
+        }
+    }
     render() {
         return (
             <View style={mainStyle.container}>
@@ -179,7 +183,7 @@ export default class ErsteFrageHomeScreen extends Component {
                                     <TouchableWithoutFeedback
                                         activeOpacity={1}
                                         onPress={() => {
-                                            this.setState({clicked: 0});
+                                            this.chooseAnswer(0);
                                         }}
                                         style={this.getStyle(0)}
                                     >
@@ -200,7 +204,7 @@ export default class ErsteFrageHomeScreen extends Component {
                                     <TouchableWithoutFeedback
                                         activeOpacity={1}
                                         onPress={() => {
-                                            this.setState({clicked: 1});
+                                            this.chooseAnswer(1);
                                         }}
                                         style={this.getStyle(1)}
                                     >
@@ -221,7 +225,7 @@ export default class ErsteFrageHomeScreen extends Component {
                                     <TouchableWithoutFeedback
                                         activeOpacity={1}
                                         onPress={() => {
-                                            this.setState({clicked: 2});
+                                            this.chooseAnswer(2);
                                         }}
                                         style={this.getStyle(2)}
                                     >
@@ -242,7 +246,7 @@ export default class ErsteFrageHomeScreen extends Component {
                                     <TouchableWithoutFeedback
                                         activeOpacity={1}
                                         onPress={() => {
-                                            this.setState({clicked: 3});
+                                            this.chooseAnswer(3);
                                         }}
                                         style={this.getStyle(3)}
                                     >
