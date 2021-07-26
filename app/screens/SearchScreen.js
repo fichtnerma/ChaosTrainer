@@ -1,6 +1,7 @@
 //Librarys
 import React, {useState} from 'react';
 import {Dimensions, StyleSheet, View, Text, Image} from 'react-native';
+import {TouchableWithoutFeedback} from 'react-native-gesture-handler';
 import {ScrollView, TextInput, TouchableNativeFeedback} from 'react-native-gesture-handler';
 
 //Styles
@@ -117,7 +118,7 @@ export default function SearchScreen({navigation}) {
     const output = searchResults.map((search, index) => {
         const {parent, screen, params} = search.nav;
         return (
-            <TouchableNativeFeedback
+            <TouchableWithoutFeedback
                 onPress={() => navigation.navigate(parent, {screen: screen, params: params})}
                 key={index}
                 style={styles.searchRes}
@@ -128,7 +129,7 @@ export default function SearchScreen({navigation}) {
                 <Text style={{fontWeight: 'bold', fontSize: 16}} key={'text' + index}>
                     {search.resultname}
                 </Text>
-            </TouchableNativeFeedback>
+            </TouchableWithoutFeedback>
         );
     });
     return (
